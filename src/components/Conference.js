@@ -1,4 +1,5 @@
 import React from 'react'
+import './Conf.css'
 function Conference(props) {
   return (
     <div>

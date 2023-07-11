@@ -1,6 +1,7 @@
 import React from 'react'
 import Conferencetopic from './Conferencetopic'
 import Conference from './Conference'
+import './Conf.css'
 function Confe() {
   return (
     <div>
