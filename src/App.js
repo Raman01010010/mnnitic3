@@ -9,7 +9,7 @@ import Speaker from './component/Speakers';
 import About from './component/About';
 import Footer from './component/Footer';
 import Map from './component/Map';
-import Ct from './components/Conferencetopics'
+//import Ct from './components/Conferencetopics'
 function App() {
 
 
@@ -18,7 +18,7 @@ function App() {
       <NavBar/>
      <div>
       <Corousel/>
-      <Ct/>
+     
       <About/>
       <Speaker/>
       <Timeline/>
