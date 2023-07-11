@@ -19,7 +19,15 @@ export default function About(){
       </div>
     </div>
     <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-      <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
+     
+
+    
+
+
+{data.about.map(item=>{
+    return(<>
+
+<div className="border-b-4 border-indigo-500 p-4 md:w-1/3 sm:mb-0 mb-6 mb-1 hover:shadow-2xl hover:text-black hover:bg-cyan-300 hover:rounded-lg">
         <div className="rounded-lg h-64 overflow-hidden">
           <img
             alt="content"
@@ -27,8 +35,8 @@ export default function About(){
             src="https://dummyimage.com/1203x503"
           />
         </div>
-        <h2 className="text-xl font-medium title-font text-white mt-5">
-          Shooting Stars
+        <h2 className="text-xl font-medium title-font  mt-5">
+          {item.heading}
         </h2>
         <p className="text-base leading-relaxed mt-2">
           Swag shoindxgoitch literally meditation subway tile tumblr

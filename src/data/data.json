@@ -13,17 +13,64 @@
         "heading":"About the MNNIT",
         "body":"The International Conference on Machine Intelligence and Signal Processing (MISP 2021) will be held at National Institute of Technology, Arunachal Pradesh, India, during September 23-25, 2021. This conference is meant for researchers all over the globe interested in the areas of data mining, artificial intelligence, optimization, machine learning methods/ algorithms, signal processing theory and methods, and applications to human brain disorders like epilepsy, Alzheimer’s, sleep disorders etc. Other applications of machine learning and signal processing techniques are also welcome"
     }],
+
+
+
+
+
+    
     "speaker":[{
-        "name":"",
-        "organization":"",
-        "image":"",
+        "name":"Prof. Witold Pedrycz",
+        "organization":"University of Alberta, Edmonton, Canada",
+        "image":"https://static.wixstatic.com/media/1cedca_909776754f5848318a2ff7c007090fc0~mv2.jpg/v1/crop/x_0,y_0,w_191,h_189/fill/w_267,h_265,al_c,lg_1,q_80,enc_auto/unnamed_edited.jpg",
+        "linkedin":""
+        
+    },{
+        "name":"Prof. Witold Pedrycz",
+        "organization":"University of Alberta, Edmonton, Canada",
+        "image":"https://static.wixstatic.com/media/1cedca_909776754f5848318a2ff7c007090fc0~mv2.jpg/v1/crop/x_0,y_0,w_191,h_189/fill/w_267,h_265,al_c,lg_1,q_80,enc_auto/unnamed_edited.jpg",
+        "linkedin":""
+        
+    },{
+        "name":"Prof. Witold Pedrycz",
+        "organization":"Nanyang Technological University, Singapore",
+        "image":"https://static.wixstatic.com/media/1cedca_909776754f5848318a2ff7c007090fc0~mv2.jpg/v1/crop/x_0,y_0,w_191,h_189/fill/w_267,h_265,al_c,lg_1,q_80,enc_auto/unnamed_edited.jpg",
+        "linkedin":""
+        
+    },{
+        "name":"Prof. Witold Pedrycz",
+        "organization":"Nanyang Technological University, Singapore",
+        "image":"https://static.wixstatic.com/media/1cedca_909776754f5848318a2ff7c007090fc0~mv2.jpg/v1/crop/x_0,y_0,w_191,h_189/fill/w_267,h_265,al_c,lg_1,q_80,enc_auto/unnamed_edited.jpg",
         "linkedin":""
         
     }],
+
+
+
+
+
+
+
     "timeline":[{
-        "start_data":"",
-        "end_data":"",
-        "title":""
+        "id":"1",
+        "start_data":"December 1",
+        "end_data":"December 2",
+        "title":"Paper Submission Due (Final)"
+    },{
+        "id":"2",
+        "start_data":"December 2",
+        "end_data":"December 3",
+        "title":"Paper Submission Due (Final)"
+    },{
+        "id":"3",
+        "start_data":"December 3",
+        "end_data":"December 3",
+        "title":"Paper Submission Due (Final)"
+    },{
+        "id":"4",
+        "start_data":"December 4",
+        "end_data":"December 5",
+        "title":"Paper Submission Due (Final)"
     }],
     "colaborators":[{
         "image":"",
