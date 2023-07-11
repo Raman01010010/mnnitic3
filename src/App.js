@@ -9,6 +9,7 @@ import Speaker from './component/Speakers';
 import About from './component/About';
 import Footer from './component/Footer';
 import Map from './component/Map';
+import Contacts from './component/Contacts';
 //import Ct from './components/Conferencetopics'
 function App() {
 

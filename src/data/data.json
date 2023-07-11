@@ -18,12 +18,8 @@
 
 
 
-<<<<<<< HEAD
-    
-=======
 
 
->>>>>>> c30f9976889c904283ac3708f350c4fbcb2d4a46
     "speaker":[{
         "name":"Prof. Witold Pedrycz",
         "organization":"University of Alberta, Edmonton, Canada",
@@ -38,21 +34,13 @@
         
     },{
         "name":"Prof. Witold Pedrycz",
-<<<<<<< HEAD
-        "organization":"Nanyang Technological University, Singapore",
-=======
         "organization":"University of Alberta, Edmonton, Canada",
->>>>>>> c30f9976889c904283ac3708f350c4fbcb2d4a46
         "image":"https://static.wixstatic.com/media/1cedca_909776754f5848318a2ff7c007090fc0~mv2.jpg/v1/crop/x_0,y_0,w_191,h_189/fill/w_267,h_265,al_c,lg_1,q_80,enc_auto/unnamed_edited.jpg",
         "linkedin":""
         
     },{
         "name":"Prof. Witold Pedrycz",
-<<<<<<< HEAD
-        "organization":"Nanyang Technological University, Singapore",
-=======
         "organization":"University of Alberta, Edmonton, Canada",
->>>>>>> c30f9976889c904283ac3708f350c4fbcb2d4a46
         "image":"https://static.wixstatic.com/media/1cedca_909776754f5848318a2ff7c007090fc0~mv2.jpg/v1/crop/x_0,y_0,w_191,h_189/fill/w_267,h_265,al_c,lg_1,q_80,enc_auto/unnamed_edited.jpg",
         "linkedin":""
         
@@ -62,12 +50,7 @@
 
 
 
-<<<<<<< HEAD
-
-
-=======
     
->>>>>>> c30f9976889c904283ac3708f350c4fbcb2d4a46
     "timeline":[{
         "id":"1",
         "start_data":"December 1",
