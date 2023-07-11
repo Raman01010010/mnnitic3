@@ -10,6 +10,7 @@ import About from './component/About';
 import Footer from './component/Footer';
 import Map from './component/Map';
 import Ct from './components/Confe'
+import Attend from './components/Attend';
 function App() {
 
 
@@ -19,6 +20,8 @@ function App() {
      <div>
       <Corousel/>
       <Ct/>
+      <Attend/>
+      
       <About/>
       <Speaker/>
       <Timeline/>
