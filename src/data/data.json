@@ -33,9 +33,25 @@
         
     }],
     "timeline":[{
-        "start_data":"",
-        "end_data":"",
-        "title":""
+        "id":"1",
+        "start_data":"December 1",
+        "end_data":"December 2",
+        "title":"Paper Submission Due (Final)"
+    },{
+        "id":"2",
+        "start_data":"December 2",
+        "end_data":"December 3",
+        "title":"Paper Submission Due (Final)"
+    },{
+        "id":"3",
+        "start_data":"December 3",
+        "end_data":"December 3",
+        "title":"Paper Submission Due (Final)"
+    },{
+        "id":"4",
+        "start_data":"December 4",
+        "end_data":"December 5",
+        "title":"Paper Submission Due (Final)"
     }],
     "colaborators":[{
         "image":"",
