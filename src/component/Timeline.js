@@ -13,7 +13,7 @@ return(
   <div className="container px-5 py-24 mx-auto flex flex-wrap">
     {data.timeline.map(item=>{
       return(<>
-       <div className="hover:text-white hover:bg-blue-600 hover:rounded-lg flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+       <div className="hover:text-white hover:bg-cyan-950 hover:rounded-lg flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
       <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
         <div className="h-full w-1 bg-gray-200 pointer-events-none" />
        

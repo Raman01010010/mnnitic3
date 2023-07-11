@@ -26,7 +26,7 @@ export default function About(){
 {data.about.map(item=>{
     return(<>
 
-<div className="border-b-4 border-indigo-500 p-4 md:w-1/3 sm:mb-0 mb-6 mb-1  hover:text-black hover:bg-white hover:rounded-lg">
+<div className="border-b-4 border-indigo-500 p-4 md:w-1/3 sm:mb-0 mb-6 mb-1 hover:shadow-2xl hover:text-black hover:bg-cyan-300 hover:rounded-lg">
         <div className="rounded-lg h-64 overflow-hidden">
           <img
             alt="content"
