@@ -2,6 +2,7 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Dropdown from './Dropdown'
+import './Navbar.css'
 
 const user = {
   name: 'Tom Cook',
@@ -28,7 +29,7 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <>
+    <div className='navclass'>
       {/*
         This example requires updating your template:
 
@@ -192,6 +193,6 @@ export default function Example() {
         
         
       </div>
-    </>
+    </div>
   )
 }
