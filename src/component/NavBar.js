@@ -46,8 +46,8 @@ export default function Example() {
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
                       <img
-                        className="h-8 w-8"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                        className="h-14 w-14"
+                        src="http://www.mnnit.ac.in/institutelogo/MNNIT%20Logo%20New.jpg"
                         alt="Your Company"
                       />
                     </div>
