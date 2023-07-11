@@ -34,5 +34,12 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      margin-left: 10%;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 4%;
+  }
+  .att:hover{
+    box-shadow: 70px 40px 16px 0 rgba(215, 121, 27, 0.2);
+    color: #6e0f17;
+    background-color: #d7d1f2;
   }
