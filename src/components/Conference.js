@@ -1,5 +1,5 @@
 import React from 'react'
-function About1(props) {
+function Conference(props) {
   return (
     <div>
       <div className="card">
@@ -17,4 +17,4 @@ function About1(props) {
   )
 }
 
-export default About1
+export default Conference
