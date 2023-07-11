@@ -19,7 +19,7 @@ export default function Speaker(){
 
 {data.speaker.map(item=>{
   return(<>
-     <div className="p-4 lg:w-1/4 md:w-1/2">
+     <div className="hover:text-black hover:bg-white hover:rounded-lg p-4 lg:w-1/4 md:w-1/2">
         <div className="h-full flex flex-col items-center text-center">
           <img
             alt="team"
@@ -31,7 +31,7 @@ export default function Speaker(){
               {item.name}
             </h2>
             <h3 className="text-gray-500 mb-3">{item.organization}</h3>
-            <p className="ml-8 mb-4 text-center">
+            <p className=" mb-4 text-center">
               
             DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware
             

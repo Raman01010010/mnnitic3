@@ -26,7 +26,7 @@ export default function About(){
 {data.about.map(item=>{
     return(<>
 
-<div className="border-b-4 border-indigo-500 p-4 md:w-1/3 sm:mb-0 mb-6 mb-1">
+<div className="border-b-4 border-indigo-500 p-4 md:w-1/3 sm:mb-0 mb-6 mb-1  hover:text-black hover:bg-white hover:rounded-lg">
         <div className="rounded-lg h-64 overflow-hidden">
           <img
             alt="content"
@@ -34,7 +34,7 @@ export default function About(){
             src={item.image_url}
           />
         </div>
-        <h2 className="text-xl font-medium title-font text-white mt-5">
+        <h2 className="text-xl font-medium title-font  mt-5">
           {item.heading}
         </h2>
         <p className="text-justify leading-relaxed mt-2">

@@ -13,7 +13,7 @@ return(
   <div className="container px-5 py-24 mx-auto flex flex-wrap">
     {data.timeline.map(item=>{
       return(<>
-       <div className="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+       <div className="hover:text-white hover:bg-blue-600 hover:rounded-lg flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
       <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
         <div className="h-full w-1 bg-gray-200 pointer-events-none" />
        
@@ -37,7 +37,7 @@ return(
           </svg>
         </div>
         <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
-          <h2 className="font-medium title-font text-gray-900 mb-1 text-xl">
+          <h2 className="font-medium title-font  mb-1 text-xl">
             {item.title}
           </h2>
           <p className="leading-relaxed">
