@@ -1,15 +1,15 @@
 {
     "about":[{
-        "image_url":"https://images.pexels.com/photos/2280547/pexels-photo-2280547.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "image_url":"https://images.pexels.com/photos/5473956/pexels-photo-5473956.jpeg?auto=compress&cs=tinysrgb&w=600",
         "heading":"About the Conference",
         "body":"The International Conference on Machine Intelligence and Signal Processing (MISP 2021) will be held at National Institute of Technology, Arunachal Pradesh, India, during September 23-25, 2021. This conference is meant for researchers all over the globe interested in the areas of data mining, artificial intelligence, optimization, machine learning methods/ algorithms, signal processing theory and methods, and applications to human brain disorders like epilepsy, Alzheimer’s, sleep disorders etc. Other applications of machine learning and signal processing techniques are also welcome"
     },{
-        "image_url":"https://images.pexels.com/photos/2280547/pexels-photo-2280547.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "image_url":"https://images.pexels.com/photos/16753416/pexels-photo-16753416/free-photo-of-taj-mahal-agra-uttar-pradesh-india.jpeg?auto=compress&cs=tinysrgb&w=600",
         "heading":"About Uttar Pradesh",
         "body":"Uttar Pradesh, located in northern India, is a state known for its rich historical, cultural, and natural heritage. With a population of over 200 million people, it is the most populous state in India. Uttar Pradesh boasts a fascinating blend of ancient traditions and modern development.The state is home to several iconic landmarks, such as the majestic Taj Mahal in Agra, which stands as a symbol of love and architectural brilliance. Additionally, the holy city of Varanasi, situated on the banks of the sacred River Ganges, attracts millions of pilgrims and tourists every year."
     },
     {
-        "image_url":"https://images.pexels.com/photos/2280547/pexels-photo-2280547.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "image_url":"https://media.getmyuni.com/azure/college-images-test/motilal-nehru-national-institute-of-technology-mnnit-allahabad/f28715e4688248d48da225f332c66b4b.jpeg",
         "heading":"About the MNNIT",
         "body":"The International Conference on Machine Intelligence and Signal Processing (MISP 2021) will be held at National Institute of Technology, Arunachal Pradesh, India, during September 23-25, 2021. This conference is meant for researchers all over the globe interested in the areas of data mining, artificial intelligence, optimization, machine learning methods/ algorithms, signal processing theory and methods, and applications to human brain disorders like epilepsy, Alzheimer’s, sleep disorders etc. Other applications of machine learning and signal processing techniques are also welcome"
     }],
