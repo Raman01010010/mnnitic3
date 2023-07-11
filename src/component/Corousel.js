@@ -8,7 +8,7 @@ export default function Corousel(){
          <Carousel>
                 <div>
                     <img src="http://www.mnnit.ac.in/images/newstories/2022/slider/yoga2023/DSC_1730.JPG" />
-                    <p>My name is raman</p>
+                    <p></p>
                     <p className="legend">Legend 1</p>
                 </div>
                 <div>
