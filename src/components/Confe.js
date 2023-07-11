@@ -5,7 +5,9 @@ import './Conf.css'
 function Confe() {
   return (
     <div>
-       <h1 style={{fontSize:"50px" , marginTop:"50px",color:"#5e06097",backgroundColor:"#8c8ed1"}}>Conferences Topic</h1>
+        <div style={{backgroundColor:"#f2bcb8"}}>
+       <h1 style={{fontSize:"50px" , marginLeft:"40%",marginTop:"50px",color:"#5e06097"}}>Conferences Topic</h1>
+       </div>
        <div className='xyz'> 
       {
         Conferencetopic.map((element)=>{

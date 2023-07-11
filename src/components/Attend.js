@@ -3,8 +3,13 @@ import './Conf.css'
 function Attend() {
     
   return (
+<<<<<<< HEAD
     <div  className='att' style={{border:"10px solid #c2c4f0",width:"1000px",borderRadius:"10px",marginLeft :"17%",marginRight:"5%",marginBottom:"50px"}}>
       <h1 style={{fontSize:"50px",marginLeft:"25%"}}>TO ATTEND THE CONFERENCE</h1>
+=======
+    <div  className='att' style={{backgroundColor:"#f5e3e1",width:"1000px",marginLeft :"17%",marginRight:"5%",marginBottom:"100px",marginTop:"50px"}}>
+      <h1 style={{fontSize:"50px",marginLeft:"18%"}}>TO ATTEND THE CONFERENCE</h1>
+>>>>>>> 05f3b73c7031c35c80dc2b7712c78958b0681742
       <p>
       The NIT Arunachal Pradesh is temporarily Campus in Yupia hired from the state government of Arunachal Pradesh. Yupia is around 18 km from Itanagar, the capital of Arunachal Pradesh, and is about 10 km from Naharlagun, which is the twin capital town. The place has a healthy climate with moderate temperature ranging from 13°C to 27°C with an annual mean rainfall of 365 mm. The permanent campus of NIT AP is under construction at Jote, Papum Pare District, Arunachal Pradesh.
       </p>
