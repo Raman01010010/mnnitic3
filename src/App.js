@@ -16,12 +16,13 @@ function App() {
     <div className="App">
       <NavBar/>
      <div>
+      
       <Corousel/>
       <About/>
       <Speaker/>
       <Timeline/>
       <Map/>
-    <Footer/>
+      <Footer/>
       </div>
 
      
