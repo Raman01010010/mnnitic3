@@ -14,6 +14,7 @@ import Colaborators from './component/Colaborators';
 import Publications from './component/Punlications';
 import Sessions from './component/Sessions';
 import Organisers from './component/Organisers';
+import Advisory from './component/Advisory';
 function App() {
 
 
@@ -23,6 +24,7 @@ function App() {
      <div>
       <Corousel/>
       <About/>
+      <Advisory/>
       <Organisers/>
       <Sessions/>
       <Publications/>
