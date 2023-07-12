@@ -11,7 +11,7 @@ import Footer from './component/Footer';
 import Map from './component/Map';
 import Ct from './components/Confe'
 import Attend from './components/Attend';
-import Commite from './components/Commite';
+import Com from './components/Com';
 function App() {
 
 
@@ -22,7 +22,7 @@ function App() {
       <Corousel/>
       <Ct/>
       <Attend/>
-      <Commite/>
+      <Com/>
       <About/>
       <Speaker/>
       <Timeline/>
