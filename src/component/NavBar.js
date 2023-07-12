@@ -1,197 +1,533 @@
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import Dropdown from './Dropdown'
+import React, { useState } from "react";
+import logo from "./mnnit.png";
 
-const user = {
-  name: 'Tom Cook',
-  email: 'tom@example.com',
-  imageUrl:
-    'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-}
-const navigation = [
-  { name: 'Dashboard', href: '#raman', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
-  { name: 'Reports', href: '#', current: false },
-]
-const userNavigation = [
-  { name: 'Your Profile', href: '#' },
-  { name: 'Settings', href: '#' },
-  { name: 'Sign out', href: '#' },
-]
+function NavBar() {
+  const [isDropdown1Open, setIsDropdown1Open] = useState(false);
+  const [isDropdown2Open, setIsDropdown2Open] = useState(false);
+  const [isDropdown3Open, setIsDropdown3Open] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isContentScrolled, setIsContentScrolled] = useState(false);
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
+  const handleMouseEnter1 = () => {
+    setIsDropdown1Open(true);
+  };
 
-export default function Example() {
+  const handleMouseLeave1 = () => {
+    setIsDropdown1Open(false);
+  };
+
+  const handleMouseEnter2 = () => {
+    setIsDropdown2Open(true);
+  };
+
+  const handleMouseLeave2 = () => {
+    setIsDropdown2Open(false);
+  };
+
+  const handleMouseEnter3 = () => {
+    setIsDropdown3Open(true);
+  };
+
+  const handleMouseLeave3 = () => {
+    setIsDropdown3Open(false);
+  };
+
+  const handleMobileMenuToggle = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const handleScrollRight = () => {
+    setIsContentScrolled(true);
+  };
+
+  const handleScrollReset = () => {
+    setIsContentScrolled(false);
+  };
+
+  const navbarStyle = {
+  
+    position: "sticky",
+    top: 0,
+    left: 0,
+    visibility: "inheret",
+    overflowX: "visible",
+    width: "100%",
+    backgroundColor: "#4c51bf",
+    borderBottomLeftRadius: "50%",
+    borderBottomRightRadius: "50%",
+    zIndex:"1"
+  };
+
+  const logoImageStyle = {
+    width: "120px",
+    height: "70px",
+    marginRight: "8px",
+  };
+
+  const logoStyle = {
+    fontSize: "1.5rem",
+    fontWeight: 600,
+    color: "#ffffff",
+  };
+
+  const primaryLinksStyle = {
+    color: "#ffffff",
+    fontFamily: "Roboto,Montserrat,Open Sans",
+  };
+
+  const dropdownMenuStyle = {
+    display: "none",
+    backgroundColor: "#4c51bf",
+    position: "absolute",
+    fontFamily: "Roboto,Montserrat,Open Sans",
+    zIndex: 99999999999,
+  };
+
+  const dropdownLinkStyle = {
+    display: "block",
+    padding: "8px",
+    color: "#ffffff",
+    fontFamily: "Roboto,Montserrat,Open Sans",
+    textDecoration: "none",
+  };
+
+  if (isDropdown1Open) {
+    dropdownMenuStyle.display = "block";
+  }
+  if (isDropdown2Open) {
+    dropdownMenuStyle.display = "block";
+  }
+  if (isDropdown3Open) {
+    dropdownMenuStyle.display = "block";
+  }
+  
+  const linksContainerStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  };
+  
   return (
-    <>
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-gray-100">
-        <body class="h-full">
-        ```
-      */}
-      <div className="min-h-full">
-        <Disclosure as="nav" className="bg-gray-800">
-          {({ open }) => (
-            <>
-              <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="flex h-16 items-center justify-between">
-                  <div className="flex items-center">
-                    <div className="flex-shrink-0">
-                      <img
-                        className="h-14 w-14"
-                        src="http://www.mnnit.ac.in/institutelogo/MNNIT%20Logo%20New.jpg"
-                        alt="Your Company"
-                      />
-                    </div>
-                    <div className="hidden md:block">
-                      <div className="ml-10 flex items-baseline space-x-4">
-                      <Dropdown/>
-                        {navigation.map((item) => (
-                          <a
-                            key={item.name}
-                            href={item.href}
-                            className={classNames(
-                              item.current
-                                ? 'bg-gray-900 text-white'
-                                : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                              'rounded-md px-3 py-2 text-sm font-medium'
-                            )}
-                            aria-current={item.current ? 'page' : undefined}
-                          >
-                            {item.name}
-                          </a>
-                        ))}
-                      </div>
-                    </div>
+    <nav style={navbarStyle} className="px-4 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex items-center">
+            <div className="flex-shrink-0">
+              <a href="http://www.mnnit.ac.in/" style={logoStyle}>
+                <img src={logo} alt="Logo" style={logoImageStyle} />
+              </a>
+            </div>
+          </div>
+          <div className="md:hidden">
+            {isContentScrolled ? (
+              <button
+                className="focus:outline-none"
+                onClick={handleScrollReset}
+              >
+                <svg
+                  className="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path className="heroicon-ui" d="M12 4v16m8-8H4" />
+                </svg>
+              </button>
+            ) : (
+              <button
+                className={`focus:outline-none ${
+                  isMobileMenuOpen ? "hidden" : "block"
+                }`}
+                onClick={handleMobileMenuToggle}
+              >
+                <svg
+                  className="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path className="heroicon-ui" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            )}
+          </div>
+          <div style={navbarStyle} className="hidden md:block ml-10">
+            <div
+              className={`flex space-x-4 ${
+                isContentScrolled ? "hidden" : "block"
+              }`}
+              style={primaryLinksStyle}
+            >
+              <a href="/" className="text-sm font-medium">
+                HOME
+              </a>
+              <a href="#" className="text-sm font-medium">
+                ABOUT
+              </a>
+              <a href="#" className="text-sm font-medium">
+                CONFERENCE TOPICS
+              </a>
+              <a
+                href="#"
+                className="text-sm"
+                onMouseEnter={handleMouseEnter1}
+                onMouseLeave={handleMouseLeave1}
+              >
+                CONFERENCE PROGRAM
+                {isDropdown1Open && (
+                  <div style={dropdownMenuStyle}>
+                    <a href="#" style={dropdownLinkStyle}>
+                      Service 1
+                    </a>
+                    <a href="#" style={dropdownLinkStyle}>
+                      Service 2
+                    </a>
+                    <a href="#" style={dropdownLinkStyle}>
+                      Service 3
+                    </a>
                   </div>
-                  <div className="hidden md:block">
-                    <div className="ml-4 flex items-center md:ml-6">
-                      <button
-                        type="button"
-                        className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                      >
-                        <span className="sr-only">View notifications</span>
-                        <BellIcon className="h-6 w-6" aria-hidden="true" />
-                      </button>
-
-                      {/* Profile dropdown */}
-                      <Menu as="div" className="relative ml-3">
-                        <div>
-                          <Menu.Button className="flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                            <span className="sr-only">Open user menu</span>
-                            <img className="h-8 w-8 rounded-full" src={user.imageUrl} alt="" />
-                          </Menu.Button>
-                        </div>
-                        <Transition
-                          as={Fragment}
-                          enter="transition ease-out duration-100"
-                          enterFrom="transform opacity-0 scale-95"
-                          enterTo="transform opacity-100 scale-100"
-                          leave="transition ease-in duration-75"
-                          leaveFrom="transform opacity-100 scale-100"
-                          leaveTo="transform opacity-0 scale-95"
-                        >
-                          <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                            {userNavigation.map((item) => (
-                              <Menu.Item key={item.name}>
-                                {({ active }) => (
-                                  <a
-                                    href={item.href}
-                                    className={classNames(
-                                      active ? 'bg-gray-100' : '',
-                                      'block px-4 py-2 text-sm text-gray-700'
-                                    )}
-                                  >
-                                    {item.name}
-                                  </a>
-                                )}
-                              </Menu.Item>
-                            ))}
-                          </Menu.Items>
-                        </Transition>
-                      </Menu>
+                )}
+              </a>
+              <a
+                href="#"
+                className="text-sm"
+                onMouseEnter={handleMouseEnter2}
+                onMouseLeave={handleMouseLeave2}
+              >
+                COMMITTEE
+                {isDropdown2Open && (
+                  <div style={dropdownMenuStyle}>
+                    <a href="#" style={dropdownLinkStyle}>
+                      Service 1
+                    </a>
+                    <a href="#" style={dropdownLinkStyle}>
+                      Service 2
+                    </a>
+                    <a href="#" style={dropdownLinkStyle}>
+                      Service 3
+                    </a>
+                  </div>
+                )}
+              </a>
+              <a
+                href="#"
+                className="text-sm"
+                onMouseEnter={handleMouseEnter3}
+                onMouseLeave={handleMouseLeave3}
+              >
+                MISP HISTORY
+                {isDropdown3Open && (
+                  <div style={dropdownMenuStyle}>
+                    <a
+                      href="http://iiti.ac.in/people/~mlsp/index.html"
+                      style={dropdownLinkStyle}
+                    >
+                      MISP-2017
+                    </a>
+                    <a
+                      href="https://misp.iiita.ac.in/"
+                      style={dropdownLinkStyle}
+                    >
+                      MISP-2019
+                    </a>
+                    <a
+                      href="https://www.misp.nitap.ac.in/"
+                      style={dropdownLinkStyle}
+                    >
+                      MISP-2021
+                    </a>
+                  </div>
+                )}
+              </a>
+              <a href="#" className="text-sm font-medium">
+                VENUE
+              </a>
+              <a href="#" className="text-sm font-medium">
+                CONTACT US
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {isMobileMenuOpen && (
+        <div className="fixed right-0 top-0 h-full w-2/3 bg-gray-800 z-50 transform duration-300 ease-in-out">
+          <div className="p-8">
+            <div className="flex items-center justify-between mb-8">
+              <div className="flex-shrink-0">
+                <a href="http://www.mnnit.ac.in/" style={logoStyle}>
+                  <img src={logo} alt="Logo" style={logoImageStyle} />
+                </a>
+              </div>
+              <button
+                className="focus:outline-none"
+                onClick={handleMobileMenuToggle}
+              >
+                <svg
+                  className="h-8 w-8"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path className="heroicon-ui" d="M20 12H4M20 6H4M20 18H4" />
+                </svg>
+              </button>
+            </div>
+            <div className="space-y-4">
+              <a href="/" className="text-base font-medium text-white block">
+                HOME
+              </a>
+              <a href="#" className="text-base font-medium text-white block">
+                ABOUT
+              </a>
+              <a href="#" className="text-base font-medium text-white block">
+                CONFERENCE TOPICS
+              </a>
+              <div>
+                <div className="flex items-center justify-between">
+                  <a
+                    href="#"
+                    className="text-base font-medium text-white"
+                    onMouseEnter={handleMouseEnter1}
+                    onMouseLeave={handleMouseLeave1}
+                  >
+                    CONFERENCE PROGRAM
+                  </a>
+                  {isDropdown1Open && (
+                    <div style={dropdownMenuStyle}>
+                      <a href="#" style={dropdownLinkStyle}>
+                        Service 1
+                      </a>
+                      <a href="#" style={dropdownLinkStyle}>
+                        Service 2
+                      </a>
+                      <a href="#" style={dropdownLinkStyle}>
+                        Service 3
+                      </a>
                     </div>
-                  </div>
-                  <div className="-mr-2 flex md:hidden">
-                    {/* Mobile menu button */}
-                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                      <span className="sr-only">Open main menu</span>
-                      {open ? (
-                        <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
-                      ) : (
-                        <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
-                      )}
-                    </Disclosure.Button>
-                  </div>
+                  )}
                 </div>
               </div>
-
-              <Disclosure.Panel className="md:hidden">
-                <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
-                  {navigation.map((item) => (
-                    <Disclosure.Button
-                      key={item.name}
-                      as="a"
-                      href={item.href}
-                      className={classNames(
-                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                        'block rounded-md px-3 py-2 text-base font-medium'
-                      )}
-                      aria-current={item.current ? 'page' : undefined}
-                    >
-                      {item.name}
-                    </Disclosure.Button>
-                  ))}
-                  
+              <div>
+                <div className="flex items-center justify-between">
+                  <a
+                    href="#"
+                    className="text-base font-medium text-white"
+                    onMouseEnter={handleMouseEnter2}
+                    onMouseLeave={handleMouseLeave2}
+                  >
+                    COMMITTEE
+                  </a>
+                  {isDropdown2Open && (
+                    <div style={dropdownMenuStyle}>
+                      <a href="#" style={dropdownLinkStyle}>
+                        Service 1
+                      </a>
+                      <a href="#" style={dropdownLinkStyle}>
+                        Service 2
+                      </a>
+                      <a href="#" style={dropdownLinkStyle}>
+                        Service 3
+                      </a>
+                    </div>
+                  )}
                 </div>
-                <div className="border-t border-gray-700 pb-3 pt-4">
-                  <div className="flex items-center px-5">
-                    <div className="flex-shrink-0">
-                      <img className="h-10 w-10 rounded-full" src={user.imageUrl} alt="" />
-                    </div>
-                    <div className="ml-3">
-                      <div className="text-base font-medium leading-none text-white">{user.name}</div>
-                      <div className="text-sm font-medium leading-none text-gray-400">{user.email}</div>
-                    </div>
-                    <button
-                      type="button"
-                      className="ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                    >
-                      <span className="sr-only">View notifications</span>
-                      <BellIcon className="h-6 w-6" aria-hidden="true" />
-                    </button>
-                  </div>
-                  <div className="mt-3 space-y-1 px-2">
-                    {userNavigation.map((item) => (
-                      <Disclosure.Button
-                        key={item.name}
-                        as="a"
-                        href={item.href}
-                        className="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
+              </div>
+              <div>
+                <div className="flex items-center justify-between">
+                  <a
+                    href="#"
+                    className="text-base font-medium text-white"
+                    onMouseEnter={handleMouseEnter3}
+                    onMouseLeave={handleMouseLeave3}
+                  >
+                    MISP HISTORY
+                  </a>
+                  {isDropdown3Open && (
+                    <div style={dropdownMenuStyle}>
+                      <a
+                        href="http://iiti.ac.in/people/~mlsp/index.html"
+                        style={dropdownLinkStyle}
                       >
-                        {item.name}
-                      </Disclosure.Button>
-                    ))}
-                     <Dropdown/>
-                  </div>
-                 
+                        MISP-2017
+                      </a>
+                      <a
+                        href="https://misp.iiita.ac.in/"
+                        style={dropdownLinkStyle}
+                      >
+                        MISP-2019
+                      </a>
+                      <a
+                        href="https://www.misp.nitap.ac.in/"
+                        style={dropdownLinkStyle}
+                      >
+                        MISP-2021
+                      </a>
+                    </div>
+                  )}
                 </div>
-              </Disclosure.Panel>
-            </>
-          )}
-        </Disclosure>
-
-        
-        
-      </div>
-    </>
-  )
+              </div>
+              <a href="#" className="text-base font-medium text-white block">
+                VENUE
+              </a>
+              <a href="#" className="text-base font-medium text-white block">
+                CONTACT US
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
+      {isContentScrolled && (
+        <div className="fixed right-0 top-0 h-full bg-gray-800 z-50">
+          <button
+            className="focus:outline-none h-full w-12 flex items-center justify-center"
+            onClick={handleScrollReset}
+          >
+            <svg
+              className="h-8 w-8 fill-current text-white transform rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path className="heroicon-ui" d="M12 4v16m8-8H4" />
+            </svg>
+          </button>
+          <div className="h-full overflow-y-auto p-8">
+            <div className="flex items-center justify-between mb-8">
+              <div className="flex-shrink-0">
+                <a href="http://www.mnnit.ac.in/" style={logoStyle}>
+                  <img src={logo} alt="Logo" style={logoImageStyle} />
+                </a>
+              </div>
+              <button
+                className="focus:outline-none"
+                onClick={handleScrollReset}
+              >
+                <svg
+                  className="h-8 w-8 fill-current text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path className="heroicon-ui" d="M20 12H4M20 6H4M20 18H4" />
+                </svg>
+              </button>
+            </div>
+            <div className="space-y-4">
+              <a href="/" className="text-base font-medium text-white block">
+                HOME
+              </a>
+              <a href="#" className="text-base font-medium text-white block">
+                ABOUT
+              </a>
+              <a href="#" className="text-base font-medium text-white block">
+                CONFERENCE TOPICS
+              </a>
+              <div>
+                <div className="flex items-center justify-between">
+                  <a
+                    href="#"
+                    className="text-base font-medium text-white"
+                    onMouseEnter={handleMouseEnter1}
+                    onMouseLeave={handleMouseLeave1}
+                  >
+                    CONFERENCE PROGRAM
+                  </a>
+                  {isDropdown1Open && (
+                    <div style={dropdownMenuStyle}>
+                      <a href="#" style={dropdownLinkStyle}>
+                        Service 1
+                      </a>
+                      <a href="#" style={dropdownLinkStyle}>
+                        Service 2
+                      </a>
+                      <a href="#" style={dropdownLinkStyle}>
+                        Service 3
+                      </a>
+                    </div>
+                  )}
+                </div>
+              </div>
+              <div>
+                <div className="flex items-center justify-between">
+                  <a
+                    href="#"
+                    className="text-base font-medium text-white"
+                    onMouseEnter={handleMouseEnter2}
+                    onMouseLeave={handleMouseLeave2}
+                  >
+                    COMMITTEE
+                  </a>
+                  {isDropdown2Open && (
+                    <div style={dropdownMenuStyle}>
+                      <a href="#" style={dropdownLinkStyle}>
+                        Service 1
+                      </a>
+                      <a href="#" style={dropdownLinkStyle}>
+                        Service 2
+                      </a>
+                      <a href="#" style={dropdownLinkStyle}>
+                        Service 3
+                      </a>
+                    </div>
+                  )}
+                </div>
+              </div>
+              <div>
+                <div className="flex items-center justify-between">
+                  <a
+                    href="#"
+                    className="text-base font-medium text-white"
+                    onMouseEnter={handleMouseEnter3}
+                    onMouseLeave={handleMouseLeave3}
+                  >
+                    MISP HISTORY
+                  </a>
+                  {isDropdown3Open && (
+                    <div style={dropdownMenuStyle}>
+                      <a
+                        href="http://iiti.ac.in/people/~mlsp/index.html"
+                        style={dropdownLinkStyle}
+                      >
+                        MISP-2017
+                      </a>
+                      <a
+                        href="https://misp.iiita.ac.in/"
+                        style={dropdownLinkStyle}
+                      >
+                        MISP-2019
+                      </a>
+                      <a
+                        href="https://www.misp.nitap.ac.in/"
+                        style={dropdownLinkStyle}
+                      >
+                        MISP-2021
+                      </a>
+                    </div>
+                  )}
+                </div>
+              </div>
+              <a href="#" className="text-base font-medium text-white block">
+                VENUE
+              </a>
+              <a href="#" className="text-base font-medium text-white block">
+                CONTACT US
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
+    </nav>
+  );
 }
+
+export default NavBar;
