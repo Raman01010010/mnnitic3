@@ -13,6 +13,7 @@ import Contacts from './component/Contacts';
 import Colaborators from './component/Colaborators';
 import Publications from './component/Punlications';
 import Sessions from './component/Sessions';
+import Organisers from './component/Organisers';
 function App() {
 
 
@@ -22,6 +23,7 @@ function App() {
      <div>
       <Corousel/>
       <About/>
+      <Organisers/>
       <Sessions/>
       <Publications/>
       <Speaker/>

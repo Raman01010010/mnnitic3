@@ -167,10 +167,73 @@
 
 
 
-    "organisers":[{
-        "name":"",
-        "organization":"",
-        "image":"",
-        "linkedin":""
-    }]
+    "category":[
+        {
+        "cat":"Chief Patron",
+        "persons":[{
+            "image":"https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "name":"PROF. ANIL D. SAHASRABUDHE",
+            "organization":"CHAIRMAN, AICTE, INDIA"
+        }
+
+        ]
+    },
+    {
+        "cat":"Honorary Chairs",
+        "persons":[{
+            "image":"https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600",
+       
+            "name":"PROF. ANIL D. SAHASRABUDHE",
+            "organization":"CHAIRMAN, AICTE, INDIA"
+        },
+        {
+            "image":"https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600",
+       
+            "name":"PROF. ANIL D. SAHASRABUDHE",
+            "organization":"CHAIRMAN, AICTE, INDIA"
+        },
+        {
+            "image":"https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600",
+       
+            "name":"PROF. ANIL D. SAHASRABUDHE",
+            "organization":"CHAIRMAN, AICTE, INDIA"
+        },{
+            "image":"https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600",
+       
+            "name":"PROF. ANIL D. SAHASRABUDHE",
+            "organization":"CHAIRMAN, AICTE, INDIA"
+        }
+
+        ]
+    },
+    {
+        "cat":"Funding Chairs",
+        "persons":[{
+            "image":"https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600",
+       
+            "name":"PROF. ANIL D. SAHASRABUDHE",
+            "organization":"CHAIRMAN, AICTE, INDIA"
+        },
+        {
+            "image":"https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600",
+       
+            "name":"PROF. ANIL D. SAHASRABUDHE",
+            "organization":"CHAIRMAN, AICTE, INDIA"
+        },
+        {
+            "image":"https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600",
+       
+            "name":"PROF. ANIL D. SAHASRABUDHE",
+            "organization":"CHAIRMAN, AICTE, INDIA"
+        },{
+            "image":"https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600",
+       
+            "name":"PROF. ANIL D. SAHASRABUDHE",
+            "organization":"CHAIRMAN, AICTE, INDIA"
+        }
+
+        ]
+    }
+      
+]
 }
