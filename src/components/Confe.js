@@ -1,11 +1,12 @@
 import React from 'react'
 import Conferencetopic from './Conferencetopic'
 import Conference from './Conference'
+import Headline from '../component/Headline'
 function Confe() {
   return (
-    <div className='my-3'>
+    <div>
         <div style={{backgroundColor:"#0f0b01"}}>
-       <h1 style={{fontSize:"50px" , marginLeft:"33%",marginTop:"50px",color:"#ebe9e6"}}>Conferences Topic</h1>
+       <Headline text={"Conference Topics"}/>
        </div>
        <div style={{color: "#6e0f17",backgroundColor: "#d7d1f2"}}> 
       {

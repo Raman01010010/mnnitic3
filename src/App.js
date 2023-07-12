@@ -32,7 +32,7 @@ function App() {
       <Advisory/>
       <Organisers/>
       <Sessions/>
-      <Publications/>
+  
       <Speaker/>
      
       <Attend/>

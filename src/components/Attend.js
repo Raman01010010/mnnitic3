@@ -1,11 +1,10 @@
 import React from 'react'
-
+import Headline from '../component/Headline'
 function Attend() {
   return (
-    <div style={{backgroundColor:"#f9fab6",marginTop:"80px"}}>
+    <div style={{backgroundColor:"#f9fab6"}}>
         <div style={{backgroundColor:"#191a02"}}>
-        <h1 style={{fontSize:"40px",marginLeft:"30%",color:"#f4f5da"}}>TO ATTEND THE CONFERENCE</h1>  
-        </div>
+        <Headline text={"How to attend the Conferene"}/>  </div>
       <section class="text-gray-600 body-font overflow-hidden">
   <div class="container px-5 py-24 mx-auto">
     <div class="-my-8 divide-y-2 divide-gray-100">
