@@ -99,7 +99,7 @@ export default function Footer(){
   <div className="bg-gray-800 bg-opacity-75">
     <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
       <p className="text-gray-400 text-sm text-center sm:text-left">
-        © 2023 Motilal Nehru National Institute of Technology
+        © 2023 Motilal Nehru National Institute of Technology. Designed by the Organizing Committee of  MNNIT
         <a
           href="https://twitter.com/knyttneve"
           rel="noopener noreferrer"
