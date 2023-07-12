@@ -1,4 +1,5 @@
  import data from  '../data/data.json'
+ import Headline from './Headline'
  export default function Timeline(){
 return(
     <>
@@ -9,7 +10,7 @@ return(
       </div>
       
     </div>
-<div class="text-2xl font-medium title-font mb-4 text-gray-900"> Timeline</div>
+<Headline text={"Timeline"}/>
   <div className="container px-5 py-24 mx-auto flex flex-wrap">
     {data.timeline.map(item=>{
       return(<>
