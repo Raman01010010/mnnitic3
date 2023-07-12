@@ -11,7 +11,7 @@ export default function Publications(){
               src={item.image}
             />
           </div>
-          <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center hover:shadow-2xl hover:text-black hover:bg-cyan-700 hover:rounded-lg">
+          <div className="border-2 border-sky-500 rounded-lg flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center hover:shadow-2xl hover:text-black hover:bg-cyan-700 hover:rounded-lg">
             <div className="flex flex-col mb-10 lg:items-start items-center">
               <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-5">
                 <svg
@@ -33,11 +33,11 @@ export default function Publications(){
 
                 </svg>
               </div>
-              <div className="flex-grow">
+              <div className="flex-grow mr-4 ml-4">
                 <h2 className="text-white text-lg title-font font-medium mb-3">
                   {item.head}
                 </h2>
-                <p className="leading-relaxed text-base">
+                <p className="text-justify leading-relaxed text-base">
                   {item.content}
                 </p>
              
