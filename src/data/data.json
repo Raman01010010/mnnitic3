@@ -72,10 +72,40 @@
         "end_data":"December 5",
         "title":"Paper Submission Due (Final)"
     }],
+
+
+
+
     "colaborators":[{
-        "image":"",
-        "name":""
+        "id":"1",
+        "image":"https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png",    "name":"Sample",
+        "link":""
+    },{
+
+        "id":"2",
+        "image":"https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png",    "name":"Sample",
+        
+        "link":""
+    },{
+        "id":"3",
+        "image":"https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png",    "name":"Sample",
+ 
+        "link":""
+    },{
+        "id":"4",
+        "image":"https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png",    "name":"Sample",
+ 
+        "link":""
+    },{
+        "id":"5",
+        "image":"https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png",    "name":"Sample",
+ 
+        "link":""
     }],
+
+
+
+
     "organisers":[{
         "name":"",
         "organization":"",

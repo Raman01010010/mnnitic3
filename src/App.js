@@ -10,6 +10,7 @@ import About from './component/About';
 import Footer from './component/Footer';
 import Map from './component/Map';
 import Contacts from './component/Contacts';
+import Colaborators from './component/Colaborators';
 function App() {
 
 
@@ -21,6 +22,7 @@ function App() {
       <About/>
       <Speaker/>
       <Timeline/>
+      <Colaborators/>
       <Map/>
       <Contacts/>
     <Footer/>
