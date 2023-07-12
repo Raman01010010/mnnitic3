@@ -15,6 +15,9 @@ import Publications from './component/Punlications';
 import Sessions from './component/Sessions';
 import Organisers from './component/Organisers';
 import Advisory from './component/Advisory';
+import Attend from './components/Attend'
+import Confe from './components/Confe';
+import Commite from './components/Commite';
 function App() {
 
 
@@ -24,11 +27,15 @@ function App() {
      <div>
       <Corousel/>
       <About/>
+      <Confe/>
+    
       <Advisory/>
       <Organisers/>
       <Sessions/>
       <Publications/>
       <Speaker/>
+     
+      <Attend/>
       <Timeline/>
    
       <Map/>
