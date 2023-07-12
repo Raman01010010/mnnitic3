@@ -12,6 +12,7 @@ import Map from './component/Map';
 import Contacts from './component/Contacts';
 import Colaborators from './component/Colaborators';
 import Publications from './component/Punlications';
+import Sessions from './component/Sessions';
 function App() {
 
 
@@ -21,6 +22,7 @@ function App() {
      <div>
       <Corousel/>
       <About/>
+      <Sessions/>
       <Publications/>
       <Speaker/>
       <Timeline/>

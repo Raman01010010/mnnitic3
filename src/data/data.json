@@ -121,6 +121,51 @@
 
 
 
+     "sessions":[{
+        "s1":"SS",
+        "s2":"1",
+        "head":"Machine Intelligence in Health Informatics",
+        "s_chair":"Dr. Tripti Goel,National Institute of Technology Silchar, India",
+        "s_cchair":"Dr. R. Murugan,  National Institute of Technology Silchar, India",
+        "contact":"triptigoel@ece.nits.ac.in",
+        "link":"https://sites.google.com/view/machine-intelligence-in-health/home"
+
+     },{
+        "s1":"SS",
+        "s2":"1",
+        "head":"Machine Intelligence in Health Informatics",
+        "s_chair":"Dr. Tripti Goel,National Institute of Technology Silchar, India",
+        "s_cchair":"Dr. R. Murugan,  National Institute of Technology Silchar, India",
+        "contact":"triptigoel@ece.nits.ac.in",
+        "link":"https://sites.google.com/view/machine-intelligence-in-health/home"
+
+     },{
+        "s1":"SS",
+        "s2":"1",
+        "head":"Machine Intelligence in Health Informatics",
+        "s_chair":"Dr. Tripti Goel,National Institute of Technology Silchar, India",
+        "s_cchair":"Dr. R. Murugan,  National Institute of Technology Silchar, India",
+        "contact":"triptigoel@ece.nits.ac.in",
+        "link":"https://sites.google.com/view/machine-intelligence-in-health/home"
+
+     }
+     ,{
+        "s1":"SS",
+        "s2":"1",
+        "head":"Machine Intelligence in Health Informatics",
+        "s_chair":"Dr. Tripti Goel,National Institute of Technology Silchar, India",
+        "s_cchair":"Dr. R. Murugan,  National Institute of Technology Silchar, India",
+        "contact":"triptigoel@ece.nits.ac.in",
+        "link":"https://sites.google.com/view/machine-intelligence-in-health/home"
+
+     }],
+
+
+
+
+
+
+
 
     "organisers":[{
         "name":"",
