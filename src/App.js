@@ -30,7 +30,7 @@ function App() {
       <Publications/>
       <Speaker/>
       <Timeline/>
-      <Colaborators/>
+   
       <Map/>
       <Contacts/>
     <Footer/>
