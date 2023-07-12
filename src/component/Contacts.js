@@ -2,6 +2,7 @@ export default function Contacts(){
     return(
         <>
     <section className="text-gray-400 body-font bg-gray-900">
+      <a name="contact"></a>
   <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-col text-center w-full mb-20">
       

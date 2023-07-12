@@ -21,6 +21,7 @@ function Temp(props){
 {props.item.persons.map(i=>{
     return(<>
      <div className="p-4 lg:w-1/2">
+       
         <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
           <img
             alt="team"
@@ -54,6 +55,7 @@ function Temp(props){
 }
 export default function Advisory(){
     return(<>
+     <a name="adv"></a>
     <Headline text={"Advisory Committee"}/>
     {data.advisory.map(item=>{
         return(<><Temp  item={item}/></>)

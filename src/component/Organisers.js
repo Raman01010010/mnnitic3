@@ -6,6 +6,7 @@ function Temp(props){
   <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-col text-center w-full mb-20">
       <h1 className="text-2xl font-medium title-font mb-4 text-white tracking-widest">
+        
      {props.item.cat}
       </h1>
       <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
@@ -20,6 +21,7 @@ function Temp(props){
 {props.item.persons.map(i=>{
     return(<>
      <div className="p-4 lg:w-1/2 ">
+       
         <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
           <img
             alt="team"
@@ -53,6 +55,7 @@ function Temp(props){
 }
 export default function Organisers(){
     return(<>
+     <a name="org"></a>
     <Headline text={"Organizing Committee"}/>
     {data.category.map(item=>{
         return(<><Temp  item={item}/></>)

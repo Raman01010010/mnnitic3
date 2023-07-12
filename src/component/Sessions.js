@@ -4,6 +4,7 @@ export default function Sessions(){
     return(<>
     <section className="text-gray-400 bg-gray-900 body-font">
   <div className="container px-5 py-24 mx-auto">
+    <a name="sessions"></a>
   <Headline text={"Sessions"}/>
     <div className="flex flex-wrap flex justify-center items-center -mx-4 -my-8">
         {data.sessions.map(item=>{

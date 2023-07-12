@@ -169,10 +169,10 @@ function NavBar() {
               <a href="/" className="text-sm font-medium">
                 HOME
               </a>
-              <a href="#" className="text-sm font-medium">
+              <a href="#about" className="text-sm font-medium">
                 ABOUT
               </a>
-              <a href="#" className="text-sm font-medium">
+              <a href="#topics" className="text-sm font-medium">
                 CONFERENCE TOPICS
               </a>
               <a
@@ -184,14 +184,20 @@ function NavBar() {
                 CONFERENCE PROGRAM
                 {isDropdown1Open && (
                   <div style={dropdownMenuStyle}>
-                    <a href="#" style={dropdownLinkStyle}>
-                      Service 1
+                    <a href="#timeline" style={dropdownLinkStyle}>
+                     Program Schedule
                     </a>
-                    <a href="#" style={dropdownLinkStyle}>
-                      Service 2
+                    <a href="#speaker" style={dropdownLinkStyle}>
+                      Speakers
                     </a>
-                    <a href="#" style={dropdownLinkStyle}>
-                      Service 3
+                    <a href="register" style={dropdownLinkStyle}>
+                      Registration
+                    </a>
+                    <a href="#attend" style={dropdownLinkStyle}>
+                      To attend the  Conference
+                    </a>
+                    <a href="#sessions" style={dropdownLinkStyle}>
+                      Sessions
                     </a>
                   </div>
                 )}
@@ -205,14 +211,14 @@ function NavBar() {
                 COMMITTEE
                 {isDropdown2Open && (
                   <div style={dropdownMenuStyle}>
-                    <a href="#" style={dropdownLinkStyle}>
-                      Service 1
+                    <a href="#org" style={dropdownLinkStyle}>
+                      Organizing
                     </a>
-                    <a href="#" style={dropdownLinkStyle}>
-                      Service 2
+                    <a href="#adv" style={dropdownLinkStyle}>
+                      Advisory
                     </a>
-                    <a href="#" style={dropdownLinkStyle}>
-                      Service 3
+                    <a href="#tech" style={dropdownLinkStyle}>
+                      Technical Committee
                     </a>
                   </div>
                 )}
@@ -223,34 +229,34 @@ function NavBar() {
                 onMouseEnter={handleMouseEnter3}
                 onMouseLeave={handleMouseLeave3}
               >
-                MISP HISTORY
+                More
                 {isDropdown3Open && (
                   <div style={dropdownMenuStyle}>
                     <a
-                      href="http://iiti.ac.in/people/~mlsp/index.html"
+                      href="#colab"
                       style={dropdownLinkStyle}
                     >
-                      MISP-2017
+                    Colaborators
                     </a>
                     <a
                       href="https://misp.iiita.ac.in/"
                       style={dropdownLinkStyle}
                     >
-                      MISP-2019
+                      MISP History
                     </a>
                     <a
                       href="https://www.misp.nitap.ac.in/"
                       style={dropdownLinkStyle}
                     >
-                      MISP-2021
+                      MISP History
                     </a>
                   </div>
                 )}
               </a>
-              <a href="#" className="text-sm font-medium">
+              <a href="#contact" className="text-sm font-medium">
                 VENUE
               </a>
-              <a href="#" className="text-sm font-medium">
+              <a href="#contact" className="text-sm font-medium">
                 CONTACT US
               </a>
             </div>
@@ -288,10 +294,10 @@ function NavBar() {
               <a href="/" className="text-base font-medium text-white block">
                 HOME
               </a>
-              <a href="#" className="text-base font-medium text-white block">
+              <a href="#about" className="text-base font-medium text-white block">
                 ABOUT
               </a>
-              <a href="#" className="text-base font-medium text-white block">
+              <a href="#topics" className="text-base font-medium text-white block">
                 CONFERENCE TOPICS
               </a>
               <div>
@@ -306,15 +312,21 @@ function NavBar() {
                   </a>
                   {isDropdown1Open && (
                     <div style={dropdownMenuStyle}>
-                      <a href="#" style={dropdownLinkStyle}>
-                        Service 1
+                      <a href="#timeline" style={dropdownLinkStyle}>
+                        Program Schedule
                       </a>
-                      <a href="#" style={dropdownLinkStyle}>
-                        Service 2
+                      <a href="#speaker" style={dropdownLinkStyle}>
+                        Speaker
                       </a>
-                      <a href="#" style={dropdownLinkStyle}>
-                        Service 3
+                      <a href="#register" style={dropdownLinkStyle}>
+                        Registration
                       </a>
+                      <a href="#attend" style={dropdownLinkStyle}>
+                      To attend the  Conference
+                    </a>
+                    <a href="#sessions" style={dropdownLinkStyle}>
+                      Sessions
+                    </a>
                     </div>
                   )}
                 </div>
@@ -331,14 +343,14 @@ function NavBar() {
                   </a>
                   {isDropdown2Open && (
                     <div style={dropdownMenuStyle}>
-                      <a href="#" style={dropdownLinkStyle}>
-                        Service 1
+                      <a href="#org" style={dropdownLinkStyle}>
+                        Organizing Committee
                       </a>
-                      <a href="#" style={dropdownLinkStyle}>
-                        Service 2
+                      <a href="#adv" style={dropdownLinkStyle}>
+                        Advisory Committee
                       </a>
-                      <a href="#" style={dropdownLinkStyle}>
-                        Service 3
+                      <a href="#tech" style={dropdownLinkStyle}>
+                        Technical Committee
                       </a>
                     </div>
                   )}
@@ -352,15 +364,15 @@ function NavBar() {
                     onMouseEnter={handleMouseEnter3}
                     onMouseLeave={handleMouseLeave3}
                   >
-                    MISP HISTORY
+                    More
                   </a>
                   {isDropdown3Open && (
                     <div style={dropdownMenuStyle}>
                       <a
-                        href="http://iiti.ac.in/people/~mlsp/index.html"
+                        href="#colab"
                         style={dropdownLinkStyle}
                       >
-                        MISP-2017
+                        Colaborators
                       </a>
                       <a
                         href="https://misp.iiita.ac.in/"
@@ -378,10 +390,10 @@ function NavBar() {
                   )}
                 </div>
               </div>
-              <a href="#" className="text-base font-medium text-white block">
+              <a href="#contact" className="text-base font-medium text-white block">
                 VENUE
               </a>
-              <a href="#" className="text-base font-medium text-white block">
+              <a href="#contact" className="text-base font-medium text-white block">
                 CONTACT US
               </a>
             </div>
@@ -426,10 +438,10 @@ function NavBar() {
               <a href="/" className="text-base font-medium text-white block">
                 HOME
               </a>
-              <a href="#" className="text-base font-medium text-white block">
+              <a href="#about" className="text-base font-medium text-white block">
                 ABOUT
               </a>
-              <a href="#" className="text-base font-medium text-white block">
+              <a href="#topics" className="text-base font-medium text-white block">
                 CONFERENCE TOPICS
               </a>
               <div>
@@ -444,15 +456,21 @@ function NavBar() {
                   </a>
                   {isDropdown1Open && (
                     <div style={dropdownMenuStyle}>
-                      <a href="#" style={dropdownLinkStyle}>
-                        Service 1
+                      <a href="#time" style={dropdownLinkStyle}>
+                        Program Schedule
                       </a>
-                      <a href="#" style={dropdownLinkStyle}>
-                        Service 2
+                      <a href="#speaker" style={dropdownLinkStyle}>
+                        Speakers
                       </a>
-                      <a href="#" style={dropdownLinkStyle}>
-                        Service 3
+                      <a href="#register" style={dropdownLinkStyle}>
+                       Registration
                       </a>
+                      <a href="#attend" style={dropdownLinkStyle}>
+                      To attend the  Conference
+                    </a>
+                    <a href="#sessions" style={dropdownLinkStyle}>
+                      Sessions
+                    </a>
                     </div>
                   )}
                 </div>
@@ -469,14 +487,14 @@ function NavBar() {
                   </a>
                   {isDropdown2Open && (
                     <div style={dropdownMenuStyle}>
-                      <a href="#" style={dropdownLinkStyle}>
-                        Service 1
+                      <a href="#org" style={dropdownLinkStyle}>
+                        Organizing Committee
                       </a>
-                      <a href="#" style={dropdownLinkStyle}>
-                        Service 2
+                      <a href="#adv" style={dropdownLinkStyle}>
+                        Advisory Committee
                       </a>
-                      <a href="#" style={dropdownLinkStyle}>
-                        Service 3
+                      <a href="#tech" style={dropdownLinkStyle}>
+                       Technical Committee
                       </a>
                     </div>
                   )}
@@ -490,15 +508,14 @@ function NavBar() {
                     onMouseEnter={handleMouseEnter3}
                     onMouseLeave={handleMouseLeave3}
                   >
-                    MISP HISTORY
+                    More
                   </a>
                   {isDropdown3Open && (
                     <div style={dropdownMenuStyle}>
                       <a
-                        href="http://iiti.ac.in/people/~mlsp/index.html"
+                        href="#colab"
                         style={dropdownLinkStyle}
-                      >
-                        MISP-2017
+                      >Colaborators
                       </a>
                       <a
                         href="https://misp.iiita.ac.in/"
@@ -516,10 +533,10 @@ function NavBar() {
                   )}
                 </div>
               </div>
-              <a href="#" className="text-base font-medium text-white block">
+              <a href="#contact" className="text-base font-medium text-white block">
                 VENUE
               </a>
-              <a href="#" className="text-base font-medium text-white block">
+              <a href="#contact" className="text-base font-medium text-white block">
                 CONTACT US
               </a>
             </div>
