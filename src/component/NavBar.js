@@ -45,6 +45,7 @@ function NavBar() {
   };
 
   const navbarStyle = {
+  
     position: "sticky",
     top: 0,
     left: 0,
@@ -54,6 +55,7 @@ function NavBar() {
     backgroundColor: "#4c51bf",
     borderBottomLeftRadius: "50%",
     borderBottomRightRadius: "50%",
+    zIndex:"1"
   };
 
   const logoImageStyle = {
