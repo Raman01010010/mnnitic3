@@ -11,6 +11,7 @@ import Footer from './component/Footer';
 import Map from './component/Map';
 import Contacts from './component/Contacts';
 import Colaborators from './component/Colaborators';
+import Publications from './component/Punlications';
 function App() {
 
 
@@ -20,6 +21,7 @@ function App() {
      <div>
       <Corousel/>
       <About/>
+      <Publications/>
       <Speaker/>
       <Timeline/>
       <Colaborators/>
