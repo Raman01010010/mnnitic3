@@ -72,14 +72,242 @@
         "end_data":"December 5",
         "title":"Paper Submission Due (Final)"
     }],
+
+
+
+
     "colaborators":[{
-        "image":"",
-        "name":""
+        "id":"1",
+        "image":"https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png",    "name":"Sample",
+        "link":""
+    },{
+
+        "id":"2",
+        "image":"https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png",    "name":"Sample",
+        
+        "link":""
+    },{
+        "id":"3",
+        "image":"https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png",    "name":"Sample",
+ 
+        "link":""
+    },{
+        "id":"4",
+        "image":"https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png",    "name":"Sample",
+ 
+        "link":""
+    },{
+        "id":"5",
+        "image":"https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png",    "name":"Sample",
+ 
+        "link":""
     }],
-    "organisers":[{
-        "name":"",
-        "organization":"",
-        "image":"",
-        "linkedin":""
-    }]
+
+
+
+
+
+
+    "publications":[{
+       "head":"Publication", 
+        "image":"https://static.wixstatic.com/media/1cedca_92389d5c72964c7888beb5e4ce9c68bd~mv2.jpg/v1/fill/w_513,h_993,al_c,q_85,enc_auto/1cedca_92389d5c72964c7888beb5e4ce9c68bd~mv2.jpg",
+        "content":"PUBLICATION\n\nIn the last conferences MISP 2017 (IIT Indore) and MISP 2019 (IIIT Allahabad), all accepted papers have been published in the Conference Proceeding as Springer AISC book series (https://www.springer.com/series/11156) in Springer. This year the Conference Proceeding will be published in Lecture Notes in Electrical Engineering (https://www.springer.com/ series/7818). (Indexed by EI Compendex and Scopus databases). Authors are requested to submit their Manuscripts through the Easy Chair System. The paper must be maximum upto 12 pages.\n\nClick on the following links to submit the Manuscripts and read the guidelines.\n\n\nSpringer Author's Guidelines\nEasyChair Submission\n\nPaper Template\n\n\nSelected and extended versions of research papers will be forwarded for publication as a Special Issue in Scopus and SCI/SCIE indexed Journals of repute.\n\nSpecial Issue\n\n1: \"Data-Driven Approach for Bio-medical and Healthcare\" for International Journal of Business Intelligence and Data Mining (Scopus Indexed) (Last date: 30 Nov 2021)\n\n\n2: Computers Materials & Continua (SCI Indexed, IF=4.89, open-access) Special Issue on \"Advanced signal acquisition and processing for Internet of Medical Things\" (Last date: 30 June 2021)\n\n\n3: \"Machine Learning and Computational Intelligence for Green Computing\" to Journal of Smart Environments and Green Computing (JSEGC). (peer-reviewed, open-access) (No Publication Fees) fromat in above method\n"
+    },{
+        "head":"Publication", 
+         "image":"https://static.wixstatic.com/media/1cedca_92389d5c72964c7888beb5e4ce9c68bd~mv2.jpg/v1/fill/w_513,h_993,al_c,q_85,enc_auto/1cedca_92389d5c72964c7888beb5e4ce9c68bd~mv2.jpg",
+         "content":"PUBLICATION\n\nIn the last conferences MISP 2017 (IIT Indore) and MISP 2019 (IIIT Allahabad), all accepted papers have been published in the Conference Proceeding as Springer AISC book series (https://www.springer.com/series/11156) in Springer. This year the Conference Proceeding will be published in Lecture Notes in Electrical Engineering (https://www.springer.com/ series/7818). (Indexed by EI Compendex and Scopus databases). Authors are requested to submit their Manuscripts through the Easy Chair System. The paper must be maximum upto 12 pages.\n\nClick on the following links to submit the Manuscripts and read the guidelines.\n\n\nSpringer Author's Guidelines\nEasyChair Submission\n\nPaper Template\n\n\nSelected and extended versions of research papers will be forwarded for publication as a Special Issue in Scopus and SCI/SCIE indexed Journals of repute.\n\nSpecial Issue\n\n1: \"Data-Driven Approach for Bio-medical and Healthcare\" for International Journal of Business Intelligence and Data Mining (Scopus Indexed) (Last date: 30 Nov 2021)\n\n\n2: Computers Materials & Continua (SCI Indexed, IF=4.89, open-access) Special Issue on \"Advanced signal acquisition and processing for Internet of Medical Things\" (Last date: 30 June 2021)\n\n\n3: \"Machine Learning and Computational Intelligence for Green Computing\" to Journal of Smart Environments and Green Computing (JSEGC). (peer-reviewed, open-access) (No Publication Fees) fromat in above method\n"
+     }],
+
+
+
+
+     "sessions":[{
+        "s1":"SS",
+        "s2":"1",
+        "head":"Machine Intelligence in Health Informatics",
+        "s_chair":"Dr. Tripti Goel,National Institute of Technology Silchar, India",
+        "s_cchair":"Dr. R. Murugan,  National Institute of Technology Silchar, India",
+        "contact":"triptigoel@ece.nits.ac.in",
+        "link":"https://sites.google.com/view/machine-intelligence-in-health/home"
+
+     },{
+        "s1":"SS",
+        "s2":"1",
+        "head":"Machine Intelligence in Health Informatics",
+        "s_chair":"Dr. Tripti Goel,National Institute of Technology Silchar, India",
+        "s_cchair":"Dr. R. Murugan,  National Institute of Technology Silchar, India",
+        "contact":"triptigoel@ece.nits.ac.in",
+        "link":"https://sites.google.com/view/machine-intelligence-in-health/home"
+
+     },{
+        "s1":"SS",
+        "s2":"1",
+        "head":"Machine Intelligence in Health Informatics",
+        "s_chair":"Dr. Tripti Goel,National Institute of Technology Silchar, India",
+        "s_cchair":"Dr. R. Murugan,  National Institute of Technology Silchar, India",
+        "contact":"triptigoel@ece.nits.ac.in",
+        "link":"https://sites.google.com/view/machine-intelligence-in-health/home"
+
+     }
+     ,{
+        "s1":"SS",
+        "s2":"1",
+        "head":"Machine Intelligence in Health Informatics",
+        "s_chair":"Dr. Tripti Goel,National Institute of Technology Silchar, India",
+        "s_cchair":"Dr. R. Murugan,  National Institute of Technology Silchar, India",
+        "contact":"triptigoel@ece.nits.ac.in",
+        "link":"https://sites.google.com/view/machine-intelligence-in-health/home"
+
+     }],
+
+
+
+
+
+
+
+
+    "category":[
+        {
+        "cat":"Chief Patron",
+        "persons":[{
+            "image":"https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "name":"PROF. ANIL D. SAHASRABUDHE",
+            "organization":"CHAIRMAN, AICTE, INDIA"
+        }
+
+        ]
+    },
+    {
+        "cat":"Honorary Chairs",
+        "persons":[{
+            "image":"https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600",
+       
+            "name":"PROF. ANIL D. SAHASRABUDHE",
+            "organization":"CHAIRMAN, AICTE, INDIA"
+        },
+        {
+            "image":"https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600",
+       
+            "name":"PROF. ANIL D. SAHASRABUDHE",
+            "organization":"CHAIRMAN, AICTE, INDIA"
+        },
+        {
+            "image":"https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600",
+       
+            "name":"PROF. ANIL D. SAHASRABUDHE",
+            "organization":"CHAIRMAN, AICTE, INDIA"
+        },{
+            "image":"https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600",
+       
+            "name":"PROF. ANIL D. SAHASRABUDHE",
+            "organization":"CHAIRMAN, AICTE, INDIA"
+        }
+
+        ]
+    },
+    {
+        "cat":"Funding Chairs",
+        "persons":[{
+            "image":"https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600",
+       
+            "name":"PROF. ANIL D. SAHASRABUDHE",
+            "organization":"CHAIRMAN, AICTE, INDIA"
+        },
+        {
+            "image":"https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600",
+       
+            "name":"PROF. ANIL D. SAHASRABUDHE",
+            "organization":"CHAIRMAN, AICTE, INDIA"
+        },
+        {
+            "image":"https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600",
+       
+            "name":"PROF. ANIL D. SAHASRABUDHE",
+            "organization":"CHAIRMAN, AICTE, INDIA"
+        },{
+            "image":"https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600",
+       
+            "name":"PROF. ANIL D. SAHASRABUDHE",
+            "organization":"CHAIRMAN, AICTE, INDIA"
+        }
+
+        ]
+    }
+      
+],
+
+
+
+
+
+"advisory":[
+    {
+    "cat":"Chief Patron",
+    "persons":[{
+        "image":"https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "name":"PROF. ANIL D. SAHASRABUDHE",
+        "organization":"CHAIRMAN, AICTE, INDIA"
+    }
+
+    ]
+},
+{
+    "cat":"Honorary Chairs",
+    "persons":[{
+        "image":"https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=600",
+    
+        "name":"PROF. ANIL D. SAHASRABUDHE",
+        "organization":"CHAIRMAN, AICTE, INDIA"
+    },
+    {
+        "image":"https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=600",
+    
+        "name":"PROF. ANIL D. SAHASRABUDHE",
+        "organization":"CHAIRMAN, AICTE, INDIA"
+    },
+    {
+        "image":"https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=600",
+    
+        "name":"PROF. ANIL D. SAHASRABUDHE",
+        "organization":"CHAIRMAN, AICTE, INDIA"
+    },{
+        "image":"https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=600",
+    
+        "name":"PROF. ANIL D. SAHASRABUDHE",
+        "organization":"CHAIRMAN, AICTE, INDIA"
+    }
+
+    ]
+},
+{
+    "cat":"Funding Chairs",
+    "persons":[{
+        "image":"https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=600",
+    
+        "name":"PROF. ANIL D. SAHASRABUDHE",
+        "organization":"CHAIRMAN, AICTE, INDIA"
+    },
+    {
+        "image":"https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=600",
+    
+        "name":"PROF. ANIL D. SAHASRABUDHE",
+        "organization":"CHAIRMAN, AICTE, INDIA"
+    },
+    {
+        "image":"https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=600",
+    
+        "name":"PROF. ANIL D. SAHASRABUDHE",
+        "organization":"CHAIRMAN, AICTE, INDIA"
+    },{
+        "image":"https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=600",
+    
+        "name":"PROF. ANIL D. SAHASRABUDHE",
+        "organization":"CHAIRMAN, AICTE, INDIA"
+    }
+
+    ]
+}
+  
+]
 }
