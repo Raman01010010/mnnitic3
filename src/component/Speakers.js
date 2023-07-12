@@ -15,7 +15,7 @@ export default function Speaker(){
         heard of them.
       </p>
     </div>
-    <div className="flex flex-wrap -m-4">
+    <div className="flex flex justify-center items-center flex-wrap -m-4">
 
 
 {data.speaker.map(item=>{
@@ -33,8 +33,7 @@ export default function Speaker(){
             </h2>
             <h3 className="text-gray-500 mb-3">{item.organization}</h3>
             <p className=" mb-4 text-center">
-              
-            DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware
+          
             
              
             </p>

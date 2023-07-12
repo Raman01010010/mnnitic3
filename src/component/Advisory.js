@@ -15,7 +15,7 @@ function Temp(props){
         heard of them.
       </p>
     </div>
-    <div className="flex flex-wrap -m-4">
+    <div className="flex-row flex flex-wrap flex justify-center items-center -m-4">
       
 
 {props.item.persons.map(i=>{
@@ -33,7 +33,7 @@ function Temp(props){
             </h2>
             <h3 className="text-gray-500 mb-3">{i.organization}</h3>
             <p className="text-gray-900 mb-4">
-              //organiser//organiser//organiser//organiser//organiser
+              
             </p>
           
           </div>

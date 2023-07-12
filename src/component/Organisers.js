@@ -14,12 +14,12 @@ function Temp(props){
         heard of them.
       </p>
     </div>
-    <div className="flex flex-wrap -m-4">
+    <div className="flex flex-wrap flex justify-center items-center  -m-4">
       
 
 {props.item.persons.map(i=>{
     return(<>
-     <div className="p-4 lg:w-1/2">
+     <div className="p-4 lg:w-1/2 ">
         <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
           <img
             alt="team"
@@ -32,7 +32,7 @@ function Temp(props){
             </h2>
             <h3 className="text-gray-500 mb-3">{i.organization}</h3>
             <p className="text-gray-900 mb-4">
-              //organiser//organiser//organiser//organiser//organiser
+            
             </p>
           
           </div>
