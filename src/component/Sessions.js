@@ -5,7 +5,7 @@ export default function Sessions(){
     <section className="text-gray-400 bg-gray-900 body-font">
   <div className="container px-5 py-24 mx-auto">
   <Headline text={"Sessions"}/>
-    <div className="flex flex-wrap -mx-4 -my-8">
+    <div className="flex flex-wrap flex justify-center items-center -mx-4 -my-8">
         {data.sessions.map(item=>{
             return(<>
               <div className="shadow-2xl text-black bg-cyan-300 rounded-lg py-8 px-4 lg:w-1/3 hover:bg-cyan-800 hover:text-white">
