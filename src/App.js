@@ -34,8 +34,8 @@ function App() {
     <C3/>
 
 
-
-     
+<News/>
+     <Colaborators/>
       <About/>
       <Confe/>
     
