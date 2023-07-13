@@ -34,6 +34,7 @@ function Com() {
                 <Commite
                 name = {element.name}
                 degre = {element.degree}
+                img = {element.image}
                 />
             )
             
