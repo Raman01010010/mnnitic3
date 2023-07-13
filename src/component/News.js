@@ -24,7 +24,7 @@ export default function News(){
     return(<>
 
      <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-        <div className="transition ease-in-out hover:scale-110 hover:delay-300 hover:shadow-2xl hover:text-white hover:bg-sky-950 hover:rounded-lg h-full bg-gray-900 flex  border-gray-200 border p-4 rounded-lg">
+        <div className="transition ease-in-out hover:scale-110 hover:delay-800 hover:shadow-2xl hover:text-white hover:bg-sky-950 hover:rounded-lg h-full bg-gray-900 flex  border-gray-200 border p-4 rounded-lg">
           <div className="text-left flex-grow">
             <h2 className="text-gray-300 text-xl text-center title-font font-medium">
              {item.new?<img  src="https://img.icons8.com/?size=2x&id=gYUwOUXlHung&format=gif"/>:""}
