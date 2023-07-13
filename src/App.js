@@ -22,18 +22,25 @@ import News from './component/News';
 import C2 from './component/C2';
 import C3 from './component/C3';
 import Test from './component/Test';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+import React from 'react'
 function App() {
 
-
+React.useEffect(()=>{
+  Aos.init({duration:1000})
+})
   return (
     <div className="App">
      
       <NavBar/>
 
-  
+      <div data-aos="fade-down">
+
+<C3/>
+  </div>
       
-    <C3/>
+
 
 
 <News/>

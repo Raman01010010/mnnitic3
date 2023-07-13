@@ -142,7 +142,8 @@ function NavBar() {
   };
 
   return (
-    <nav style={navbarStyle} className="px-4 lg:px-8">
+    <nav style={navbarStyle}   className="px-4 lg:px-8">
+      
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -229,14 +230,14 @@ function NavBar() {
               >
                 CONFERENCE PROGRAM
                 {isDropdown1Open && (
-                  <div style={dropdownMenuStyle}>
-                    <a href="#" style={dropdownLinkStyle}>
+                  <div data-aos="fade" data-aos-duration={1000} style={dropdownMenuStyle}>
+                    <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
                       Service 1
                     </a>
-                    <a href="#" style={dropdownLinkStyle}>
+                    <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
                       Service 2
                     </a>
-                    <a href="#" style={dropdownLinkStyle}>
+                    <a href="#"  class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
                       Service 3
                     </a>
                   </div>
@@ -250,14 +251,14 @@ function NavBar() {
               >
                 COMMITTEE
                 {isDropdown2Open && (
-                  <div style={dropdownMenuStyle}>
-                    <a href="#" style={dropdownLinkStyle}>
+                  <div data-aos="fade" data-aos-duration={1000} style={dropdownMenuStyle}>
+                    <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
                       Service 1
                     </a>
-                    <a href="#" style={dropdownLinkStyle}>
+                    <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
                       Service 2
                     </a>
-                    <a href="#" style={dropdownLinkStyle}>
+                    <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
                       Service 3
                     </a>
                   </div>
@@ -271,20 +272,20 @@ function NavBar() {
               >
                 MISP HISTORY
                 {isDropdown3Open && (
-                  <div style={dropdownMenuStyle}>
-                    <a
+                  <div  data-aos="fade" data-aos-duration={1000} style={dropdownMenuStyle}>
+                    <a class="hover:bg-cyan-300 hover:text-black"
                       href="http://iiti.ac.in/people/~mlsp/index.html"
                       style={dropdownLinkStyle}
                     >
                       MISP-2017
                     </a>
-                    <a
+                    <a class="hover:bg-cyan-300 hover:text-black"
                       href="https://misp.iiita.ac.in/"
                       style={dropdownLinkStyle}
                     >
                       MISP-2019
                     </a>
-                    <a
+                    <a class="hover:bg-cyan-300 hover:text-black"
                       href="https://www.misp.nitap.ac.in/"
                       style={dropdownLinkStyle}
                     >
@@ -311,10 +312,12 @@ function NavBar() {
       </div>
       {isMobileMenuOpen && (
         <div
+        data-aos="slide-left" data-aos-duration={1000}
           className="fixed right-0 top-0 h-full w-2/3 bg-gray-800 z-50 transform duration-300 ease-in-out"
           style={offCanvasStyle}
+         
         >
-          <div className="p-8" style={offCanvasContentStyle}>
+          <div  data-aos="fade-left" data-aos-duration={1000} className="p-8" style={offCanvasContentStyle}>
             <div className="flex items-center justify-between mb-8">
               <div className="flex-shrink-0">
                 <a href="http://www.mnnit.ac.in/" style={logoStyle}>
@@ -373,14 +376,14 @@ function NavBar() {
                     CONFERENCE PROGRAM
                   </a>
                   {isDropdown1Open && (
-                    <div style={dropdownMenuStyle}>
-                      <a href="#" style={dropdownLinkStyle}>
+                    <div data-aos="fade" data-aos-duration={1000} style={dropdownMenuStyle}>
+                      <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
                         Service 1
                       </a>
-                      <a href="#" style={dropdownLinkStyle}>
+                      <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
                         Service 2
                       </a>
-                      <a href="#" style={dropdownLinkStyle}>
+                      <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
                         Service 3
                       </a>
                     </div>
@@ -399,14 +402,14 @@ function NavBar() {
                     COMMITTEE
                   </a>
                   {isDropdown2Open && (
-                    <div style={dropdownMenuStyle}>
-                      <a href="#" style={dropdownLinkStyle}>
+                    <div data-aos="fade" data-aos-duration={1000} style={dropdownMenuStyle}>
+                      <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
                         Service 1
                       </a>
-                      <a href="#" style={dropdownLinkStyle}>
+                      <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
                         Service 2
                       </a>
-                      <a href="#" style={dropdownLinkStyle}>
+                      <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
                         Service 3
                       </a>
                     </div>
@@ -425,20 +428,20 @@ function NavBar() {
                     MISP HISTORY
                   </a>
                   {isDropdown3Open && (
-                    <div style={dropdownMenuStyle}>
-                      <a
+                    <div  data-aos="fade" data-aos-duration={1000} style={dropdownMenuStyle}>
+                      <a class="hover:bg-cyan-300 hover:text-black"
                         href="http://iiti.ac.in/people/~mlsp/index.html"
                         style={dropdownLinkStyle}
                       >
                         MISP-2017
                       </a>
-                      <a
+                      <a class="hover:bg-cyan-300 hover:text-black"
                         href="https://misp.iiita.ac.in/"
                         style={dropdownLinkStyle}
                       >
                         MISP-2019
                       </a>
-                      <a
+                      <a class="hover:bg-cyan-300 hover:text-black"
                         href="https://www.misp.nitap.ac.in/"
                         style={dropdownLinkStyle}
                       >
@@ -534,14 +537,14 @@ function NavBar() {
                     CONFERENCE PROGRAM
                   </a>
                   {isDropdown1Open && (
-                    <div style={dropdownMenuStyle}>
-                      <a href="#" style={dropdownLinkStyle}>
+                    <div data-aos="fade" data-aos-duration={1000} style={dropdownMenuStyle}>
+                      <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
                         Service 1
                       </a>
-                      <a href="#" style={dropdownLinkStyle}>
+                      <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
                         Service 2
                       </a>
-                      <a href="#" style={dropdownLinkStyle}>
+                      <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
                         Service 3
                       </a>
                     </div>
@@ -560,14 +563,14 @@ function NavBar() {
                     COMMITTEE
                   </a>
                   {isDropdown2Open && (
-                    <div style={dropdownMenuStyle}>
-                      <a href="#" style={dropdownLinkStyle}>
+                    <div data-aos="fade" data-aos-duration={1000} style={dropdownMenuStyle}>
+                      <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
                         Service 1
                       </a>
-                      <a href="#" style={dropdownLinkStyle}>
+                      <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
                         Service 2
                       </a>
-                      <a href="#" style={dropdownLinkStyle}>
+                      <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
                         Service 3
                       </a>
                     </div>
@@ -586,20 +589,20 @@ function NavBar() {
                     MISP HISTORY
                   </a>
                   {isDropdown3Open && (
-                    <div style={dropdownMenuStyle}>
-                      <a
+                    <div  data-aos="fade" data-aos-duration={1000} style={dropdownMenuStyle}>
+                      <a class="hover:bg-cyan-300 hover:text-black"
                         href="http://iiti.ac.in/people/~mlsp/index.html"
                         style={dropdownLinkStyle}
                       >
                         MISP-2017
                       </a>
-                      <a
+                      <a class="hover:bg-cyan-300 hover:text-black"
                         href="https://misp.iiita.ac.in/"
                         style={dropdownLinkStyle}
                       >
                         MISP-2019
                       </a>
-                      <a
+                      <a class="hover:bg-cyan-300 hover:text-black"
                         href="https://www.misp.nitap.ac.in/"
                         style={dropdownLinkStyle}
                       >

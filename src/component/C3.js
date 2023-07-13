@@ -15,11 +15,11 @@ export default function C3(){
       MISP 2021
 3rd INTERNATIONAL CONFERENCE ON MACHINE
 INTELLIGENCE AND SIGNAL PROCESSING
-        
+SEPTEMBER 23 - 25, 2021, MNNIT ALLAHABAD UTTAR PRADESH, INDIA
       </h1>
     
       <p className="text-gray-300 mb-8 leading-relaxed">
-      SEPTEMBER 23 - 25, 2021, MNNIT ALLAHABAD UTTAR PRADESH, INDIA
+      
 
       </p>
       <div className="flex justify-center">
