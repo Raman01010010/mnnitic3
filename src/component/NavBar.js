@@ -142,8 +142,7 @@ function NavBar() {
   };
 
   return (
-    <nav style={navbarStyle}   className="px-4 lg:px-8">
-      
+    <nav style={navbarStyle} className="px-4 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -206,38 +205,38 @@ function NavBar() {
             >
               <a
                 href="/"
-                className="text-sm font-medium hover:text-gray-800"
+                className="text-sm font-medium hover:text-gray-300"
               >
                 HOME
               </a>
               <a
                 href="#"
-                className="text-sm font-medium hover:text-gray-800"
+                className="text-sm font-medium hover:text-gray-300"
               >
                 ABOUT
               </a>
               <a
                 href="#"
-                className="text-sm font-medium hover:text-gray-800"
+                className="text-sm font-medium hover:text-gray-300"
               >
                 CONFERENCE TOPICS
               </a>
               <a
                 href="#"
-                className="text-sm font-medium hover:text-gray-800"
+                className="text-sm font-medium hover:text-gray-300"
                 onMouseEnter={handleMouseEnter1}
                 onMouseLeave={handleMouseLeave1}
               >
                 CONFERENCE PROGRAM
                 {isDropdown1Open && (
-                  <div data-aos="fade" data-aos-duration={1000} style={dropdownMenuStyle}>
-                    <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
+                  <div style={dropdownMenuStyle}>
+                    <a href="#" style={dropdownLinkStyle}>
                       Service 1
                     </a>
-                    <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
+                    <a href="#" style={dropdownLinkStyle}>
                       Service 2
                     </a>
-                    <a href="#"  class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
+                    <a href="#" style={dropdownLinkStyle}>
                       Service 3
                     </a>
                   </div>
@@ -245,20 +244,20 @@ function NavBar() {
               </a>
               <a
                 href="#"
-                className="text-sm font-medium hover:text-gray-800"
+                className="text-sm font-medium hover:text-gray-300"
                 onMouseEnter={handleMouseEnter2}
                 onMouseLeave={handleMouseLeave2}
               >
                 COMMITTEE
                 {isDropdown2Open && (
-                  <div data-aos="fade" data-aos-duration={1000} style={dropdownMenuStyle}>
-                    <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
+                  <div style={dropdownMenuStyle}>
+                    <a href="#" style={dropdownLinkStyle}>
                       Service 1
                     </a>
-                    <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
+                    <a href="#" style={dropdownLinkStyle}>
                       Service 2
                     </a>
-                    <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
+                    <a href="#" style={dropdownLinkStyle}>
                       Service 3
                     </a>
                   </div>
@@ -266,26 +265,26 @@ function NavBar() {
               </a>
               <a
                 href="#"
-                className="text-sm font-medium hover:text-gray-800"
+                className="text-sm font-medium hover:text-gray-300"
                 onMouseEnter={handleMouseEnter3}
                 onMouseLeave={handleMouseLeave3}
               >
                 MISP HISTORY
                 {isDropdown3Open && (
-                  <div  data-aos="fade" data-aos-duration={1000} style={dropdownMenuStyle}>
-                    <a class="hover:bg-cyan-300 hover:text-black"
+                  <div style={dropdownMenuStyle}>
+                    <a
                       href="http://iiti.ac.in/people/~mlsp/index.html"
                       style={dropdownLinkStyle}
                     >
                       MISP-2017
                     </a>
-                    <a class="hover:bg-cyan-300 hover:text-black"
+                    <a
                       href="https://misp.iiita.ac.in/"
                       style={dropdownLinkStyle}
                     >
                       MISP-2019
                     </a>
-                    <a class="hover:bg-cyan-300 hover:text-black"
+                    <a
                       href="https://www.misp.nitap.ac.in/"
                       style={dropdownLinkStyle}
                     >
@@ -296,13 +295,13 @@ function NavBar() {
               </a>
               <a
                 href="#"
-                className="text-sm font-medium hover:text-gray-800"
+                className="text-sm font-medium hover:text-gray-300"
               >
                 VENUE
               </a>
               <a
                 href="#"
-                className="text-sm font-medium hover:text-gray-800"
+                className="text-sm font-medium hover:text-gray-300"
               >
                 CONTACT US
               </a>
@@ -312,12 +311,10 @@ function NavBar() {
       </div>
       {isMobileMenuOpen && (
         <div
-        data-aos="slide-left" data-aos-duration={1000}
           className="fixed right-0 top-0 h-full w-2/3 bg-gray-800 z-50 transform duration-300 ease-in-out"
           style={offCanvasStyle}
-         
         >
-          <div  data-aos="fade-left" data-aos-duration={1000} className="p-8" style={offCanvasContentStyle}>
+          <div className="p-8" style={offCanvasContentStyle}>
             <div className="flex items-center justify-between mb-8">
               <div className="flex-shrink-0">
                 <a href="http://www.mnnit.ac.in/" style={logoStyle}>
@@ -345,21 +342,21 @@ function NavBar() {
             <div className="space-y-4">
               <a
                 href="/"
-                className="text-base font-medium text-white block hover:text-gray-800"
+                className="text-base font-medium text-white block hover:text-gray-300"
                 style={hoverLinkStyle}
               >
                 HOME
               </a>
               <a
                 href="#"
-                className="text-base font-medium text-white block hover:text-gray-800"
+                className="text-base font-medium text-white block hover:text-gray-300"
                 style={hoverLinkStyle}
               >
                 ABOUT
               </a>
               <a
                 href="#"
-                className="text-base font-medium text-white block hover:text-gray-800"
+                className="text-base font-medium text-white block hover:text-gray-300"
                 style={hoverLinkStyle}
               >
                 CONFERENCE TOPICS
@@ -368,7 +365,7 @@ function NavBar() {
                 <div className="flex items-center justify-between">
                   <a
                     href="#"
-                    className="text-base font-medium text-white hover:text-gray-800"
+                    className="text-base font-medium text-white hover:text-gray-300"
                     onMouseEnter={handleMouseEnter1}
                     onMouseLeave={handleMouseLeave1}
                     style={hoverLinkStyle} // Added: Hover style
@@ -376,14 +373,14 @@ function NavBar() {
                     CONFERENCE PROGRAM
                   </a>
                   {isDropdown1Open && (
-                    <div data-aos="fade" data-aos-duration={1000} style={dropdownMenuStyle}>
-                      <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
+                    <div style={dropdownMenuStyle}>
+                      <a href="#" style={dropdownLinkStyle}>
                         Service 1
                       </a>
-                      <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
+                      <a href="#" style={dropdownLinkStyle}>
                         Service 2
                       </a>
-                      <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
+                      <a href="#" style={dropdownLinkStyle}>
                         Service 3
                       </a>
                     </div>
@@ -394,7 +391,7 @@ function NavBar() {
                 <div className="flex items-center justify-between">
                   <a
                     href="#"
-                    className="text-base font-medium text-white hover:text-gray-800"
+                    className="text-base font-medium text-white hover:text-gray-300"
                     onMouseEnter={handleMouseEnter2}
                     onMouseLeave={handleMouseLeave2}
                     style={hoverLinkStyle} // Added: Hover style
@@ -402,14 +399,14 @@ function NavBar() {
                     COMMITTEE
                   </a>
                   {isDropdown2Open && (
-                    <div data-aos="fade" data-aos-duration={1000} style={dropdownMenuStyle}>
-                      <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
+                    <div style={dropdownMenuStyle}>
+                      <a href="#" style={dropdownLinkStyle}>
                         Service 1
                       </a>
-                      <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
+                      <a href="#" style={dropdownLinkStyle}>
                         Service 2
                       </a>
-                      <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
+                      <a href="#" style={dropdownLinkStyle}>
                         Service 3
                       </a>
                     </div>
@@ -420,7 +417,7 @@ function NavBar() {
                 <div className="flex items-center justify-between">
                   <a
                     href="#"
-                    className="text-base font-medium text-white hover:text-gray-800"
+                    className="text-base font-medium text-white hover:text-gray-300"
                     onMouseEnter={handleMouseEnter3}
                     onMouseLeave={handleMouseLeave3}
                     style={hoverLinkStyle} // Added: Hover style
@@ -428,20 +425,20 @@ function NavBar() {
                     MISP HISTORY
                   </a>
                   {isDropdown3Open && (
-                    <div  data-aos="fade" data-aos-duration={1000} style={dropdownMenuStyle}>
-                      <a class="hover:bg-cyan-300 hover:text-black"
+                    <div style={dropdownMenuStyle}>
+                      <a
                         href="http://iiti.ac.in/people/~mlsp/index.html"
                         style={dropdownLinkStyle}
                       >
                         MISP-2017
                       </a>
-                      <a class="hover:bg-cyan-300 hover:text-black"
+                      <a
                         href="https://misp.iiita.ac.in/"
                         style={dropdownLinkStyle}
                       >
                         MISP-2019
                       </a>
-                      <a class="hover:bg-cyan-300 hover:text-black"
+                      <a
                         href="https://www.misp.nitap.ac.in/"
                         style={dropdownLinkStyle}
                       >
@@ -453,14 +450,14 @@ function NavBar() {
               </div>
               <a
                 href="#"
-                className="text-base font-medium text-white block hover:text-gray-800"
+                className="text-base font-medium text-white block hover:text-gray-300"
                 style={hoverLinkStyle}
               >
                 VENUE
               </a>
               <a
                 href="#"
-                className="text-base font-medium text-white block hover:text-gray-800"
+                className="text-base font-medium text-white block hover:text-gray-300"
                 style={hoverLinkStyle}
               >
                 CONTACT US
@@ -509,19 +506,19 @@ function NavBar() {
             <div className="space-y-4">
               <a
                 href="/"
-                className="text-base font-medium text-white block hover:text-gray-800"
+                className="text-base font-medium text-white block hover:text-gray-300"
               >
                 HOME
               </a>
               <a
                 href="#"
-                className="text-base font-medium text-white block hover:text-gray-800"
+                className="text-base font-medium text-white block hover:text-gray-300"
               >
                 ABOUT
               </a>
               <a
                 href="#"
-                className="text-base font-medium text-white block hover:text-gray-800"
+                className="text-base font-medium text-white block hover:text-gray-300"
               >
                 CONFERENCE TOPICS
               </a>
@@ -529,7 +526,7 @@ function NavBar() {
                 <div className="flex items-center justify-between">
                   <a
                     href="#"
-                    className="text-base font-medium text-white hover:text-gray-800"
+                    className="text-base font-medium text-white hover:text-gray-300"
                     onMouseEnter={handleMouseEnter1}
                     onMouseLeave={handleMouseLeave1}
                     style={hoverLinkStyle} // Added: Hover style
@@ -537,14 +534,14 @@ function NavBar() {
                     CONFERENCE PROGRAM
                   </a>
                   {isDropdown1Open && (
-                    <div data-aos="fade" data-aos-duration={1000} style={dropdownMenuStyle}>
-                      <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
+                    <div style={dropdownMenuStyle}>
+                      <a href="#" style={dropdownLinkStyle}>
                         Service 1
                       </a>
-                      <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
+                      <a href="#" style={dropdownLinkStyle}>
                         Service 2
                       </a>
-                      <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
+                      <a href="#" style={dropdownLinkStyle}>
                         Service 3
                       </a>
                     </div>
@@ -555,7 +552,7 @@ function NavBar() {
                 <div className="flex items-center justify-between">
                   <a
                     href="#"
-                    className="text-base font-medium text-white hover:text-gray-800"
+                    className="text-base font-medium text-white hover:text-gray-300"
                     onMouseEnter={handleMouseEnter2}
                     onMouseLeave={handleMouseLeave2}
                     style={hoverLinkStyle} // Added: Hover style
@@ -563,14 +560,14 @@ function NavBar() {
                     COMMITTEE
                   </a>
                   {isDropdown2Open && (
-                    <div data-aos="fade" data-aos-duration={1000} style={dropdownMenuStyle}>
-                      <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
+                    <div style={dropdownMenuStyle}>
+                      <a href="#" style={dropdownLinkStyle}>
                         Service 1
                       </a>
-                      <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
+                      <a href="#" style={dropdownLinkStyle}>
                         Service 2
                       </a>
-                      <a href="#" class="hover:bg-cyan-300 hover:text-black" style={dropdownLinkStyle}>
+                      <a href="#" style={dropdownLinkStyle}>
                         Service 3
                       </a>
                     </div>
@@ -581,7 +578,7 @@ function NavBar() {
                 <div className="flex items-center justify-between">
                   <a
                     href="#"
-                    className="text-base font-medium text-white hover:text-gray-800"
+                    className="text-base font-medium text-white hover:text-gray-300"
                     onMouseEnter={handleMouseEnter3}
                     onMouseLeave={handleMouseLeave3}
                     style={hoverLinkStyle} // Added: Hover style
@@ -589,20 +586,20 @@ function NavBar() {
                     MISP HISTORY
                   </a>
                   {isDropdown3Open && (
-                    <div  data-aos="fade" data-aos-duration={1000} style={dropdownMenuStyle}>
-                      <a class="hover:bg-cyan-300 hover:text-black"
+                    <div style={dropdownMenuStyle}>
+                      <a
                         href="http://iiti.ac.in/people/~mlsp/index.html"
                         style={dropdownLinkStyle}
                       >
                         MISP-2017
                       </a>
-                      <a class="hover:bg-cyan-300 hover:text-black"
+                      <a
                         href="https://misp.iiita.ac.in/"
                         style={dropdownLinkStyle}
                       >
                         MISP-2019
                       </a>
-                      <a class="hover:bg-cyan-300 hover:text-black"
+                      <a
                         href="https://www.misp.nitap.ac.in/"
                         style={dropdownLinkStyle}
                       >
@@ -614,13 +611,13 @@ function NavBar() {
               </div>
               <a
                 href="#"
-                className="text-base font-medium text-white block hover:text-gray-800"
+                className="text-base font-medium text-white block hover:text-gray-300"
               >
                 VENUE
               </a>
               <a
                 href="#"
-                className="text-base font-medium text-white block hover:text-gray-800"
+                className="text-base font-medium text-white block hover:text-gray-300"
               >
                 CONTACT US
               </a>
