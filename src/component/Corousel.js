@@ -28,13 +28,13 @@ function Carousel() {
     <div className="carousel-container">
       <Slider {...settings}>
         <div>
-          <img src="http://www.mnnit.ac.in/images/newstories/2022/slider/yoga2023/DSC_1730.JPG" alt="Image 1" />
+          <img className="object-contain w-full h-auto"  src="http://www.mnnit.ac.in/images/newstories/2022/slider/yoga2023/DSC_1730.JPG" alt="Image 1" />
         </div>
         <div>
-          <img src="http://www.mnnit.ac.in/images/newstories/2022/slider/yoga2023/DSC_1730.JPG" alt="Image 2" />
+          <img className="object-contain w-full h-auto"  src="http://www.mnnit.ac.in/images/newstories/2022/slider/yoga2023/DSC_1730.JPG" alt="Image 2" />
         </div>
         <div>
-          <img src="http://www.mnnit.ac.in/images/newstories/2022/slider/yoga2023/DSC_1730.JPG" alt="Image 3" />
+          <img className="object-contain w-full h-auto"  src="http://www.mnnit.ac.in/images/newstories/2022/slider/yoga2023/DSC_1730.JPG" alt="Image 3" />
         </div>
       </Slider>
     </div>
