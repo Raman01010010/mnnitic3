@@ -1,7 +1,7 @@
 import data from '../data/data.json'
 export default function Publications(){
     return (<>
-    <a name="topics"></a>
+    {/* <a name="topics"></a>
     {data.publications.map(item=>{
         return(<><section className="text-gray-400 bg-gray-900 body-font">
         <div className="container px-5 py-24 mx-auto flex flex-wrap">
@@ -49,6 +49,6 @@ export default function Publications(){
         </div>
       </section></>)
     })}
-    
+     */}
 </>)
 }

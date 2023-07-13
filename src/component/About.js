@@ -1,7 +1,7 @@
 import data from '../data/data.json'
 export default function About(){
     return (
-        <>
+        <div>
         <section className="text-gray-400 bg-gray-900 body-font">
           <a name="about"></a>
   <div className="container px-5 py-24 mx-auto">
@@ -18,7 +18,9 @@ export default function About(){
         </p>
       </div>
     </div>
+    </div>
+    </section>
+    </div>
   )
 }
 
-export default About
