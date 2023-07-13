@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import logo from "./mnnit.png";
+import React, { useState } from 'react';
+import logo from './mnnit.png';
 
 function NavBar() {
   const [isDropdown1Open, setIsDropdown1Open] = useState(false);
@@ -45,68 +45,102 @@ function NavBar() {
   };
 
   const navbarStyle = {
-  
-    position: "sticky",
+    position: 'sticky',
     top: 0,
     left: 0,
-    visibility: "inheret",
-    overflowX: "visible",
-    width: "100%",
-    backgroundColor: "#4c51bf",
-    borderBottomLeftRadius: "50%",
-    borderBottomRightRadius: "50%",
-    zIndex:"1"
+    visibility: 'inheret',
+    overflowX: 'visible',
+    width: '100%',
+    backgroundColor: '#ffffff', // Updated: Make navbar white
+    borderBottom: '2px solid #4c51bf', // Updated: Add border color
+    zIndex: 1,
   };
 
   const logoImageStyle = {
-    width: "120px",
-    height: "70px",
-    marginRight: "8px",
+    width: '120px',
+    height: '70px',
+    marginRight: '8px',
+    zIndex: 1,
   };
 
   const logoStyle = {
-    fontSize: "1.5rem",
+    fontSize: '1.5rem',
     fontWeight: 600,
-    color: "#ffffff",
+    color: '#4c51bf', // Updated: Use accent color
+    zIndex: 1,
   };
 
   const primaryLinksStyle = {
-    color: "#ffffff",
-    fontFamily: "Roboto,Montserrat,Open Sans",
+    color: '#4c51bf', // Updated: Use accent color
+    fontFamily: 'Roboto,Montserrat,Open Sans',
+    zIndex: 1,
   };
 
   const dropdownMenuStyle = {
-    display: "none",
-    backgroundColor: "#4c51bf",
-    position: "absolute",
-    fontFamily: "Roboto,Montserrat,Open Sans",
-    zIndex: 99999999999,
+    display: 'none',
+    backgroundColor: '#4c51bf', // Updated: Use accent color
+    position: 'absolute',
+    fontFamily: 'Roboto,Montserrat,Open Sans',
+    zIndex: 1,
   };
 
   const dropdownLinkStyle = {
-    display: "block",
-    padding: "8px",
-    color: "#ffffff",
-    fontFamily: "Roboto,Montserrat,Open Sans",
-    textDecoration: "none",
+    display: 'block',
+    padding: '8px',
+    color: '#ffffff',
+    fontFamily: 'Roboto,Montserrat,Open Sans',
+    textDecoration: 'none',
+    zIndex: 1,
   };
 
   if (isDropdown1Open) {
-    dropdownMenuStyle.display = "block";
+    dropdownMenuStyle.display = 'block';
   }
   if (isDropdown2Open) {
-    dropdownMenuStyle.display = "block";
+    dropdownMenuStyle.display = 'block';
   }
   if (isDropdown3Open) {
-    dropdownMenuStyle.display = "block";
+    dropdownMenuStyle.display = 'block';
   }
-  
+
   const linksContainerStyle = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    zIndex: 1,
   };
+
+  const offCanvasStyle = {
+    transform: isMobileMenuOpen ? 'translateX(0)' : 'translateX(100%)',
+    transition: 'transform 0.3s ease-in-out',
+    backgroundColor: '#ffffff', // Updated: Make off-canvas white
+  };
+
+  const offCanvasContentStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    textAlign: 'left',
+    marginLeft: '0',
+    color: '#000000', // Updated: Make off-canvas content black
+  };
+
   
+    const closeIconStyle = {
+      position: 'absolute',
+      top: '1rem', // Adjusted position
+      right: '1rem', // Adjusted position
+      cursor: 'pointer',
+      zIndex: 1,
+      fontSize: '4rem', // Increased cross sign size
+    };
+
+
+  const hoverLinkStyle = {
+    textDecoration: 'none',
+    color: '#4c51bf', // Updated: Use accent color for hover effect
+  };
+
   return (
     <nav style={navbarStyle} className="px-4 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -134,13 +168,13 @@ function NavBar() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  <path className="heroicon-ui" d="M12 4v16m8-8H4" />
+                  <path className="heroicon-ui" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               </button>
             ) : (
               <button
                 className={`focus:outline-none ${
-                  isMobileMenuOpen ? "hidden" : "block"
+                  isMobileMenuOpen ? 'hidden' : 'block'
                 }`}
                 onClick={handleMobileMenuToggle}
               >
@@ -159,104 +193,116 @@ function NavBar() {
               </button>
             )}
           </div>
-          <div style={navbarStyle} className="hidden md:block ml-10">
+          <div
+            style={navbarStyle}
+            className="hidden md:block ml-10 relative"
+          >
             <div
               className={`flex space-x-4 ${
-                isContentScrolled ? "hidden" : "block"
+                isContentScrolled ? 'hidden' : 'block'
               }`}
               style={primaryLinksStyle}
             >
-              <a href="/" className="text-sm font-medium">
+              <a
+                href="/"
+                className="text-sm font-medium hover:text-gray-800"
+              >
                 HOME
               </a>
-              <a href="#about" className="text-sm font-medium">
+              <a
+                href="#"
+                className="text-sm font-medium hover:text-gray-800"
+              >
                 ABOUT
               </a>
-              <a href="#topics" className="text-sm font-medium">
+              <a
+                href="#"
+                className="text-sm font-medium hover:text-gray-800"
+              >
                 CONFERENCE TOPICS
               </a>
               <a
                 href="#"
-                className="text-sm"
+                className="text-sm font-medium hover:text-gray-800"
                 onMouseEnter={handleMouseEnter1}
                 onMouseLeave={handleMouseLeave1}
               >
                 CONFERENCE PROGRAM
                 {isDropdown1Open && (
                   <div style={dropdownMenuStyle}>
-                    <a href="#timeline" style={dropdownLinkStyle}>
-                     Program Schedule
+                    <a href="#" style={dropdownLinkStyle}>
+                      Service 1
                     </a>
-                    <a href="#speaker" style={dropdownLinkStyle}>
-                      Speakers
+                    <a href="#" style={dropdownLinkStyle}>
+                      Service 2
                     </a>
-                    <a href="register" style={dropdownLinkStyle}>
-                      Registration
-                    </a>
-                    <a href="#attend" style={dropdownLinkStyle}>
-                      To attend the  Conference
-                    </a>
-                    <a href="#sessions" style={dropdownLinkStyle}>
-                      Sessions
+                    <a href="#" style={dropdownLinkStyle}>
+                      Service 3
                     </a>
                   </div>
                 )}
               </a>
               <a
                 href="#"
-                className="text-sm"
+                className="text-sm font-medium hover:text-gray-800"
                 onMouseEnter={handleMouseEnter2}
                 onMouseLeave={handleMouseLeave2}
               >
                 COMMITTEE
                 {isDropdown2Open && (
                   <div style={dropdownMenuStyle}>
-                    <a href="#org" style={dropdownLinkStyle}>
-                      Organizing
+                    <a href="#" style={dropdownLinkStyle}>
+                      Service 1
                     </a>
-                    <a href="#adv" style={dropdownLinkStyle}>
-                      Advisory
+                    <a href="#" style={dropdownLinkStyle}>
+                      Service 2
                     </a>
-                    <a href="#tech" style={dropdownLinkStyle}>
-                      Technical Committee
+                    <a href="#" style={dropdownLinkStyle}>
+                      Service 3
                     </a>
                   </div>
                 )}
               </a>
               <a
                 href="#"
-                className="text-sm"
+                className="text-sm font-medium hover:text-gray-800"
                 onMouseEnter={handleMouseEnter3}
                 onMouseLeave={handleMouseLeave3}
               >
-                More
+                MISP HISTORY
                 {isDropdown3Open && (
                   <div style={dropdownMenuStyle}>
                     <a
-                      href="#colab"
+                      href="http://iiti.ac.in/people/~mlsp/index.html"
                       style={dropdownLinkStyle}
                     >
-                    Colaborators
+                      MISP-2017
                     </a>
                     <a
                       href="https://misp.iiita.ac.in/"
                       style={dropdownLinkStyle}
                     >
-                      MISP History
+                      MISP-2019
                     </a>
                     <a
                       href="https://www.misp.nitap.ac.in/"
                       style={dropdownLinkStyle}
                     >
-                      MISP History
+                      MISP-2021
                     </a>
                   </div>
                 )}
               </a>
-              <a href="#contact" className="text-sm font-medium">
+              <a
+                href="#"
+                className="text-sm font-medium hover:text-gray-800"
+              >
                 VENUE
               </a>
-              <a href="#contact" className="text-sm font-medium">
+              <a
+                href="#"
+                className="text-sm font-medium hover:text-gray-800"
+              >
                 CONTACT US
               </a>
             </div>
@@ -264,8 +310,11 @@ function NavBar() {
         </div>
       </div>
       {isMobileMenuOpen && (
-        <div className="fixed right-0 top-0 h-full w-2/3 bg-gray-800 z-50 transform duration-300 ease-in-out">
-          <div className="p-8">
+        <div
+          className="fixed right-0 top-0 h-full w-2/3 bg-gray-800 z-50 transform duration-300 ease-in-out"
+          style={offCanvasStyle}
+        >
+          <div className="p-8" style={offCanvasContentStyle}>
             <div className="flex items-center justify-between mb-8">
               <div className="flex-shrink-0">
                 <a href="http://www.mnnit.ac.in/" style={logoStyle}>
@@ -276,9 +325,8 @@ function NavBar() {
                 className="focus:outline-none"
                 onClick={handleMobileMenuToggle}
               >
-                
                 <svg
-                  className="h-8 w-8"
+                  className="h-6 w-6"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"
@@ -287,47 +335,54 @@ function NavBar() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  <path d="M18 6L6 18M6 6l12 12" />
                 </svg>
               </button>
             </div>
             <div className="space-y-4">
-              <a href="/" className="text-base font-medium text-white block">
+              <a
+                href="/"
+                className="text-base font-medium text-white block hover:text-gray-800"
+                style={hoverLinkStyle}
+              >
                 HOME
               </a>
-              <a href="#about" className="text-base font-medium text-white block">
+              <a
+                href="#"
+                className="text-base font-medium text-white block hover:text-gray-800"
+                style={hoverLinkStyle}
+              >
                 ABOUT
               </a>
-              <a href="#topics" className="text-base font-medium text-white block">
+              <a
+                href="#"
+                className="text-base font-medium text-white block hover:text-gray-800"
+                style={hoverLinkStyle}
+              >
                 CONFERENCE TOPICS
               </a>
               <div>
                 <div className="flex items-center justify-between">
                   <a
                     href="#"
-                    className="text-base font-medium text-white"
+                    className="text-base font-medium text-white hover:text-gray-800"
                     onMouseEnter={handleMouseEnter1}
                     onMouseLeave={handleMouseLeave1}
+                    style={hoverLinkStyle} // Added: Hover style
                   >
                     CONFERENCE PROGRAM
                   </a>
                   {isDropdown1Open && (
                     <div style={dropdownMenuStyle}>
-                      <a href="#timeline" style={dropdownLinkStyle}>
-                        Program Schedule
+                      <a href="#" style={dropdownLinkStyle}>
+                        Service 1
                       </a>
-                      <a href="#speaker" style={dropdownLinkStyle}>
-                        Speaker
+                      <a href="#" style={dropdownLinkStyle}>
+                        Service 2
                       </a>
-                      <a href="#register" style={dropdownLinkStyle}>
-                        Registration
+                      <a href="#" style={dropdownLinkStyle}>
+                        Service 3
                       </a>
-                      <a href="#attend" style={dropdownLinkStyle}>
-                      To attend the  Conference
-                    </a>
-                    <a href="#sessions" style={dropdownLinkStyle}>
-                      Sessions
-                    </a>
                     </div>
                   )}
                 </div>
@@ -336,22 +391,23 @@ function NavBar() {
                 <div className="flex items-center justify-between">
                   <a
                     href="#"
-                    className="text-base font-medium text-white"
+                    className="text-base font-medium text-white hover:text-gray-800"
                     onMouseEnter={handleMouseEnter2}
                     onMouseLeave={handleMouseLeave2}
+                    style={hoverLinkStyle} // Added: Hover style
                   >
                     COMMITTEE
                   </a>
                   {isDropdown2Open && (
                     <div style={dropdownMenuStyle}>
-                      <a href="#org" style={dropdownLinkStyle}>
-                        Organizing Committee
+                      <a href="#" style={dropdownLinkStyle}>
+                        Service 1
                       </a>
-                      <a href="#adv" style={dropdownLinkStyle}>
-                        Advisory Committee
+                      <a href="#" style={dropdownLinkStyle}>
+                        Service 2
                       </a>
-                      <a href="#tech" style={dropdownLinkStyle}>
-                        Technical Committee
+                      <a href="#" style={dropdownLinkStyle}>
+                        Service 3
                       </a>
                     </div>
                   )}
@@ -361,19 +417,20 @@ function NavBar() {
                 <div className="flex items-center justify-between">
                   <a
                     href="#"
-                    className="text-base font-medium text-white"
+                    className="text-base font-medium text-white hover:text-gray-800"
                     onMouseEnter={handleMouseEnter3}
                     onMouseLeave={handleMouseLeave3}
+                    style={hoverLinkStyle} // Added: Hover style
                   >
-                    More
+                    MISP HISTORY
                   </a>
                   {isDropdown3Open && (
                     <div style={dropdownMenuStyle}>
                       <a
-                        href="#colab"
+                        href="http://iiti.ac.in/people/~mlsp/index.html"
                         style={dropdownLinkStyle}
                       >
-                        Colaborators
+                        MISP-2017
                       </a>
                       <a
                         href="https://misp.iiita.ac.in/"
@@ -391,10 +448,18 @@ function NavBar() {
                   )}
                 </div>
               </div>
-              <a href="#contact" className="text-base font-medium text-white block">
+              <a
+                href="#"
+                className="text-base font-medium text-white block hover:text-gray-800"
+                style={hoverLinkStyle}
+              >
                 VENUE
               </a>
-              <a href="#contact" className="text-base font-medium text-white block">
+              <a
+                href="#"
+                className="text-base font-medium text-white block hover:text-gray-800"
+                style={hoverLinkStyle}
+              >
                 CONTACT US
               </a>
             </div>
@@ -422,56 +487,63 @@ function NavBar() {
                   <img src={logo} alt="Logo" style={logoImageStyle} />
                 </a>
               </div>
-              <button
-                className="focus:outline-none"
-                onClick={handleScrollReset}
-              >
-                <svg
-                  className="h-8 w-8 fill-current text-white"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                >
-                  <path className="heroicon-ui" d="M20 12H4M20 6H4M20 18H4" />
-                </svg>
-              </button>
+              <div>
+<button
+               className="focus:outline-none"
+               onClick={handleScrollReset}
+               style={closeIconStyle}
+             >
+<svg
+                 className="h-8 w-8 fill-current text-white"
+                 xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 24 24"
+               >
+<path className="heroicon-ui" d="M20 12H4M20 6H4M20 18H4" />
+</svg>
+</button>
+</div>
             </div>
             <div className="space-y-4">
-              <a href="/" className="text-base font-medium text-white block">
+              <a
+                href="/"
+                className="text-base font-medium text-white block hover:text-gray-800"
+              >
                 HOME
               </a>
-              <a href="#about" className="text-base font-medium text-white block">
+              <a
+                href="#"
+                className="text-base font-medium text-white block hover:text-gray-800"
+              >
                 ABOUT
               </a>
-              <a href="#topics" className="text-base font-medium text-white block">
+              <a
+                href="#"
+                className="text-base font-medium text-white block hover:text-gray-800"
+              >
                 CONFERENCE TOPICS
               </a>
               <div>
                 <div className="flex items-center justify-between">
                   <a
                     href="#"
-                    className="text-base font-medium text-white"
+                    className="text-base font-medium text-white hover:text-gray-800"
                     onMouseEnter={handleMouseEnter1}
                     onMouseLeave={handleMouseLeave1}
+                    style={hoverLinkStyle} // Added: Hover style
                   >
                     CONFERENCE PROGRAM
                   </a>
                   {isDropdown1Open && (
                     <div style={dropdownMenuStyle}>
-                      <a href="#time" style={dropdownLinkStyle}>
-                        Program Schedule
+                      <a href="#" style={dropdownLinkStyle}>
+                        Service 1
                       </a>
-                      <a href="#speaker" style={dropdownLinkStyle}>
-                        Speakers
+                      <a href="#" style={dropdownLinkStyle}>
+                        Service 2
                       </a>
-                      <a href="#register" style={dropdownLinkStyle}>
-                       Registration
+                      <a href="#" style={dropdownLinkStyle}>
+                        Service 3
                       </a>
-                      <a href="#attend" style={dropdownLinkStyle}>
-                      To attend the  Conference
-                    </a>
-                    <a href="#sessions" style={dropdownLinkStyle}>
-                      Sessions
-                    </a>
                     </div>
                   )}
                 </div>
@@ -480,22 +552,23 @@ function NavBar() {
                 <div className="flex items-center justify-between">
                   <a
                     href="#"
-                    className="text-base font-medium text-white"
+                    className="text-base font-medium text-white hover:text-gray-800"
                     onMouseEnter={handleMouseEnter2}
                     onMouseLeave={handleMouseLeave2}
+                    style={hoverLinkStyle} // Added: Hover style
                   >
                     COMMITTEE
                   </a>
                   {isDropdown2Open && (
                     <div style={dropdownMenuStyle}>
-                      <a href="#org" style={dropdownLinkStyle}>
-                        Organizing Committee
+                      <a href="#" style={dropdownLinkStyle}>
+                        Service 1
                       </a>
-                      <a href="#adv" style={dropdownLinkStyle}>
-                        Advisory Committee
+                      <a href="#" style={dropdownLinkStyle}>
+                        Service 2
                       </a>
-                      <a href="#tech" style={dropdownLinkStyle}>
-                       Technical Committee
+                      <a href="#" style={dropdownLinkStyle}>
+                        Service 3
                       </a>
                     </div>
                   )}
@@ -505,18 +578,20 @@ function NavBar() {
                 <div className="flex items-center justify-between">
                   <a
                     href="#"
-                    className="text-base font-medium text-white"
+                    className="text-base font-medium text-white hover:text-gray-800"
                     onMouseEnter={handleMouseEnter3}
                     onMouseLeave={handleMouseLeave3}
+                    style={hoverLinkStyle} // Added: Hover style
                   >
-                    More
+                    MISP HISTORY
                   </a>
                   {isDropdown3Open && (
                     <div style={dropdownMenuStyle}>
                       <a
-                        href="#colab"
+                        href="http://iiti.ac.in/people/~mlsp/index.html"
                         style={dropdownLinkStyle}
-                      >Colaborators
+                      >
+                        MISP-2017
                       </a>
                       <a
                         href="https://misp.iiita.ac.in/"
@@ -534,10 +609,16 @@ function NavBar() {
                   )}
                 </div>
               </div>
-              <a href="#contact" className="text-base font-medium text-white block">
+              <a
+                href="#"
+                className="text-base font-medium text-white block hover:text-gray-800"
+              >
                 VENUE
               </a>
-              <a href="#contact" className="text-base font-medium text-white block">
+              <a
+                href="#"
+                className="text-base font-medium text-white block hover:text-gray-800"
+              >
                 CONTACT US
               </a>
             </div>
