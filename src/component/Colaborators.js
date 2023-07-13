@@ -11,7 +11,7 @@ export default function Colaborators(){
 
 {data.colaborators.map(item=>{
   return(<>
-    <div className="p-4 lg:w-1/4 md:w-1/2">
+    <div className="p-4 rounded-lg lg:w-1/4 md:w-1/2 transition  ease-in-out hover:delay-800 hover:scale-105 hover:shadow-2xl  hover:bg-cyan-300 hover:rounded-lg">
       <a href={item.link}>
       <div className="h-full flex flex-col items-center text-center">
           <img
