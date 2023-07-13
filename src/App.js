@@ -32,13 +32,16 @@ function App() {
    
       
     <C3/>
- 
+
+
+
      
       <About/>
       <Confe/>
     
       <Advisory/>
       <Organisers/>
+      <Publications/>
       <Sessions/>
   
       <Speaker/>

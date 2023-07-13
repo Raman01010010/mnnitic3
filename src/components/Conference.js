@@ -32,9 +32,9 @@ function Conference(props) {
         className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
         src={props.src}
       />
-      <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+      <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0 transition delay-200 duration-600 ease-in-out hover:delay-800 hover:shadow-2xl hover:text-white hover:bg-cyan-800 hover:rounded-lg">
        
-        <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">
+        <h1 className=" text-3xl title-font font-medium mb-1">
           {props.topicname}
         </h1>
         <div className="flex mb-4">
