@@ -21,6 +21,7 @@ import Commite from './components/Commite';
 import News from './component/News';
 import C2 from './component/C2';
 import C3 from './component/C3';
+import Test from './component/Test';
 
 function App() {
 
@@ -30,13 +31,13 @@ function App() {
      
       <NavBar/>
 
-   
+  
       
     <C3/>
 
 
 <News/>
-     <Colaborators/>
+  
       <About/>
       <Confe/>
     
@@ -48,8 +49,9 @@ function App() {
       <Speaker/>
      
       <Attend/>
+
       <Timeline/>
-   
+      <Colaborators/>
       <Map/>
       <Contacts/>
     <Footer/>
