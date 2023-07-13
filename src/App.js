@@ -18,6 +18,7 @@ import Advisory from './component/Advisory';
 import Attend from './components/Attend'
 import Confe from './components/Confe';
 import Commite from './components/Commite';
+import News from './component/News';
 function App() {
 
 
@@ -26,6 +27,7 @@ function App() {
       <NavBar/>
      <div>
       <Corousel/>
+      <News/>
       <About/>
       <Confe/>
     
