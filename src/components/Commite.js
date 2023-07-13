@@ -16,9 +16,9 @@ function Commite(props) {
           />
           <div className="flex-grow">
             <h2 className="text-white title-font font-medium">
-              Holden Caulfield
+             {props.name}
             </h2>
-            <p className="text-gray-600">UI Designer</p>
+            <p className="text-gray-600">{props.degre}</p>
           </div>
         </div>
       </div>
