@@ -6,9 +6,7 @@ return(
     <section className="text-gray-600 body-font">
       <a name="timeline"></a>
     <div className="flex flex-col">
-      <div className="h-1 bg-gray-800 rounded overflow-hidden">
-        <div className="w-24 h-full bg-indigo-500" />
-      </div>
+    
       
     </div>
 <Headline text={"Timeline"}/>
