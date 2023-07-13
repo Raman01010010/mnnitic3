@@ -21,7 +21,7 @@ export default function Speaker(){
 
 {data.speaker.map(item=>{
   return(<>
-     <div className="transition ease-in-out hover:scale-105 hover:delay-300 hover:text-black hover:bg-cyan-300 hover:rounded-lg p-4 lg:w-1/4 md:w-1/2">
+     <div className="transition ease-in-out hover:scale-105  hover:text-black hover:bg-cyan-300 hover:rounded-lg p-4 lg:w-1/4 md:w-1/2">
         <div className="h-full flex flex-col items-center text-center">
           <img
             alt="team"
