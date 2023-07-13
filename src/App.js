@@ -19,15 +19,21 @@ import Attend from './components/Attend'
 import Confe from './components/Confe';
 import Commite from './components/Commite';
 import News from './component/News';
+import C2 from './component/C2';
+import C3 from './component/C3';
 function App() {
 
 
   return (
     <div className="App">
+     
       <NavBar/>
-     <div>
-      <Corousel/>
-      <News/>
+
+   
+      
+    <C3/>
+ 
+     
       <About/>
       <Confe/>
     
@@ -43,7 +49,7 @@ function App() {
       <Map/>
       <Contacts/>
     <Footer/>
-
+    <div>
       </div>
 
      
