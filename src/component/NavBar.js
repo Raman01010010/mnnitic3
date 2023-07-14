@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "./mnnit.png";
 import { Link } from "react-router-dom";
+import Aos from "aos";
 
 function NavBar() {
   const [isDropdown1Open, setIsDropdown1Open] = useState(false);
@@ -164,9 +165,8 @@ function NavBar() {
 
   const offCanvasStyle = {
     transform: isMobileMenuOpen ? "translateX(0)" : "translateX(100%)",
-    transition: "transform 0.3s ease-in-out",
+    transition: "transform 1s ease-in-out",
     backgroundColor: "#ffffff", // Updated: Make off-canvas white
-    transition: 'all 0.3s ease-in-out',
   };
 
   const offCanvasContentStyle = {
@@ -193,6 +193,7 @@ function NavBar() {
     scrollBehavior:" smooth"
   };
 
+  
   return (
     <nav style={navbarStyle} className="px-4 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -211,7 +212,7 @@ function NavBar() {
                 onClick={handleScrollReset}
               >
                 <svg
-                  className="h-6 w-6 transition-all duration-300"
+                  className="h-6 w-6 transition-all duration-3000"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"
@@ -424,20 +425,20 @@ function NavBar() {
           </div>
         </div>
       </div>
-      {isMobileMenuOpen && (
+     
         <div
-          className="fixed right-0 top-0 h-full w-2/3 bg-gray-800 z-50 transform duration-300 ease-in-out"
+          className="fixed right-0 top-0 h-full w-2/3 bg-gray-800 z-50 transition-all duration-3000 "
           style={offCanvasStyle}
         >
-          <div className="p-8" style={offCanvasContentStyle}>
-            <div className="flex items-center justify-between mb-8">
+          <div className="p-8" style={offCanvasContentStyle} >
+            <div className="flex items-center justify-between mb-8" >
               <div className="flex-shrink-0">
                 <a href="http://www.mnnit.ac.in/" style={logoStyle}>
                   <img src={logo} alt="Logo" style={logoImageStyle} />
                 </a>
               </div>
               <button
-                className="focus:outline-none transition-all duration-300"
+                className="focus:outline-none transition-all duration-3000"
                 onClick={handleMobileMenuToggle}
                 style={closeIconStyle}
               >
@@ -623,177 +624,10 @@ function NavBar() {
                     </a>
                   </div>
                 )}
-              </a>
-                
+              </a> 
             </div>
           </div>
         </div>
-      )}
-      {isContentScrolled && (
-        <div className="fixed right-0 top-0 h-full bg-gray-800 z-50">
-          <button
-            className="focus:outline-none h-full w-12 flex items-center justify-center transition-all duration-300"
-            onClick={handleScrollReset}
-          >
-            <svg
-              className="h-8 w-8 fill-current text-white transform rotate-180"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-            >
-              <path className="heroicon-ui" d="M12 4v16m8-8H4" />
-            </svg>
-          </button>
-          <div className="h-full overflow-y-auto p-8">
-            <div className="flex items-center justify-between mb-8">
-              <div className="flex-shrink-0">
-                <a href="http://www.mnnit.ac.in/" style={logoStyle}>
-                  <img src={logo} alt="Logo" style={logoImageStyle} />
-                </a>
-              </div>
-              <div>
-                <button
-                  className="focus:outline-none"
-                  onClick={handleScrollReset}
-                  style={closeIconStyle}
-                >
-                  <svg
-                    className="h-8 w-8 fill-current text-white"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                  >
-                    <path className="heroicon-ui" d="M20 12H4M20 6H4M20 18H4" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div className="space-y-4">
-              {/* <a
-                href="/"
-                className="text-base font-medium text-white block hover:text-black"
-              >
-                HOME
-              </a> */}
-              <a
-                href="#"
-                className="text-base font-medium text-white block hover:text-black"
-              >
-                ABOUT
-              </a>
-              <a
-                href="#"
-                className="text-base font-medium text-white block hover:text-black"
-              >
-                CONFERENCE TOPICS
-              </a>
-              <div>
-                <div className="flex items-center justify-between">
-                  <a
-                    href="#"
-                    className="text-base font-medium text-white hover:text-black"
-                    onMouseEnter={handleMouseEnter1}
-                    onMouseLeave={handleMouseLeave1}
-                    style={hoverLinkStyle} // Added: Hover style
-                  >
-                    CONFERENCE PROGRAM
-                  </a>
-                  {isDropdown1Open && (
-                    <div style={dropdownMenuStyle}>
-                      <a href="#" style={dropdownLinkStyle}>
-                        Service 1
-                      </a>
-                      <a href="#" style={dropdownLinkStyle}>
-                        Service 2
-                      </a>
-                      <a href="#" style={dropdownLinkStyle}>
-                        Service 3
-                      </a>
-                    </div>
-                  )}
-                </div>
-              </div>
-              <div>
-                <div className="flex items-center justify-between">
-                  <a
-                    href="#"
-                    className="text-base font-medium text-white hover:text-black"
-                    onMouseEnter={handleMouseEnter2}
-                    onMouseLeave={handleMouseLeave2}
-                    style={hoverLinkStyle} // Added: Hover style
-                  >
-                    COMMITTEE
-                  </a>
-                  {isDropdown2Open && (
-                    <div style={dropdownMenuStyle}>
-                      <a href="#" style={dropdownLinkStyle}>
-                        Service 1
-                      </a>
-                      <a href="#" style={dropdownLinkStyle}>
-                        Service 2
-                      </a>
-                      <a href="#" style={dropdownLinkStyle}>
-                        Service 3
-                      </a>
-                    </div>
-                  )}
-                </div>
-              </div>
-              <div>
-                <div className="flex items-center justify-between">
-                  <a
-                    href="#"
-                    className="text-base font-medium text-white hover:text-black"
-                    onMouseEnter={handleMouseEnter3}
-                    onMouseLeave={handleMouseLeave3}
-                    style={hoverLinkStyle} // Added: Hover style
-                  >
-                    MISP HISTORY
-                  </a>
-                  {isDropdown3Open && (
-                    <div style={dropdownMenuStyle}>
-                      <a
-                        href="http://iiti.ac.in/people/~mlsp/index.html"
-                        style={dropdownLinkStyle}
-                      >
-                        MISP-2017
-                      </a>
-                      <a
-                        href="https://misp.iiita.ac.in/"
-                        style={dropdownLinkStyle}
-                      >
-                        MISP-2019
-                      </a>
-                      <a
-                        href="https://www.misp.nitap.ac.in/"
-                        style={dropdownLinkStyle}
-                      >
-                        MISP-2021
-                      </a>
-                    </div>
-                  )}
-                </div>
-              </div>
-              <a
-                href="#"
-                className="text-base font-medium text-white block hover:text-black"
-              >
-                VENUE
-              </a>
-              <a
-                href="#"
-                className="text-base font-medium text-white block hover:text-black"
-              >
-                CONTACT US
-              </a>
-              <a
-                href="#"
-                className="text-base font-medium text-white block hover:text-black"
-              >
-                CONTACT US
-              </a>
-            </div>
-          </div>
-        </div>
-      )}
     </nav>
   );
 }

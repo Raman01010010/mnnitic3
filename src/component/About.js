@@ -4,7 +4,7 @@ import Headline from './Headline'
 import { Element } from 'react-scroll'
 export default function About(){
     return (
-        <div id="about">
+        <div id="about" data-aos='fade-up' data-aos-delay='100'>
         <Headline text={"About"}/>
         <section className="text-gray-400 bg-gray-900 body-font">
         <a name="about"></a>

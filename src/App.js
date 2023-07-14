@@ -30,9 +30,10 @@ import {
   Route,
 } from "react-router-dom";
 function App() {
-  React.useEffect(() => {
-    Aos.init({ duration: 1000 });
-  });
+  Aos.init({
+    duration: 600,
+    offset: 0
+  })
   return (
     <div className="App">
       <NavBar />
