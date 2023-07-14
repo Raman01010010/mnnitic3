@@ -1,0 +1,23 @@
+ 
+   */.slick-list {
+    width: 100 vb;
+    height: 100 vh
+  }
+  .slick-slide  {
+    width: 100vb;
+    height: 100 vh
+  }
+  .slick-slide > div {
+    width: 100 vb;
+    height: 100 vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }.slick-slider {
+    width: 100 vb;
+    height: 100 vh
+  }.carousel-container {
+    height: auto;
+    overflow: hidden;
+    position: relative;
+  }
