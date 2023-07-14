@@ -8,7 +8,6 @@ import Timeline from "./component/Timeline";
 import Speaker from "./component/Speakers";
 import About from "./component/About";
 import Footer from "./component/Footer";
-import Map from "./component/Map";
 import Contacts from "./component/Contacts";
 import Colaborators from "./component/Colaborators";
 import Publications from "./component/Punlications";
@@ -25,6 +24,11 @@ import Test from "./component/Test";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 function App() {
   React.useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -32,8 +36,8 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-
       <div data-aos="fade-down">
+     
         <C3 />
       </div>
       <News />
@@ -47,9 +51,10 @@ function App() {
       <Attend />
       <Timeline />
       <Colaborators />
-      <Map />
       <Contacts />
       <Footer />
+      
+    
       <div></div>
     </div>
   );

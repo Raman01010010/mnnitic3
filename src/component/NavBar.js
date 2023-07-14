@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "./mnnit.png";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   const [isDropdown1Open, setIsDropdown1Open] = useState(false);
@@ -110,6 +111,7 @@ function NavBar() {
     color: "#4c51bf", // Updated: Use accent color
     fontFamily: "Roboto,Montserrat,Open Sans",
     zIndex: 1,
+
   };
 
   const dropdownMenuStyle = {
@@ -118,6 +120,7 @@ function NavBar() {
     position: "absolute",
     fontFamily: "Roboto,Montserrat,Open Sans",
     zIndex: 1,
+ 
   };
 
   const dropdownLinkStyle = {
@@ -127,6 +130,7 @@ function NavBar() {
     fontFamily: "Roboto,Montserrat,Open Sans",
     textDecoration: "none",
     zIndex: 1,
+    scrollBehavior:" smooth"
   };
 
   if (isDropdown1Open) {
@@ -155,6 +159,7 @@ function NavBar() {
     justifyContent: "center",
     alignItems: "center",
     zIndex: 1,
+    scrollBehavior:" smooth"
   };
 
   const offCanvasStyle = {
@@ -185,6 +190,7 @@ function NavBar() {
   const hoverLinkStyle = {
     textDecoration: "none",
     color: "#4c51bf", // Updated: Use accent color for hover effect
+    scrollBehavior:" smooth"
   };
 
   return (
@@ -246,14 +252,14 @@ function NavBar() {
               }`}
               style={primaryLinksStyle}
             >
-              <a href="/" className="text-sm font-medium hover:text-black transition-colors duration-300">
+              <a href="#" className="text-sm font-medium hover:text-black transition-colors duration-300"> 
                 HOME
               </a>
-              <a href="#" className="text-sm font-medium hover:text-black transition-colors duration-300">
+              <a href="#about"  className="text-sm font-medium hover:text-black transition-colors duration-300">
                 ABOUT
               </a>
               <a
-                href="#"
+                href="#confe"
                 className="text-sm font-medium hover:text-black transition-colors duration-300"
                 onMouseEnter={handleMouseEnter5}
                 onMouseLeave={handleMouseLeave5}
@@ -295,7 +301,7 @@ function NavBar() {
                 )}
               </a>
               <a
-                href="#"
+                href="#committee"
                 className="text-sm font-medium hover:text-black transition-colors duration-300"
                 onMouseEnter={handleMouseEnter2}
                 onMouseLeave={handleMouseLeave2}
@@ -316,7 +322,7 @@ function NavBar() {
                 )}
               </a>
               <a
-                href="#"
+                href="#sessions"
                 className="text-sm font-medium hover:text-black transition-colors duration-300"
                 onMouseEnter={handleMouseEnter4}
                 onMouseLeave={handleMouseLeave4}
@@ -366,11 +372,11 @@ function NavBar() {
                   </div>
                 )}
               </a>
-              <a href="#" className="text-sm font-medium hover:text-black transition-colors duration-300">
+              <a href="#collab" className="text-sm font-medium hover:text-black transition-colors duration-300">
                 COLLABORATORS
               </a>
               <a
-                href="#"
+                href="#contactus"
                 className="text-sm font-medium hover:text-black transition-colors duration-300"
                 onMouseEnter={handleMouseEnter6}
                 onMouseLeave={handleMouseLeave6}
@@ -390,7 +396,7 @@ function NavBar() {
                   </div>
                 )}
               </a>
-              <a href="#" className="text-sm font-medium hover:text-black transition-colors duration-300">
+              <a href="#contactus" className="text-sm font-medium hover:text-black transition-colors duration-300">
                 CONTACT US
               </a>
               <a
@@ -450,14 +456,14 @@ function NavBar() {
               </button>
             </div>
             <div className="space-y-4" style={primaryLinksStyle}>
-            <a href="/" className="text-sm font-medium block hover:text-black transition-colors duration-300">
+            <a href="#" className="text-sm font-medium block hover:text-black transition-colors duration-300">
                 HOME
               </a>
-              <a href="#" className="text-sm font-medium block hover:text-black transition-colors duration-300">
+              <a href="#about" className="text-sm font-medium block hover:text-black transition-colors duration-300">
                 ABOUT
               </a>
               <a
-                href="#"
+                href="#confe"
                 className="text-sm font-medium block hover:text-black transition-colors duration-300"
                 onMouseEnter={handleMouseEnter5}
                 onMouseLeave={handleMouseLeave5}
@@ -499,7 +505,7 @@ function NavBar() {
                 )}
               </a>
               <a
-                href="#"
+                href="#committee"
                 className="text-sm font-medium block hover:text-black transition-colors duration-300"
                 onMouseEnter={handleMouseEnter2}
                 onMouseLeave={handleMouseLeave2}
@@ -520,7 +526,7 @@ function NavBar() {
                 )}
               </a>
               <a
-                href="#"
+                href="#sessions"
                 className="text-sm font-medium block hover:text-black transition-colors duration-300"
                 onMouseEnter={handleMouseEnter4}
                 onMouseLeave={handleMouseLeave4}
@@ -570,11 +576,11 @@ function NavBar() {
                   </div>
                 )}
               </a>
-              <a href="#" className="text-sm font-medium block hover:text-black transition-colors duration-300">
+              <a href="#collab" className="text-sm font-medium block hover:text-black transition-colors duration-300">
                 COLLABORATORS
               </a>
               <a
-                href="#"
+                href="#contactus"
                 className="text-sm font-medium block hover:text-black transition-colors duration-300"
                 onMouseEnter={handleMouseEnter6}
                 onMouseLeave={handleMouseLeave6}
@@ -594,7 +600,7 @@ function NavBar() {
                   </div>
                 )}
               </a>
-              <a href="#" className="text-sm font-medium block hover:text-black transition-colors duration-300">
+              <a href="#contactus" className="text-sm font-medium block hover:text-black transition-colors duration-300">
                 CONTACT US
               </a>
               <a

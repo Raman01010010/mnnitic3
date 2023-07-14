@@ -1,7 +1,7 @@
 import data from '../data/data.json'
 import Headline from './Headline'
 export default function Sessions(){
-    return(<>
+    return(<div id="sessions">
     <section className="text-gray-400 bg-gray-900 body-font">
   <div className="container px-5 py-24 mx-auto">
     <a name="sessions"></a>
@@ -76,5 +76,5 @@ export default function Sessions(){
     </div>
   </div>
 </section>
-</>)
+</div>)
 }

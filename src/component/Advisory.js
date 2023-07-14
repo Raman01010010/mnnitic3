@@ -1,7 +1,8 @@
 import data from '../data/data.json'
 import Headline from './Headline'
 function Temp(props){
-    return(<>
+    return(
+    <div id="committee">
     <section className="text-gray-400 bg-gray-900 body-font">
        
   <div className="container px-5 py-24 mx-auto">
@@ -51,7 +52,7 @@ function Temp(props){
     </div>
   </div>
 </section>
-</>)
+</div>)
 }
 export default function Advisory(){
     return(<>

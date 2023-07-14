@@ -1,7 +1,7 @@
 import data from '../data/data.json'
 import Headline from './Headline'
 export default function Colaborators(){
-    return(<>
+    return(<div id="collab">
       <Headline text={"Colaborators"}/>
 <section className="text-gray-400 bg-gray-900 body-font">
   <div className="container px-5 py-24 mx-auto">
@@ -39,5 +39,5 @@ export default function Colaborators(){
 
 
 
-</>)
+</div>)
 }

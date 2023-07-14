@@ -1,8 +1,10 @@
+import { Link } from 'react-router-dom'
 import data from '../data/data.json'
 import Headline from './Headline'
+import { Element } from 'react-scroll'
 export default function About(){
     return (
-        <>
+        <div id="about">
         <Headline text={"About"}/>
         <section className="text-gray-400 bg-gray-900 body-font">
         <a name="about"></a>
@@ -30,8 +32,9 @@ export default function About(){
    </div>
     </div>
     </section>
-    </>
 
+    </div>
+    
   )
 }
 
