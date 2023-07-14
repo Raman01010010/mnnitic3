@@ -28,13 +28,13 @@ function Carousel() {
     <div className="carousel-container">
       <Slider {...settings}>
         <div>
-          <img className="object-contain w-full h-auto"  src="http://www.mnnit.ac.in/images/newstories/2022/slider/yoga2023/DSC_1730.JPG" alt="Image 1" />
+          <img className="object-contain w-full h-auto"  src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?size=626&ext=jpg&ga=GA1.2.2014565303.1683796265&semt=sph" alt="Image 1" />
         </div>
         <div>
-          <img className="object-contain w-full h-auto"  src="http://www.mnnit.ac.in/images/newstories/2022/slider/yoga2023/DSC_1730.JPG" alt="Image 2" />
+          <img className="object-contain w-full h-auto"  src="https://img.freepik.com/free-photo/green-sprouts-dark-soil-against-blurred-background-symbolizing-concept-growth-potential_90220-1462.jpg?size=626&ext=jpg&ga=GA1.2.2014565303.1683796265&semt=sph" alt="Image 2" />
         </div>
         <div>
-          <img className="object-contain w-full h-auto"  src="http://www.mnnit.ac.in/images/newstories/2022/slider/yoga2023/DSC_1730.JPG" alt="Image 3" />
+          <img className="object-contain w-full h-auto"  src="https://img.freepik.com/free-photo/cascade-boat-clean-china-natural-rural_1417-1356.jpg?size=626&ext=jpg&ga=GA1.2.2014565303.1683796265&semt=sph" alt="Image 3" />
         </div>
       </Slider>
     </div>
