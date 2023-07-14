@@ -9,19 +9,21 @@ export default function Sessions(){
     <div className="flex flex-wrap flex justify-center items-center -mx-4 -my-8">
         {data.sessions.map(item=>{
             return(<>
-              <div className="shadow-2xl text-black bg-cyan-300 rounded-lg py-8 px-4 lg:w-1/3 hover:bg-cyan-800 hover:text-white">
-        <div className="h-full flex items-start">
+              <div className="m-2 shadow-2xl text-black bg-cyan-300 rounded-lg py-8  lg:w-1/3 transition ease-in-out hover:delay-300 hover:bg-fuchsia-800 hover:text-gray-200">
+        <div className="h-full flex items-start mr-2">
        
-          <div className="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+       
+          <div className="flex-grow pl-6">
+         
+          <h1 className="title-font text-xl font-medium  mb-3">
+          <div className="ml-auto mr-auto w-12 flex-shrink-0 flex flex-col text-center leading-none">
             <span className=" pb-2 mb-2 border-b-2 border-gray-700">
-        {item.s1}
+             {item.s1}
             </span>
             <span className="font-medium text-lg leading-none  title-font">
               {item.s2}
             </span>
           </div>
-          <div className="flex-grow pl-6">
-          <h1 className="title-font text-xl font-medium  mb-3">
               {item.head}
             </h1>
             <h2 className="tracking-widest text-l title-font font-medium text-indigo-400 mb-1">

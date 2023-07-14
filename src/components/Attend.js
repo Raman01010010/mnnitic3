@@ -1,29 +1,52 @@
 import React from 'react'
-import './Conf.css'
+import Headline from '../component/Headline'
 function Attend() {
-    
   return (
-<<<<<<< HEAD
-    <div  className='att' style={{border:"10px solid #c2c4f0",width:"1000px",borderRadius:"10px",marginLeft :"17%",marginRight:"5%",marginBottom:"50px"}}>
-      <h1 style={{fontSize:"50px",marginLeft:"25%"}}>TO ATTEND THE CONFERENCE</h1>
-=======
-    <div  className='att' style={{backgroundColor:"#f5e3e1",width:"1000px",marginLeft :"17%",marginRight:"5%",marginBottom:"100px",marginTop:"50px"}}>
-      <h1 style={{fontSize:"50px",marginLeft:"18%"}}>TO ATTEND THE CONFERENCE</h1>
->>>>>>> 05f3b73c7031c35c80dc2b7712c78958b0681742
-      <p>
-      The NIT Arunachal Pradesh is temporarily Campus in Yupia hired from the state government of Arunachal Pradesh. Yupia is around 18 km from Itanagar, the capital of Arunachal Pradesh, and is about 10 km from Naharlagun, which is the twin capital town. The place has a healthy climate with moderate temperature ranging from 13°C to 27°C with an annual mean rainfall of 365 mm. The permanent campus of NIT AP is under construction at Jote, Papum Pare District, Arunachal Pradesh.
-      </p>
-      <h2 style={{fontSize:"40px",marginLeft:"35%"}}>Travel Guide</h2>
-      <p>
-      <b>Rail Link:</b> The nearest railway station is Naharlagun, which is around 3 km from the present campus at Yupia. The other nearest railway station is at Harmuti which is 15 km away from the present campus and Guwahati which is around 330 km away. The journey from Guwahati to Harmuti or Naharlagun takes about 6 hours. Taxi for Yupia and share auto service are also available at Naharlagun City or Naharlagun Railway Station as well as Harmuti Railway station. 
-
-​<br></br>
-
-<b>Air Link:</b> The nearest Airport is Lilabari (North Lakhimpur) in Assam, which is around 50 km from the institute at Yupia. The flight services for Lilabari Airport is available every day from Netaji Subhash Chandra Bose International Airport, Kolkata (CCU). Lokpriya Gopinath Bordoloi International Airport, Guwahati (GAU) is well connected to major cities. Plan a flight trip from your nearest city to Guwahati Airport (GAU). After reaching Lilabari/ Guwahati Airport book a Cab/Taxi to reach Yupia. Also, the helicopter service from Guwahati to Naharlagun is daily available except on Sunday.
-
-<br></br>
-<b>Road Link: </b>Naharlagun is at a distance of 370 km from Guwahati. Day and Night Taxi/bus services are available from Guwahati to Naharlagun.
-      </p>
+    <div style={{backgroundColor:"#f9fab6"}}>
+        <div style={{backgroundColor:"#191a02"}}>
+        <Headline text={"How to attend the Conferene"}/>  </div>
+      <section class="text-gray-600 body-font overflow-hidden">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="-my-8 divide-y-2 divide-gray-100">
+        <div style={{border:"5px solid #f5deda",borderRadius:"50px",marginBottom:"10px"}}>
+      <div class="py-8 flex flex-wrap md:flex-nowrap">
+        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+          <span class="font-semibold title-font text-red-900" style={{fontSize:"30px"}}>ROAD LINK</span>
+        </div>
+        <div class="md:flex-grow">
+          <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Bitters hashtag waistcoat fashion axe chia unicorn</h2>
+          <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
+        
+        </div>
+      </div>  
+      </div>
+      <div style={{border:"5px solid #f5deda",borderRadius:"50px",marginBottom:"10px"}}>
+      <div class="py-8 flex flex-wrap md:flex-nowrap">
+        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+          <span class="font-semibold title-font text-red-900" style={{fontSize:"30px"}}>AIR LINK</span>
+        </div>
+        <div class="md:flex-grow">
+          <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Meditation bushwick direct trade taxidermy shaman</h2>
+          <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
+          
+        </div>
+      </div>
+       </div>
+       <div style={{border:"5px solid #f5deda",borderRadius:"50px"}}>
+      <div class="py-8 flex flex-wrap md:flex-nowrap">
+        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+          <span class="font-semibold title-font text-red-900" style={{fontSize:"30px"}}>TRAVEL LINK</span>
+        </div>
+        <div class="md:flex-grow">
+          <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Woke master cleanse drinking vinegar salvia</h2>
+          <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
+          
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
     </div>
   )
 }
