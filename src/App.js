@@ -27,18 +27,16 @@ import 'aos/dist/aos.css'
 import React from 'react'
 function App() {
 
-React.useEffect(()=>{
-  Aos.init({duration:1000})
-})
+
   return (
     <div className="App">
      
       <NavBar/>
 
-      <div data-aos="fade-down">
+  
 
 <C3/>
-  </div>
+
       
 
 
@@ -59,7 +57,7 @@ React.useEffect(()=>{
 
       <Timeline/>
       <Colaborators/>
-      <Map/>
+    
       <Contacts/>
     <Footer/>
     <div>

@@ -165,7 +165,7 @@ function NavBar() {
 
   const offCanvasStyle = {
     transform: isMobileMenuOpen ? "translateX(0)" : "translateX(100%)",
-    transition: "transform 1s ease-in-out",
+    transition: "transform 0.3s ease-in-out",
     backgroundColor: "#ffffff", // Updated: Make off-canvas white
   };
 
