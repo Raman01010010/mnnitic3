@@ -97,16 +97,32 @@ function NavBar() {
   const logoImageStyle = {
     width: "120px",
     height: "70px",
-    marginRight: "8px",
+    marginLeft: "8px",
     zIndex: 1,
   };
 
+  const logonavImageStyle = {
+    width: "120px",
+    height: "70px",
+    zIndex: 1,
+  };
+   
+  const logonav1ImageStyle = {
+    width: "120px",
+    height: "70px",
+    marginLeft:"80px",
+    zIndex: 1,
+  };
+  
+   
   const logoStyle = {
     fontSize: "1.5rem",
     fontWeight: 600,
     color: "#4c51bf", // Updated: Use accent color
     zIndex: 1,
   };
+  
+  
 
   const primaryLinksStyle = {
     color: "#4c51bf", // Updated: Use accent color
@@ -121,7 +137,7 @@ function NavBar() {
     position: "absolute",
     fontFamily: "Roboto,Montserrat,Open Sans",
     zIndex: 1,
- 
+    transition: 'all 0.3s ease-in-out',
   };
 
   const dropdownLinkStyle = {
@@ -131,7 +147,8 @@ function NavBar() {
     fontFamily: "Roboto,Montserrat,Open Sans",
     textDecoration: "none",
     zIndex: 1,
-    scrollBehavior:" smooth"
+    scrollBehavior:" smooth",
+    transition: 'all 0.3s ease-in-out',
   };
 
   if (isDropdown1Open) {
@@ -165,13 +182,15 @@ function NavBar() {
 
   const offCanvasStyle = {
     transform: isMobileMenuOpen ? "translateX(0)" : "translateX(100%)",
-    transition: "transform 0.3s ease-in-out",
-    backgroundColor: "#ffffff", // Updated: Make off-canvas white
+    transition: "transform 0.5s ease-in-out",
+    backgroundColor: "#ffffff", // Updated: Make off-canvas whit
   };
+  
 
   const offCanvasContentStyle = {
     display: "flex",
     flexDirection: "column",
+    transition: 'all 0.3s ease-in-out',
     alignItems: "flex-start",
     textAlign: "left",
     marginLeft: "0",
@@ -199,9 +218,12 @@ function NavBar() {
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <div className="flex-shrink-0">
-              <a href="http://www.mnnit.ac.in/" style={logoStyle}>
-                <img src={logo} alt="Logo" style={logoImageStyle} />
+            <div className="flex-shrink-0 ">
+              <a  href="http://www.mnnit.ac.in/" style={logoStyle}>
+                <div >
+                <img className="hidden md:block ml-8px" src={logo} alt="Logo" style={logonavImageStyle} />
+                <img className="ml-100  md:hidden " src={logo} alt="Logo" style={logonav1ImageStyle} />
+                </div>
               </a>
             </div>
           </div>
@@ -427,12 +449,12 @@ function NavBar() {
       </div>
      
         <div
-          className="fixed right-0 top-0 h-full w-2/3 bg-gray-800 z-50 transition-all duration-3000 "
+          className="fixed right-0 top-0 h-full w-2/3 bg-gray-800 z-50  bg-opacity-1000"
           style={offCanvasStyle}
         >
           <div className="p-8" style={offCanvasContentStyle} >
             <div className="flex items-center justify-between mb-8" >
-              <div className="flex-shrink-0">
+              <div className="flex-shrink-0 ">
                 <a href="http://www.mnnit.ac.in/" style={logoStyle}>
                   <img src={logo} alt="Logo" style={logoImageStyle} />
                 </a>
@@ -624,10 +646,13 @@ function NavBar() {
                     </a>
                   </div>
                 )}
-              </a> 
-            </div>
+              </a>
+             
+            </div> 
           </div>
-        </div>
+          </div >
+          
+        
     </nav>
   );
 }
