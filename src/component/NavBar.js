@@ -188,8 +188,8 @@ function NavBar() {
 
   const offCanvasStyle1 = {
     transform: isMobileMenuOpen ? "translateX(0)" : "translateX(100%)",
-    transition: "transform 0s ease-in-out",
-    backgroundColor: "#F3F4F6", // Updated: Make off-canvas whit
+    transition: "transform 0s ease-in-out ",
+    
   };
   
 
@@ -454,9 +454,9 @@ function NavBar() {
         </div>
       </div>
       <div
-          className="fixed right-0 top-0 h-full w-full bg-gray-800 z-50"
+          className="fixed right-0 top-0 h-full bg-gray-800 bg-opacity-80 w-full bg-gray-800 z-50"
           style={offCanvasStyle1}
-        >
+        ></div>
         <div
           className="fixed right-0 top-0 h-full w-2/3 bg-gray-800 z-50 "
           style={offCanvasStyle}
@@ -660,7 +660,7 @@ function NavBar() {
             </div> 
           </div>
           </div >
-      </div>    
+          
         
     </nav>
   );
