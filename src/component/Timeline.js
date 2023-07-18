@@ -2,7 +2,7 @@
  import Headline from './Headline'
  export default function Timeline(){
 return(
-    <>
+    <div id="time">
     <section className="text-gray-600 body-font">
       <a name="timeline"></a>
     <div className="flex flex-col">
@@ -52,6 +52,6 @@ return(
   
   </div>
 </section>
-</>
+</div>
 )
 }

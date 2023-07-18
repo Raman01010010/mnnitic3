@@ -35,7 +35,7 @@ function App() {
     offset: 0
   })
   return (
-    <div className="App">
+    <div className="App" style={{scrollBehavior:"revert-layer"}}>
       <NavBar />
       <div data-aos="fade-down">
      
