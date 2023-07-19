@@ -41,7 +41,7 @@ function App() {
 
 
 
-<News/>
+
   
       <About/>
       <Confe/>
