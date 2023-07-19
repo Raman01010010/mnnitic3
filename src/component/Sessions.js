@@ -10,7 +10,7 @@ export default function Sessions(){
     <div className="flex flex-wrap flex justify-center items-center -mx-4 -my-8">
         {data.sessions.map(item=>{
             return(<>
-              <div className="m-2 shadow-2xl text-black bg-white-300 rounded-lg py-8  lg:w-1/3 transition ease-in-out hover:delay-200 hover:bg-gray-300 hover:text-white-100">
+              <div className="m-2 text-black bg-white-300 rounded-lg py-8  lg:w-1/3 transition ease-in-out hover:delay-200 hover:bg-gray-300 hover:text-white-100">
         <div className="h-full flex items-start mr-2">
        
        

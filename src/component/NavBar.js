@@ -297,7 +297,7 @@ function NavBar() {
                 </a>
               </div>
             </div>
-            <div className="font-sans" style={{ fontSize: "25px",paddingLeft: "300px" }}>
+            <div className="font-sans font-semibold" style={{ fontSize: "25px",paddingLeft: "300px" }}>
               <h1>MOTILAL NEHRU NATIONAL INSTITUTE OF TECHNOLOGY ALLAHABAD</h1>
             </div>
           </div>

@@ -42,7 +42,7 @@ function App() {
 
 
 
-<Timeline/>
+
       <About/>
       <Confe/>
     
@@ -51,7 +51,7 @@ function App() {
       <Sessions/>
   
       <Speaker/>
-     
+      <Timeline/>
       <Attend/>
 
      
