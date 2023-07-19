@@ -42,12 +42,11 @@ function App() {
 
 
 
-  
+<Timeline/>
       <About/>
       <Confe/>
     
-      <Advisory/>
-      <Organisers/>
+     
       <Publications/>
       <Sessions/>
   
@@ -55,7 +54,7 @@ function App() {
      
       <Attend/>
 
-      <Timeline/>
+     
       <Colaborators/>
     
       <Contacts/>
