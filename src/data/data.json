@@ -234,10 +234,29 @@
       
 ],
 
+
 "time":{
     "day":"20",
     "month":"7"
+
 },
+
+
+
+
+
+
+
+"title":{
+    "title":"INTERNATIONAL CONFERENCE ON COMMUNICATION AND COMPUTING (IC3)",
+    "date":" DECEMBER 1- DECEMBER 5",
+    "venue":"MNNIT ALLAHABAD",
+    "reg_link":"232323"
+
+},
+
+
+
 
 
 
@@ -280,6 +299,13 @@
 
     ]
 },
+
+
+
+
+
+
+
 {
     "cat":"Funding Chairs",
     "persons":[{
