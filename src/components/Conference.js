@@ -24,15 +24,15 @@ import React from 'react'
 function Conference(props) {
   return (
     <div >
-     <section className="text-gray-600 body-font overflow-hidden">
-  <div className="container px-5 py-24 mx-auto">
-    <div className="lg:w-4/5 mx-auto flex flex-wrap">
+     <section className="text-gray-800 body-font overflow-hidden">
+  <div className="container py-4 mx-auto">
+    <div className="lg:w-4/5 border-2 border-sky-500  p-4 rounded-lg  mx-auto flex flex-wrap">
       <img
         alt="ecommerce"
         className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
         src={props.src}
       />
-      <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0 transition delay-200 duration-600 ease-in-out hover:delay-800 hover:shadow-2xl hover:text-white hover:bg-gray-600 hover:rounded-lg">
+      <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0 transition delay-200 duration-600 ease-in-out hover:delay-800 hover:shadow-2xl  hover:bg-gray-300 hover:rounded-lg">
        
         <h1 className=" text-3xl title-font font-medium mb-1">
           {props.topicname}
