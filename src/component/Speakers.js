@@ -2,15 +2,15 @@ import data from '../data/data'
 export default function Speaker(){
     return (
         <>
-        <section  className="text-gray-400 bg-gray-900 body-font">
+        <section  className=" bg-white body-font">
           <a name="raman"></a>
   <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-col text-center w-full mb-20">
-      <h1 className="text-2xl font-medium title-font mb-4 text-white">
-        <a name="speaker"></a>
+      <h1 className="text-2xl font-medium title-font mb-4">
+        <a class="text-gray-600" name="speaker"></a>
         Speakers
       </h1>
-      <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+      <p className="lg:w-2/3 mx-auto text-gray-500 leading-relaxed text-base">
         Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
         gentrify, subway tile poke farm-to-table. Franzen you probably haven't
         heard of them.
@@ -21,7 +21,7 @@ export default function Speaker(){
 
 {data.speaker.map(item=>{
   return(<>
-     <div className="transition ease-in-out hover:scale-105  hover:text-black hover:bg-cyan-300 hover:rounded-lg p-4 lg:w-1/4 md:w-1/2">
+     <div className="transition ease-in-out hover:scale-105  hover:text-black hover:bg-gray-200 hover:rounded-lg p-4 lg:w-1/4 md:w-1/2">
         <div className="h-full flex flex-col items-center text-center">
           <img
             alt="team"
@@ -29,7 +29,7 @@ export default function Speaker(){
             src={item.image}
           />
           <div className="w-full">
-            <h2 className="title-font font-medium text-lg text-white">
+            <h2 className="title-font font-medium text-lg text-gray-700">
               {item.name}
             </h2>
             <h3 className="text-gray-500 mb-3">{item.organization}</h3>
