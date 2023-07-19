@@ -136,12 +136,17 @@ function NavBar() {
     zIndex: 1,
   };
 
+  
+   
+  
   const logoStyle = {
     fontSize: "1.5rem",
     fontWeight: 600,
     color: "#4c51bf", // Updated: Use accent color
     zIndex: 1,
   };
+  
+  
 
   const primaryLinksStyle = {
     color: "#000000", // Updated: Use accent color
@@ -197,6 +202,7 @@ function NavBar() {
     justifyContent: "center",
     alignItems: "center",
     zIndex: 1,
+    scrollBehavior:" smooth"
   };
 
   const offCanvasStyle = {
@@ -209,6 +215,8 @@ function NavBar() {
     transform: isMobileMenuOpen ? "translateX(0)" : "translateX(100%)",
     transition: "transform 0s ease-in-out ",
   };
+
+  
 
   const offCanvasContentStyle = {
     display: "flex",
@@ -232,8 +240,10 @@ function NavBar() {
   const hoverLinkStyle = {
     textDecoration: "none",
     color: "#4c51bf", // Updated: Use accent color for hover effect
+    scrollBehavior:" smooth"
   };
 
+  
   return (
     <nav style={navbarStyle} className="px-4 lg:px-8">
       <div className=" max-w-7xl mx-auto md:hidden">
@@ -292,7 +302,7 @@ function NavBar() {
                 </a>
               </div>
             </div>
-            <div className=" font-bold" style={{ fontSize: "20px",paddingLeft: "300px" }}>
+            <div className=" font-bold" style={{ fontSize: "30px",paddingLeft: "150px" }}>
               <h1>MOTILAL NEHRU NATIONAL INSTITUTE OF TECHNOLOGY ALLAHABAD</h1>
             </div>
           </div>
