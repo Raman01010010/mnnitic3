@@ -145,7 +145,7 @@ function NavBar() {
 
   const primaryLinksStyle = {
     color: "#000000", // Updated: Use accent color
-    fontFamily: "Roboto,Montserrat,Open Sans",
+    fontFamily:  "san-seriff",
     zIndex: 1,
     padding: "10px",
     textAlign: "centre",
@@ -155,7 +155,7 @@ function NavBar() {
     display: "none",
     backgroundColor: "#4c51bf", // Updated: Use accent color
     position: "absolute",
-    fontFamily: "Roboto,Montserrat,Open Sans",
+    fontFamily: "san-seriff",
     zIndex: 1,
     transition: "all 0.3s ease-in-out",
   };
@@ -164,7 +164,7 @@ function NavBar() {
     display: "block",
     padding: "8px",
     color: "#ffffff",
-    fontFamily: "Roboto,Montserrat,Open Sans",
+    fontFamily: "san-seriff",
     textDecoration: "none",
     zIndex: 1,
 
@@ -235,11 +235,11 @@ function NavBar() {
   };
 
   return (
-    <nav style={navbarStyle} className="px-4 lg:px-8">
-      <div className=" max-w-7xl mx-auto md:hidden">
-        <div className="flex items-center justify-between h-16 ">
-          <div className="flex items-center">
-            <div className="flex-shrink-0 ">
+    <nav style={navbarStyle} className="font-sans px-4 lg:px-8">
+      <div className="font-sans max-w-7xl mx-auto md:hidden">
+        <div className="font-sans flex items-center justify-between h-16 ">
+          <div className="font-sans flex items-center">
+            <div className="font-sans flex-shrink-0 ">
               <a href="http://www.mnnit.ac.in/" style={logoStyle}>
                 <div>
                   <img
@@ -252,7 +252,7 @@ function NavBar() {
               </a>
             </div>
           </div>
-          <div className="md:hidden  ">
+          <div className="font-sans md:hidden  ">
             <button
               className={` ease-in-out focus:outline-none ${
                 isMobileMenuOpen ? "hidden" : "block"
@@ -275,11 +275,11 @@ function NavBar() {
           </div>
         </div>
       </div>
-      <div className="hidden md:block  ">
-        <div className=" max-w-7xl mx-auto ">
-          <div className="flex items-center  ">
-            <div className="flex items-center">
-              <div className="flex-shrink-0 ">
+      <div className="font-sans hidden md:block  ">
+        <div className=" font-sans max-w-7xl mx-auto ">
+          <div className="font-sans flex items-center  ">
+            <div className="font-sans flex items-center">
+              <div className="font-sans flex-shrink-0 ">
                 <a href="http://www.mnnit.ac.in/" style={logoStyle}>
                   <div>
                     <img
@@ -292,7 +292,7 @@ function NavBar() {
                 </a>
               </div>
             </div>
-            <div className=" font-bold" style={{ fontSize: "20px",paddingLeft: "300px" }}>
+            <div className="font-sans" style={{ fontSize: "20px",paddingLeft: "300px" }}>
               <h1>MOTILAL NEHRU NATIONAL INSTITUTE OF TECHNOLOGY ALLAHABAD</h1>
             </div>
           </div>
@@ -300,18 +300,18 @@ function NavBar() {
       </div>
       <div style={navbarStyle1}>
         <div>
-          <div className="hidden md:block">
+          <div className="font-sans hidden md:block">
             <div
-              className={`flex items-center flex space-x-4
+              className={`font-sans flex items-center flex space-x-4
                  "block" 
               `}
               style={primaryLinksStyle}
             >
-              <div class="relative inline-block text-left">
+              <div class="font-sans relative inline-block text-left">
                 <div>
                   <button
                     type="button"
-                    class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                    class="font-sans inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-100"
                     id="menu-button"
                     aria-expanded="true"
                     aria-haspopup="true"
@@ -320,9 +320,9 @@ function NavBar() {
                   </button>
                 </div>
               </div>
-              <Menu as="div" className="relative inline-block text-left">
+              <Menu as="div" className="font-sans relative inline-block text-left">
                 <div>
-                  <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+                  <Menu.Button className="font-sans inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-100">
                     ABOUT
                     <svg
                       class="w-4 h-4 inline-block ml-1"
@@ -356,8 +356,8 @@ function NavBar() {
                             href="#about"
                             className={classNames(
                               active
-                                ? "bg-gray-100 text-gray-900"
-                                : "text-gray-700",
+                                ? "font-sans bg-gray-100 text-gray-900"
+                                : "font-sans text-gray-700",
                               "block px-4 py-2 text-sm"
                             )}
                           >
@@ -445,11 +445,11 @@ function NavBar() {
                 </Transition>
               </Menu>
 
-              <div class="relative inline-block text-left">
+              <div class="font-sans relative inline-block text-left">
                 <div>
                   <button
                     type="button"
-                    class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                    class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-100"
                     id="menu-button"
                     aria-expanded="true"
                     aria-haspopup="true"
@@ -458,9 +458,9 @@ function NavBar() {
                   </button>
                 </div>
               </div>
-              <Menu as="div" className="relative inline-block text-left">
+              <Menu as="div" className="font-sans relative inline-block text-left">
                 <div>
-                  <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+                  <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-100">
                     IMPORTANT LINKS
                     <svg
                       class="w-4 h-4 inline-block ml-1"
@@ -517,18 +517,18 @@ function NavBar() {
         style={offCanvasStyle1}
       ></div>
       <div
-        className="fixed right-0 top-0 h-full w-2/3 bg-gray-800 z-50 "
+        className="font-sans fixed right-0 top-0 h-full w-2/3 bg-gray-800 z-50 "
         style={offCanvasStyle}
       >
-        <div className="p-8" style={offCanvasContentStyle}>
-          <div className="flex items-center justify-between mb-8">
-            <div className="flex-shrink-0 ">
+        <div className="font-sans p-8" style={offCanvasContentStyle}>
+          <div className="font-sans flex items-center justify-between mb-8">
+            <div className="font-sans flex-shrink-0 ">
               <a href="http://www.mnnit.ac.in/" style={logoStyle}>
                 <img src={logo} alt="Logo" style={logoImageStyle} />
               </a>
             </div>
             <button
-              className="focus:outline-none transition-all duration-3000"
+              className="font-sans focus:outline-none transition-all duration-3000"
               onClick={handleMobileMenuToggle}
               style={closeIconStyle}
             >
@@ -547,30 +547,31 @@ function NavBar() {
             </button>
           </div>
 
-          <div className="space-y-4" style={primaryLinksStyle}>
-            <div class="block bg-gray-200 hover:bg-gray-300 p-4">
+          <div className="font-sans space-y-4" style={primaryLinksStyle}>
+            
               <a
                 href="#"
-                className="text-sm font-medium block hover:text-black transition-colors duration-300"
+                className="font-sans text-sm font-medium block hover:text-black transition-colors duration-300"
               >
-                HOME
+               <div class="font-sans block bg-gray-200 hover:bg-gray-300 p-4"> HOME</div>
               </a>
-            </div>
-
             
+
+            <div className="text-sm font-medium block bg-gray-200 hover:bg-gray-300 p-4"><div onClick={() => handleAccordionClick(0)} className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
             <div className="accordion">
               <div className="accordion-item">
-                <div className="block bg-gray-200 hover:bg-gray-300 p-4">
+                
                   <h2 className="accordion-header">
-                    <div className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+                    
                       <button
                         className={`accordion-button ${
                           activeIndex === 0 ? "active" : ""
                         }`}
-                        type="button"
-                        onClick={() => handleAccordionClick(0)}
+                      
+                        
                       >
-                        ABOUT
+                        <div className=" font-sans text-sm font-medium">ABOUT</div>
+                        
                       </button>
 
                       <svg
@@ -584,14 +585,15 @@ function NavBar() {
                           d="M10 12l-5-5h10l-5 5z"
                           clip-rule="evenodd"
                         />
-                      </svg>
+                      </svg></h2>
                     </div>
-                  </h2>
+                  
                   {activeIndex === 0 && (
-                    <div className="accordion-collapse">
+                    <div className="font-sans accordion-collapse">
                       <div className="accordion-body">
                         <a
                           href="#about"
+                          className="hover:bg-gray-100"
                           style={{
                             color: "#555",
                             display: "block",
@@ -602,6 +604,7 @@ function NavBar() {
                         </a>
                         <a
                           href="#confe"
+                          className="hover:bg-gray-100"
                           style={{
                             color: "#555",
                             display: "block",
@@ -612,6 +615,7 @@ function NavBar() {
                         </a>
                         <a
                           href="#"
+                          className="hover:bg-gray-100"
                           style={{
                             color: "#555",
                             display: "block",
@@ -622,6 +626,7 @@ function NavBar() {
                         </a>
                         <a
                           href="#sessions"
+                          className="hover:bg-gray-100"
                           style={{
                             color: "#555",
                             display: "block",
@@ -632,6 +637,7 @@ function NavBar() {
                         </a>
                         <a
                           href="#collab"
+                          className="hover:bg-gray-100"
                           style={{
                             color: "#555",
                             display: "block",
@@ -642,6 +648,7 @@ function NavBar() {
                         </a>
                         <a
                           href="#timeline"
+                          className="hover:bg-gray-100"
                           style={{
                             color: "#555",
                             display: "block",
@@ -659,26 +666,27 @@ function NavBar() {
             <div class="block bg-gray-200 hover:bg-gray-300 p-4">
               <a
                 href="#contact"
-                className="text-sm font-medium block hover:text-black transition-colors duration-300"
+                className="font-sans text-sm font-medium block hover:text-black transition-colors duration-300"
               >
                 CONTACT
               </a>
             </div>
 
             
-            <div className="accordion">
+            <div className="accordion ">
               <div className="accordion-item">
                 <div className="block bg-gray-200 hover:bg-gray-300 p-4">
+                  <div onClick={() => handleAccordionClick(1)} className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
                   <h2 className="accordion-header">
-                    <div className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+                    
                       <button
                         className={`accordion-button ${
                           activeIndex === 1 ? "active" : ""
                         }`}
                         type="button"
-                        onClick={() => handleAccordionClick(1)}
+                        
                       >
-                        IMPORTANT LINKS
+                         <div className="font-sans text-sm font-medium">LINKS</div>
                       </button>
 
                       <svg
@@ -692,13 +700,14 @@ function NavBar() {
                           d="M10 12l-5-5h10l-5 5z"
                           clip-rule="evenodd"
                         />
-                      </svg>
+                      </svg></h2>
                     </div>
-                  </h2>
+                  
                   {activeIndex === 1 && (
-                    <div className="accordion-collapse">
-                      <div className="accordion-body">
+                    <div className="font-sans accordion-collapse">
+                      <div className="font-sans accordion-body">
                         <a
+                        className="hover:bg-gray-100"
                           href="#foot"
                           style={{
                             color: "#555",
