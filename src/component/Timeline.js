@@ -4,7 +4,7 @@
 return(
     <>
     <section className="text-gray-600 body-font">
-      <a name="timeline"></a>
+      <a name="time"></a>
     <div className="flex flex-col">
     
       
