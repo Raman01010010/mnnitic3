@@ -3,7 +3,7 @@ import Headline from './Headline'
 export default function About(){
     return (
         <>
-        <Headline text={"About"}/>
+        <Headline text={"ABOUT"}/>
         <section className="text-gray-800 bg-white body-font">
           <a name="about"></a>
   <div className="container px-5 pb-24 mx-auto">
