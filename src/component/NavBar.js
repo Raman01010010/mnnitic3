@@ -136,6 +136,9 @@ function NavBar() {
     zIndex: 1,
   };
 
+  
+   
+  
   const logoStyle = {
     fontSize: "1.5rem",
     fontWeight: 600,
@@ -209,6 +212,8 @@ function NavBar() {
     transform: isMobileMenuOpen ? "translateX(0)" : "translateX(100%)",
     transition: "transform 0s ease-in-out ",
   };
+
+  
 
   const offCanvasContentStyle = {
     display: "flex",
