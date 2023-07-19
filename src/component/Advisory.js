@@ -57,7 +57,7 @@ function Temp(props){
 export default function Advisory(){
     return(<>
      <a name="adv"></a>
-    <Headline text={"Advisory Committee"}/>
+    <Headline text={"ADVISORY COMMITEE"}/>
     {data.advisory.map(item=>{
         return(<><Temp  item={item}/></>)
     })}

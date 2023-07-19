@@ -39,7 +39,35 @@ function App() {
       <NavBar />
       <div data-aos="fade-down">
      
-        <C3 />
+      <NavBar/>
+
+  
+
+<C3/>
+
+      
+
+
+
+
+<Timeline/>
+      <About/>
+      <Confe/>
+    
+     
+      <Publications/>
+      <Sessions/>
+  
+      <Speaker/>
+     
+      <Attend/>
+
+     
+      <Colaborators/>
+    
+      <Contacts/>
+    <Footer/>
+    <div>
       </div>
       <News />
       <About />
@@ -56,7 +84,8 @@ function App() {
       <Footer />
       
     
-      <div></div>
+      
+    </div>
     </div>
   );
 }

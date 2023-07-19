@@ -3,7 +3,7 @@ export default function Contacts() {
     <div id="contactus">
       <section className="text-gray-400 body-font bg-gray-100">
         <a name="contact"></a>
-        <div className="container px-5 py-24 mx-auto border-2 border-blue-500 bg-white rounded-lg">
+        <div className="container px-5 py-24 mx-auto border-2 border-gray-300 bg-white rounded-lg">
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-800">
               REACHING US
