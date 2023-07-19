@@ -277,7 +277,7 @@ function NavBar() {
       </div>
       <div className="hidden md:block  ">
         <div className=" max-w-7xl mx-auto ">
-          <div className="flex items-center h-16 ">
+          <div className="flex items-center  ">
             <div className="flex items-center">
               <div className="flex-shrink-0 ">
                 <a href="http://www.mnnit.ac.in/" style={logoStyle}>
@@ -292,7 +292,7 @@ function NavBar() {
                 </a>
               </div>
             </div>
-            <div style={{ fontSize: "30px", margin: "100px" }}>
+            <div className=" font-bold" style={{ fontSize: "20px",paddingLeft: "300px" }}>
               <h1>MOTILAL NEHRU NATIONAL INSTITUTE OF TECHNOLOGY ALLAHABAD</h1>
             </div>
           </div>
