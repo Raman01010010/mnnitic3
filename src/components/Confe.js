@@ -4,11 +4,11 @@ import Conference from './Conference'
 import Headline from '../component/Headline'
 function Confe() {
   return (
-    <div>
+    <div id="confe" style={{scrollBehavior: "smooth"}} >
         <div style={{backgroundColor:"#0f0b01"}}>
        <Headline text={"Conference Topics"}/>
        </div>
-       <div style={{color: "#6e0f17",backgroundColor: "#d7d1f2"}}> 
+       <div style={{color: "#6e0f17",backgroundColor: "white"}}> 
       {
         Conferencetopic.map((element)=>{
            return(

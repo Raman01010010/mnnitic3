@@ -1,15 +1,15 @@
 {
     "about":[{
-        "image_url":"https://images.pexels.com/photos/5473956/pexels-photo-5473956.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "image_url":"https://images.pexels.com/photos/2280547/pexels-photo-2280547.jpeg?auto=compress&cs=tinysrgb&w=600",
         "heading":"About the Conference",
         "body":"The International Conference on Machine Intelligence and Signal Processing (MISP 2021) will be held at National Institute of Technology, Arunachal Pradesh, India, during September 23-25, 2021. This conference is meant for researchers all over the globe interested in the areas of data mining, artificial intelligence, optimization, machine learning methods/ algorithms, signal processing theory and methods, and applications to human brain disorders like epilepsy, Alzheimer’s, sleep disorders etc. Other applications of machine learning and signal processing techniques are also welcome"
     },{
-        "image_url":"https://images.pexels.com/photos/16753416/pexels-photo-16753416/free-photo-of-taj-mahal-agra-uttar-pradesh-india.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "image_url":"https://images.pexels.com/photos/2280547/pexels-photo-2280547.jpeg?auto=compress&cs=tinysrgb&w=600",
         "heading":"About Uttar Pradesh",
         "body":"Uttar Pradesh, located in northern India, is a state known for its rich historical, cultural, and natural heritage. With a population of over 200 million people, it is the most populous state in India. Uttar Pradesh boasts a fascinating blend of ancient traditions and modern development.The state is home to several iconic landmarks, such as the majestic Taj Mahal in Agra, which stands as a symbol of love and architectural brilliance. Additionally, the holy city of Varanasi, situated on the banks of the sacred River Ganges, attracts millions of pilgrims and tourists every year."
     },
     {
-        "image_url":"https://media.getmyuni.com/azure/college-images-test/motilal-nehru-national-institute-of-technology-mnnit-allahabad/f28715e4688248d48da225f332c66b4b.jpeg",
+        "image_url":"https://images.pexels.com/photos/2280547/pexels-photo-2280547.jpeg?auto=compress&cs=tinysrgb&w=600",
         "heading":"About the MNNIT",
         "body":"Motilal Nehru National Institute of Technology Allahabad, Prayagraj (MNNIT) is an Institute with total commitment to quality and excellence in academic pursuits. It was established as one of the seventeen Regional Engineering Colleges of India in the year 1961 as a joint enterprise of Government of India and Government of Uttar Pradesh, and was an associated college of University of Allahabad, which is the third oldest university in India."
     }],
@@ -18,7 +18,8 @@
 
 
 
-    
+
+
     "speaker":[{
         "name":"Prof. Witold Pedrycz",
         "organization":"University of Alberta, Edmonton, Canada",
@@ -33,13 +34,13 @@
         
     },{
         "name":"Prof. Witold Pedrycz",
-        "organization":"Nanyang Technological University, Singapore",
+        "organization":"University of Alberta, Edmonton, Canada",
         "image":"https://static.wixstatic.com/media/1cedca_909776754f5848318a2ff7c007090fc0~mv2.jpg/v1/crop/x_0,y_0,w_191,h_189/fill/w_267,h_265,al_c,lg_1,q_80,enc_auto/unnamed_edited.jpg",
         "linkedin":""
         
     },{
         "name":"Prof. Witold Pedrycz",
-        "organization":"Nanyang Technological University, Singapore",
+        "organization":"University of Alberta, Edmonton, Canada",
         "image":"https://static.wixstatic.com/media/1cedca_909776754f5848318a2ff7c007090fc0~mv2.jpg/v1/crop/x_0,y_0,w_191,h_189/fill/w_267,h_265,al_c,lg_1,q_80,enc_auto/unnamed_edited.jpg",
         "linkedin":""
         
@@ -49,8 +50,7 @@
 
 
 
-
-
+    
     "timeline":[{
         "id":"1",
         "start_data":"December 1",
@@ -234,10 +234,29 @@
       
 ],
 
+
 "time":{
     "day":"20",
     "month":"7"
+
 },
+
+
+
+
+
+
+
+"title":{
+    "title":"INTERNATIONAL CONFERENCE ON COMMUNICATION AND COMPUTING (IC3)",
+    "date":" DECEMBER 1- DECEMBER 5",
+    "venue":"MNNIT ALLAHABAD",
+    "reg_link":"232323"
+
+},
+
+
+
 
 
 
@@ -280,6 +299,13 @@
 
     ]
 },
+
+
+
+
+
+
+
 {
     "cat":"Funding Chairs",
     "persons":[{

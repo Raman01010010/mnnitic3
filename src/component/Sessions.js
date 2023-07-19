@@ -2,14 +2,15 @@ import data from '../data/data.json'
 import Headline from './Headline'
 export default function Sessions(){
     return(<>
-    <section className="text-gray-400 bg-gray-900 body-font">
+     <Headline text={"Sessions"}/>
+    <section className="text-gray-400 bg-gray-100 body-font">
   <div className="container px-5 py-24 mx-auto">
     <a name="sessions"></a>
-  <Headline text={"Sessions"}/>
+ 
     <div className="flex flex-wrap flex justify-center items-center -mx-4 -my-8">
         {data.sessions.map(item=>{
             return(<>
-              <div className="m-2 shadow-2xl text-black bg-cyan-300 rounded-lg py-8  lg:w-1/3 transition ease-in-out hover:delay-300 hover:bg-fuchsia-800 hover:text-gray-200">
+              <div className="m-2 shadow-2xl text-black bg-white-300 rounded-lg py-8  lg:w-1/3 transition ease-in-out hover:delay-200 hover:bg-gray-300 hover:text-white-100">
         <div className="h-full flex items-start mr-2">
        
        

@@ -2,7 +2,7 @@
  import Headline from './Headline'
  export default function Timeline(){
 return(
-    <>
+    <div id="time">
     <section className="text-gray-600 body-font">
       <a name="timeline"></a>
     <div className="flex flex-col">
@@ -13,7 +13,7 @@ return(
   <div className="container px-5 py-24 mx-auto flex flex-wrap">
     {data.timeline.map(item=>{
       return(<>
-       <div className="transition ease-in-out  hover:delay-300 hover:text-white hover:bg-cyan-950 hover:rounded-lg flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+       <div className="transition ease-in-out  hover:delay-300 hover:hover:bg-gray-200 hover:rounded-lg flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
       <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
         <div className="h-full w-1 bg-gray-200 pointer-events-none" />
        
@@ -52,6 +52,6 @@ return(
   
   </div>
 </section>
-</>
+</div>
 )
 }

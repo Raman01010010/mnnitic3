@@ -1,10 +1,12 @@
+import { Link } from 'react-router-dom'
 import data from '../data/data.json'
 import Headline from './Headline'
+import { Element } from 'react-scroll'
 export default function About(){
     return (
-        <>
-        <Headline text={"About"}/>
-        <section className="text-gray-400 bg-gray-900 body-font">
+        <div>
+        <Headline text={"ABOUT"}/>
+        <section className="text-gray-800 bg-white body-font">
           <a name="about"></a>
   <div className="container px-5 pb-24 mx-auto">
    
@@ -17,7 +19,7 @@ export default function About(){
 {data.about.map(item=>{
     return(<>
 
-<div className="border-b-4 border-indigo-500 p-4 md:w-1/3 sm:mb-0 mb-6 mb-1 transition ease-in-out  hover:delay-800 hover:shadow-2xl hover:text-black hover:bg-cyan-300 hover:rounded-lg">
+<div className="border-b-4 border-gray-300 p-4 md:w-1/3 sm:mb-0 mb-6 mb-1 transition ease-in-out  hover:delay-800 hover:shadow-2xl hover:text-black hover:bg-gray-300 hover:rounded-lg">
         <div className="rounded-lg h-64 overflow-hidden">
           <img
             alt="content"
@@ -30,25 +32,17 @@ export default function About(){
         </h2>
         <p className="text-justify leading-relaxed mt-2">
          {item.body}
-        </p>
-       
+        </p> 
       </div>
-
-
-    </>)
-})}
-
-    
-
-
-
-
-
-
+    </>)})}
       
+   </div>
     </div>
-  </div>
-</section>
-</>
-    )
+    </section>
+
+    </div>
+    
+    
+  )
 }
+

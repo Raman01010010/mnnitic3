@@ -1,9 +1,9 @@
 import data from '../data/data.json'
 import Headline from './Headline'
 export default function Colaborators(){
-    return(<>
+    return(<div id="collab">
       <Headline text={"Colaborators"}/>
-<section className="text-gray-400 bg-gray-900 body-font">
+<section className="text-gray-400 bg-white body-font">
   <div className="container px-5 py-24 mx-auto">
 
     <div className="flex flex justify-center items-center flex-wrap -m-4">
@@ -11,7 +11,7 @@ export default function Colaborators(){
 
 {data.colaborators.map(item=>{
   return(<>
-    <div className="p-4 rounded-lg lg:w-1/4 md:w-1/2 transition  ease-in-out hover:delay-800 hover:scale-105 hover:shadow-2xl  hover:bg-cyan-300 hover:rounded-lg">
+    <div className="p-4 rounded-lg lg:w-1/4 md:w-1/2 transition   ease-in-out hover:delay-800 hover:scale-105 hover:shadow-2xl  hover:bg-gray-200 hover:rounded-lg">
       <a href={item.link}>
       <div className="h-full flex flex-col items-center text-center">
           <img
@@ -39,5 +39,5 @@ export default function Colaborators(){
 
 
 
-</>)
+</div>)
 }
