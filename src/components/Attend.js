@@ -1,15 +1,19 @@
 import React from 'react'
 import Headline from '../component/Headline'
+import { useState } from 'react';
 function Attend() {
+  
+ 
+
   return (
-    <div style={{backgroundColor:"#f9fab6"}}>
+    <div  style={{backgroundColor:"white"}}>
         <div style={{backgroundColor:"#191a02"}}>
-        <Headline text={"How to attend the Conferene"}/>  </div>
-      <section class="text-gray-600 body-font overflow-hidden">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="-my-8 divide-y-2 divide-gray-100">
-        <div class="px-4" style={{border:"5px solid #f5deda",borderRadius:"50px",marginBottom:"10px"}}>
-           <div class="py-8 flex flex-wrap md:flex-nowrap">
+        <Headline  text={"How to attend the Conferene"}/>  </div>
+      <section   class="text-gray-600 body-font overflow-hidden">
+  <div  class="container px-5 py-24 mx-auto">
+    <div  class="-my-8 divide-y-2 divide-gray-100">
+        <div  class="px-4" style={{border:"5px solid black",borderRadius:"50px",marginBottom:"10px",}}>
+           <div  class="py-8 flex flex-wrap md:flex-nowrap">
          
         <div class="md:flex-grow">
         <span class=" font-semibold title-font text-red-900" style={{fontSize:"30px"}}>ROAD LINK</span>
@@ -19,7 +23,7 @@ function Attend() {
         </div>
       </div>  
       </div>
-      <div class="px-4" style={{border:"5px solid #f5deda",borderRadius:"50px",marginBottom:"10px"}}>
+      <div class="px-4" style={{border:"5px solid black",borderRadius:"50px",marginBottom:"10px"}}>
       <div class="py-8 flex flex-wrap md:flex-nowrap">
        
         <div class="md:flex-grow">
@@ -30,7 +34,7 @@ function Attend() {
         </div>
       </div>
        </div>
-       <div class="px-4" style={{border:"5px solid #f5deda",borderRadius:"50px"}}>
+       <div class="px-4" style={{border:"5px solid black",borderRadius:"50px"}}>
       <div class="py-8 flex flex-wrap md:flex-nowrap">
        
         <div class="md:flex-grow">
