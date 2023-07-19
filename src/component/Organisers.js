@@ -42,12 +42,6 @@ function Temp(props){
       </div>
     </>)
 })}
-
-   
-
-
-      
-     
     </div>
   </div>
 </section>

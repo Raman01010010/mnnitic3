@@ -8,7 +8,7 @@ function Confe() {
         <div style={{backgroundColor:"#0f0b01"}}>
        <Headline text={"Conference Topics"}/>
        </div>
-       <div style={{color: "#6e0f17",backgroundColor: "#d7d1f2"}}> 
+       <div style={{color: "#6e0f17",backgroundColor: "white"}}> 
       {
         Conferencetopic.map((element)=>{
            return(
