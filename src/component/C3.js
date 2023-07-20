@@ -4,7 +4,7 @@ import Test from "./Test"
 import data from '../data/data.json'
 export default function C3(){
     return (<>
-    <section className=" bg-white-800 text-gray-600 body-font">
+    <section className=" bg-white-800 pt-[14%] text-gray-600 body-font">
   <div className="container mx-auto flex px-5  md:flex-row flex-col items-center">
   <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
   <Test/>

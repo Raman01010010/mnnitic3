@@ -94,7 +94,7 @@ function NavBar() {
   };
 
   const navbarStyle = {
-    position: "sticky",
+    position: "fixed",
     top: 0,
     left: 0,
     visibility: "inheret",
@@ -123,22 +123,21 @@ function NavBar() {
   };
 
   const logonavImageStyle = {
-    width: "120px",
-    height: "70px",
+    width: "150x",
+    height: "150px",
     marginTop: "16px",
+    marginLeft: "16px",
     zIndex: 1,
   };
 
   const logonav1ImageStyle = {
     width: "120px",
     height: "70px",
-    marginLeft: "80px",
+    marginLeft: "16px",
+    marginTop: "16px",
     zIndex: 1,
   };
 
-  
-   
-  
   const logoStyle = {
     fontSize: "1.5rem",
     fontWeight: 600,
@@ -148,7 +147,7 @@ function NavBar() {
 
   const primaryLinksStyle = {
     color: "#000000", // Updated: Use accent color
-    fontFamily: "Roboto,Montserrat,Open Sans",
+    fontFamily: "san-seriff",
     zIndex: 1,
     padding: "10px",
     textAlign: "centre",
@@ -158,7 +157,7 @@ function NavBar() {
     display: "none",
     backgroundColor: "#4c51bf", // Updated: Use accent color
     position: "absolute",
-    fontFamily: "Roboto,Montserrat,Open Sans",
+    fontFamily: "san-seriff",
     zIndex: 1,
     transition: "all 0.3s ease-in-out",
   };
@@ -167,7 +166,7 @@ function NavBar() {
     display: "block",
     padding: "8px",
     color: "#ffffff",
-    fontFamily: "Roboto,Montserrat,Open Sans",
+    fontFamily: "san-seriff",
     textDecoration: "none",
     zIndex: 1,
 
@@ -213,8 +212,6 @@ function NavBar() {
     transition: "transform 0s ease-in-out ",
   };
 
-  
-
   const offCanvasContentStyle = {
     display: "flex",
     flexDirection: "column",
@@ -240,24 +237,24 @@ function NavBar() {
   };
 
   return (
-    <nav style={navbarStyle} className="px-4 lg:px-8">
-      <div className=" max-w-7xl mx-auto md:hidden">
-        <div className="flex items-center justify-between h-16 ">
-          <div className="flex items-center">
-            <div className="flex-shrink-0 ">
+    <nav style={navbarStyle} className="font-sans  bg-white">
+      <div className="font-sans max-w-7xl mx-auto bg-white md:hidden">
+        <div className="font-sans flex items-center justify-between h-16 ">
+          <div className="font-sans flex items-center">
+            <div className="font-sans flex-shrink-0 ">
               <a href="http://www.mnnit.ac.in/" style={logoStyle}>
                 <div>
                   <img
                     className="block ml-8px"
                     src={logo}
                     alt="Logo"
-                    style={logonavImageStyle}
+                    style={logonav1ImageStyle}
                   />
                 </div>
               </a>
             </div>
           </div>
-          <div className="md:hidden  ">
+          <div className="font-sans md:hidden  ">
             <button
               className={` ease-in-out focus:outline-none ${
                 isMobileMenuOpen ? "hidden" : "block"
@@ -280,24 +277,24 @@ function NavBar() {
           </div>
         </div>
       </div>
-      <div className="hidden md:block  ">
-        <div className=" max-w-7xl mx-auto ">
-          <div className="flex items-center  ">
-            <div className="flex items-center">
-              <div className="flex-shrink-0 ">
-                <a href="http://www.mnnit.ac.in/" style={logoStyle}>
-                  <div>
-                    <img
-                      className="block ml-8px"
-                      src={logo}
-                      alt="Logo"
-                      style={logonavImageStyle}
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div className="font-sans font-semibold" style={{ fontSize: "25px",paddingLeft: "300px" }}>
+      <div className=" hidden md:block  z-1 bg-white font-sans ">
+        <a href="http://www.mnnit.ac.in/">
+          <div className="mr-0 float-left">
+            <img
+              className=" block ml-8px"
+              src={logo}
+              alt="Logo"
+              style={logonavImageStyle}
+            />
+          </div>
+        </a>
+
+        <div>
+          <div>
+            <div
+              className="float-right  mt-6 mb-5 mr-20  z-1 font-sans font-semibold"
+              style={{ fontSize: "25px" }}
+            >
               <h1>MOTILAL NEHRU NATIONAL INSTITUTE OF TECHNOLOGY ALLAHABAD</h1>
             </div>
           </div>
@@ -305,18 +302,18 @@ function NavBar() {
       </div>
       <div style={navbarStyle1}>
         <div>
-          <div className="hidden md:block">
+          <div className=" bg-white z-1 float-right flex items-center font-sans mr-60  hidden md:block">
             <div
-              className={`flex items-center flex space-x-4
+              className={`font-sans flex items-center flex space-x-3 
                  "block" 
               `}
               style={primaryLinksStyle}
             >
-              <div class="relative inline-block text-left">
+              <div class=" z-1 font-sans relative inline-block text-left">
                 <div>
                   <button
                     type="button"
-                    class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                    class="font-sans inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-100"
                     id="menu-button"
                     aria-expanded="true"
                     aria-haspopup="true"
@@ -325,9 +322,12 @@ function NavBar() {
                   </button>
                 </div>
               </div>
-              <Menu as="div" className="relative inline-block text-left">
+              <Menu
+                as="div"
+                className=" z-1 font-sans relative inline-block text-left"
+              >
                 <div>
-                  <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+                  <Menu.Button className="font-sans inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-100">
                     ABOUT
                     <svg
                       class="w-4 h-4 inline-block ml-1"
@@ -354,15 +354,15 @@ function NavBar() {
                   leaveTo="transform opacity-0 scale-95"
                 >
                   <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                    <div className="py-1">
+                    <div className=" z-1 py-1">
                       <Menu.Item>
                         {({ active }) => (
                           <a
                             href="#about"
                             className={classNames(
                               active
-                                ? "bg-gray-100 text-gray-900"
-                                : "text-gray-700",
+                                ? "font-sans bg-gray-100 text-gray-900"
+                                : "font-sans text-gray-700",
                               "block px-4 py-2 text-sm"
                             )}
                           >
@@ -450,11 +450,11 @@ function NavBar() {
                 </Transition>
               </Menu>
 
-              <div class="relative inline-block text-left">
+              <div class="font-sans relative inline-block text-left">
                 <div>
                   <button
                     type="button"
-                    class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                    class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-100"
                     id="menu-button"
                     aria-expanded="true"
                     aria-haspopup="true"
@@ -463,9 +463,12 @@ function NavBar() {
                   </button>
                 </div>
               </div>
-              <Menu as="div" className="relative inline-block text-left">
+              <Menu
+                as="div"
+                className="font-sans relative inline-block text-left"
+              >
                 <div>
-                  <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+                  <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-100">
                     IMPORTANT LINKS
                     <svg
                       class="w-4 h-4 inline-block ml-1"
@@ -522,18 +525,18 @@ function NavBar() {
         style={offCanvasStyle1}
       ></div>
       <div
-        className="fixed right-0 top-0 h-full w-2/3 bg-gray-800 z-50 "
+        className="font-sans fixed right-0 top-0 h-full w-2/3  z-50 "
         style={offCanvasStyle}
       >
-        <div className="p-8" style={offCanvasContentStyle}>
-          <div className="flex items-center justify-between mb-8">
-            <div className="flex-shrink-0 ">
+        <div className="font-sans" style={offCanvasContentStyle}>
+          <div className="font-sans flex items-center justify-between mb-8">
+            <div className="font-sans flex-shrink-0 ml-5 mt-5 ">
               <a href="http://www.mnnit.ac.in/" style={logoStyle}>
                 <img src={logo} alt="Logo" style={logoImageStyle} />
               </a>
             </div>
             <button
-              className="focus:outline-none transition-all duration-3000"
+              className="font-sans focus:outline-none transition-all duration-3000"
               onClick={handleMobileMenuToggle}
               style={closeIconStyle}
             >
@@ -552,176 +555,197 @@ function NavBar() {
             </button>
           </div>
 
-          <div className="space-y-4" style={primaryLinksStyle}>
-            <div class="block bg-gray-200  hover:bg-gray-300 p-2">
+          <div className="space-y-4 " style={primaryLinksStyle}>
+            <div class="block ">
+              <div className="border-black rounded ">
               <a
                 href="#"
-                className="text-sm font-medium block hover:text-black transition-colors duration-300"
+                className="font-sans text-sm font-medium block hover:text-black transition-colors duration-300"
               >
-                HOME
-              </a>
-            </div>
-
-            
-            <div className="accordion">
-              <div className="accordion-item">
-                <div className="block bg-gray-200 hover:bg-gray-300 ">
-                  <h2 className="accordion-header">
-                    <div className="inline-flex w-full  justify-center gap-x-1.5 rounded-md bg-gray-00 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
-                      <button
-                        className={`accordion-button ${
-                          activeIndex === 0 ? "active" : ""
-                        }  `}
-                        type="button"
-                        onClick={() => handleAccordionClick(0)}
-                      >
-                        ABOUT
-                      </button>
-
-                      <svg
-                        class="w-4 h-4 inline-block ml-1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M10 12l-5-5h10l-5 5z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                    </div>
-                  </h2>
-                  {activeIndex === 0 && (
-                    <div className="accordion-collapse">
-                      <div className="accordion-body">
-                        <a
-                          href="#about"
-                          style={{
-                            color: "#555",
-                            display: "block",
-                            padding: "8px 0",
-                          }}
-                        >
-                          ABOUT US
-                        </a>
-                        <a
-                          href="#confe"
-                          style={{
-                            color: "#555",
-                            display: "block",
-                            padding: "8px 0",
-                          }}
-                        >
-                          CONFERENCE TOPIC
-                        </a>
-                        <a
-                          href="#"
-                          style={{
-                            color: "#555",
-                            display: "block",
-                            padding: "8px 0",
-                          }}
-                        >
-                          CONFERENCE PROGRAM
-                        </a>
-                        <a
-                          href="#sessions"
-                          style={{
-                            color: "#555",
-                            display: "block",
-                            padding: "8px 0",
-                          }}
-                        >
-                          SPECIAL SESSIONS
-                        </a>
-                        <a
-                          href="#collab"
-                          style={{
-                            color: "#555",
-                            display: "block",
-                            padding: "8px 0",
-                          }}
-                        >
-                          COLLABORATORS
-                        </a>
-                        <a
-                          href="#timeline"
-                          style={{
-                            color: "#555",
-                            display: "block",
-                            padding: "8px 0",
-                          }}
-                        >
-                          TIMELINE
-                        </a>
-                      </div>
-                    </div>
-                  )}
+                <div class=" font-sans block  hover:bg-gray-300 p-4 inline-flex w-full  justify-center gap-x-1.5 rounded-md bg-gray-00 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+                  {" "}
+                  HOME
                 </div>
-              </div>
-            </div>
-            <div class="block bg-gray-200 hover:bg-gray-300 p-2">
-              <a
-                href="#contact"
-                className="text-sm font-medium block hover:text-black transition-colors duration-300"
-              >
-                CONTACT
-              </a>
-            </div>
+              </a></div>
+                <div
+                  onClick={() => handleAccordionClick(0)}
+                  className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 mt-2"
+                >
+                  
+                    <div className="accordion-item">
+                      
+                      
+                         
+                            <button
+                              className={`accordion-button ${
+                                activeIndex === 0 ? "active" : ""
+                              }  `}
+                              type="button"
+                              onClick={() => handleAccordionClick(0)}
+                            >
+                              <div className=" font-sans text-sm font-medium">
+                                ABOUT
+                              </div>
+                            </button>
 
-            
-            <div className="accordion">
-              <div className="accordion-item">
-                <div className="block bg-gray-200 hover:bg-gray-300">
-                  <h2 className="accordion-header">
-                    <div className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-gray-200 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
-                      <button
-                        className={`accordion-button ${
-                          activeIndex === 1 ? "active" : ""
-                        }`}
-                        type="button"
-                        onClick={() => handleAccordionClick(1)}
-                      >
-                        IMPORTANT LINKS
-                      </button>
+                            <svg
+                              class="w-4 h-4 inline-block ml-1"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M10 12l-5-5h10l-5 5z"
+                                clip-rule="evenodd"
+                              />
+                            </svg>
+                          
+                        
+                      
 
-                      <svg
-                        class="w-4 h-4 inline-block ml-1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M10 12l-5-5h10l-5 5z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
+                      {activeIndex === 0 && (
+                        <div className="font-sans accordion-collapse">
+                          <div className="accordion-body">
+                            <a
+                              href="#about"
+                              className="hover:bg-gray-100"
+                              style={{
+                                color: "#555",
+                                display: "block",
+                                padding: "8px 0",
+                              }}
+                            >
+                              ABOUT US
+                            </a>
+                            <a
+                              href="#confe"
+                              className="hover:bg-gray-100"
+                              style={{
+                                color: "#555",
+                                display: "block",
+                                padding: "8px 0",
+                              }}
+                            >
+                              CONFERENCE TOPIC
+                            </a>
+                            <a
+                              href="#"
+                              className="hover:bg-gray-100"
+                              style={{
+                                color: "#555",
+                                display: "block",
+                                padding: "8px 0",
+                              }}
+                            >
+                              CONFERENCE PROGRAM
+                            </a>
+                            <a
+                              href="#sessions"
+                              className="hover:bg-gray-100"
+                              style={{
+                                color: "#555",
+                                display: "block",
+                                padding: "8px 0",
+                              }}
+                            >
+                              SPECIAL SESSIONS
+                            </a>
+                            <a
+                              href="#collab"
+                              className="hover:bg-gray-100"
+                              style={{
+                                color: "#555",
+                                display: "block",
+                                padding: "8px 0",
+                              }}
+                            >
+                              COLLABORATORS
+                            </a>
+                            <a
+                              href="#timeline"
+                              className="hover:bg-gray-100"
+                              style={{
+                                color: "#555",
+                                display: "block",
+                                padding: "8px 0",
+                              }}
+                            >
+                              TIMELINE
+                            </a>
+                          </div>
+                        </div>
+                      )}
                     </div>
-                  </h2>
-                  {activeIndex === 1 && (
-                    <div className="accordion-collapse">
-                      <div className="accordion-body">
-                        <a
-                          href="#foot"
-                          style={{
-                            color: "#555",
-                            display: "block",
-                            padding: "8px 0",
-                          }}
-                        >
-                          LINKS
-                        </a>
-                      </div>
-                    </div>
-                  )}
+                
                 </div>
-              </div>
+                <div class="mt-2 inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+                  <a
+                    href="#contact"
+                    className="font-sans text-sm font-medium block hover:text-black transition-colors duration-300"
+                  >
+                    CONTACT
+                  </a>
+                </div>
+
+                <div
+                  onClick={() => handleAccordionClick(1)}
+                  className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 mt-2"
+                >
+                  
+                    <div className="accordion-item">
+                      
+                      
+                         
+                            <button
+                              className={`accordion-button ${
+                                activeIndex === 0 ? "active" : ""
+                              }  `}
+                              type="button"
+                              onClick={() => handleAccordionClick(1)}
+                            >
+                              <div className=" font-sans text-sm font-medium">
+                                LINKS
+                              </div>
+                            </button>
+
+                            <svg
+                              class="w-4 h-4 inline-block ml-1"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M10 12l-5-5h10l-5 5z"
+                                clip-rule="evenodd"
+                              />
+                            </svg>
+                          
+                        
+                      
+
+                      {activeIndex === 1 && (
+                        <div className="font-sans accordion-collapse">
+                          <div className="accordion-body">
+                            <a
+                              href="#about"
+                              className="hover:bg-gray-100"
+                              style={{
+                                color: "#555",
+                                display: "block",
+                                padding: "8px 0",
+                              }}
+                            >
+                              LINKS
+                            </a>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              
             </div>
-            
-
-
           </div>
         </div>
       </div>
