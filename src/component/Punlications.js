@@ -1,14 +1,13 @@
-import React from 'react';
-import data from '../data/data.json';
+import data from '../data/data.json'
+import Headline from '../component/Headline'
 
-export default function Publications() {
-  return (
-    <>
-      <a name="topics"></a>
-      <div className=" font-sans text-center py-8 bg-white">
-        <h2 className="font-sans text-4xl font-bold mb-4">PUBLICATIONS</h2>
-      </div>
-      {data.publications.map((item, index) => {
+export default function Publications(){
+    return (<>
+    <div style={{backgroundColor:"#0f0b01"}}>
+       <Headline text={"Publication"}/>
+       </div>
+    <a name="topics"></a>
+    {data.publications.map((item, index) => {
         return (
           <div key={index} className="my-8">
             <section className="font-sans text-gray-200 text-justify bg-white text-gray-200 body-font overflow-hidden">
@@ -32,6 +31,11 @@ export default function Publications() {
           </div>
         );
       })}
+      
+      
+  
     </>
+  
+    
   );
 }

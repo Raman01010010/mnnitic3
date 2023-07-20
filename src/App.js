@@ -42,12 +42,13 @@ function App() {
   
 
 <C3/>
-<Timeline/>
+
       
 
 
 
-  
+
+
       <About/>
       <Confe/>
     
@@ -56,7 +57,7 @@ function App() {
       <Sessions/>
   
       <Speaker/>
-     
+      <Timeline/>
       <Attend/>
 
      
@@ -66,19 +67,6 @@ function App() {
     <Footer/>
     <div>
       </div>
-      <News />
-      <About />
-      <Confe />
-      <Advisory />
-      <Organisers />
-      <Publications />
-      <Sessions />
-      <Speaker />
-      <Attend />
-      <Timeline />
-      <Colaborators />
-      <Contacts />
-      <Footer />
       
     
       

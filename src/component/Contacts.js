@@ -1,13 +1,14 @@
+import Headline from "./Headline";
+
 export default function Contacts() {
   return (
     <div id="contactus">
+      <Headline text={"REACHING US"}/>
       <section className="text-gray-400 body-font bg-gray-100">
         <a name="contact"></a>
-        <div className="container px-5 py-24 mx-auto border-2 border-gray-300 bg-white rounded-lg">
+        <div className=" mx-auto border-2 border-gray-300 bg-white rounded-lg">
           <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-800">
-              REACHING US
-            </h1>
+            
           </div>
           <div className="flex flex-wrap justify-center md:justify-start">
             <div className="xl:w-1/2 lg:w-1/2 md:w-full px-8 py-6">

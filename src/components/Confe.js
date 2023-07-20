@@ -4,7 +4,8 @@ import Conference from './Conference'
 import Headline from '../component/Headline'
 function Confe() {
   return (
-    <div id="confe" style={{scrollBehavior: "smooth"}} >
+    <div>
+      <a name="confe"></a>
         <div style={{backgroundColor:"#0f0b01"}}>
        <Headline text={"Conference Topics"}/>
        </div>
