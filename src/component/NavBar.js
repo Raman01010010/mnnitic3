@@ -606,7 +606,7 @@ function NavBar() {
                       
 
                       {activeIndex === 0 && (
-                        <div className="font-sans accordion-collapse">
+                        <div className="font-sans text-center accordion-collapse">
                           <div className="accordion-body">
                             <a
                               href="#about"
