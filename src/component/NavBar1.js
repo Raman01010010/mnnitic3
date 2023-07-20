@@ -5,7 +5,7 @@ import Aos from "aos";
 import { Menu } from "@headlessui/react";
 import { Transition } from "react-transition-group";
 
-function NavBar() {
+function NavBar1() {
   const [isDropdown1Open, setIsDropdown1Open] = useState(false);
   const [isDropdown2Open, setIsDropdown2Open] = useState(false);
   const [isDropdown3Open, setIsDropdown3Open] = useState(false);
@@ -94,14 +94,14 @@ function NavBar() {
   };
 
   const navbarStyle = {
-    position: "fixed",
+    position: "sticky",
     top: 0,
     left: 0,
     visibility: "inheret",
     overflowX: "visible",
     width: "100%",
     backgroundColor: "#ffffff", // Updated: Make navbar white
-    zIndex: 1,
+    zIndex: 0,
     transition: "all 0.3s ease-in-out",
   };
   const navbarStyle1 = {
@@ -277,7 +277,7 @@ function NavBar() {
           </div>
         </div>
       </div>
-      <div className=" hidden md:block  z-1 bg-white font-sans ">
+      <div className="h-20 hidden md:block  z-1 bg-white font-sans ">
         <a href="http://www.mnnit.ac.in/">
           <div className="mr-0 float-left">
             
@@ -754,4 +754,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default NavBar1;

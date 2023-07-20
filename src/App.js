@@ -25,6 +25,7 @@ import Test from './component/Test';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 import React from 'react'
+import NavBar1 from './component/NavBar1';
 function App() {
 
 
@@ -32,7 +33,9 @@ function App() {
     <div className="App">
      
       <NavBar/>
-
+      <div class="bg-white">
+      <NavBar1/>
+      </div>
   
 
 <C3/>
